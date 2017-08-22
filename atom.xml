@@ -293,10 +293,10 @@ git <span class="built_in">clone</span> [url] 新名称 <span class="comment"># 
 <h1 id="序列图"><a href="#序列图" class="headerlink" title="序列图"></a>序列图</h1><div id="sequence-0"></div>
 
 <h1 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h1><h1 id="Security"><a href="#Security" class="headerlink" title="Security"></a>Security</h1><p>##<br>encrypt:<br>    enable: true</p>
-<h1 id="Echarts的使用"><a href="#Echarts的使用" class="headerlink" title="Echarts的使用"></a>Echarts的使用</h1><div id="echarts3533" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<h1 id="Echarts的使用"><a href="#Echarts的使用" class="headerlink" title="Echarts的使用"></a>Echarts的使用</h1><div id="echarts5725" style="width: 85%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts3533'));
+        var myChart = echarts.init(document.getElementById('echarts5725'));
 
         // 指定图表的配置项和数据
         var option = var data = [
