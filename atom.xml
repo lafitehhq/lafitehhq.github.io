@@ -5,10 +5,42 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-21T17:03:36.000Z</updated>
+  <updated>2017-08-22T14:21:35.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一本书读懂财报</title>
+    <link href="http://yoursite.com/2017/08/22/%E4%B8%80%E6%9C%AC%E4%B9%A6%E8%AF%BB%E6%87%82%E8%B4%A2%E6%8A%A5/"/>
+    <id>http://yoursite.com/2017/08/22/一本书读懂财报/</id>
+    <published>2017-08-22T14:16:23.000Z</published>
+    <updated>2017-08-22T14:21:35.000Z</updated>
+    
+    <content type="html"><![CDATA[
+<ol>
+<li>认知理解基本的财务会计术语和技能</li>
+<li>教读者学会看财务报表
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;认知理解基本的财务会计术语和技能&lt;/li&gt;
+&lt;li&gt;教读者学会看财务报表
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="阅读の力量" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E9%98%85%E8%AF%BB%E3%81%AE%E5%8A%9B%E9%87%8F/"/>
+    
+    
+      <category term="财务会计" scheme="http://yoursite.com/tags/%E8%B4%A2%E5%8A%A1%E4%BC%9A%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>极致高效の日常和21天の主题挑战</title>
@@ -293,10 +325,10 @@ git <span class="built_in">clone</span> [url] 新名称 <span class="comment"># 
 <h1 id="序列图"><a href="#序列图" class="headerlink" title="序列图"></a>序列图</h1><div id="sequence-0"></div>
 
 <h1 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h1><h1 id="Security"><a href="#Security" class="headerlink" title="Security"></a>Security</h1><p>##<br>encrypt:<br>    enable: true</p>
-<h1 id="Echarts的使用"><a href="#Echarts的使用" class="headerlink" title="Echarts的使用"></a>Echarts的使用</h1><div id="echarts799" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<h1 id="Echarts的使用"><a href="#Echarts的使用" class="headerlink" title="Echarts的使用"></a>Echarts的使用</h1><div id="echarts2953" style="width: 85%;height: 400px;margin: 0 auto"></div>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts799'));
+        var myChart = echarts.init(document.getElementById('echarts2953'));
 
         // 指定图表的配置项和数据
         var option = var data = [
