@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>python语言及应用 | 海球的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="python" />
+  
+  
+  
+  
+  <meta name="description" content="《Python 语言及其应用》 读后感&amp;amp;笔记">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python语言及应用">
+<meta property="og:url" content="http://yoursite.com/2017/09/03/python语言及应用/index.html">
+<meta property="og:site_name" content="海球的博客">
+<meta property="og:description" content="《Python 语言及其应用》 读后感&amp;amp;笔记">
+<meta property="og:locale" content="de">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/Python%20%E8%AF%AD%E8%A8%80%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8..png">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/Python%20%E8%AF%AD%E8%A8%80%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.jpg">
+<meta property="og:updated_time" content="2017-09-03T06:48:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python语言及应用">
+<meta name="twitter:description" content="《Python 语言及其应用》 读后感&amp;amp;笔记">
+<meta name="twitter:image" content="http://ovot91g2e.bkt.clouddn.com/Python%20%E8%AF%AD%E8%A8%80%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8..png">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.JPG">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.JPG">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/dialog.css">
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.JPG">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home🔝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives📝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories🗂</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags🏷</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/pictures">Pictures📽</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About🙄</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键字" />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Seiten',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Unbenannt)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-python语言及应用" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      python语言及应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/09/03/python语言及应用/" class="article-date">
+	  <time datetime="2017-09-03T04:23:45.000Z" itemprop="datePublished">2017-09-03</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/工作/">工作</a><a class="article-category-link" href="/categories/工作/互联网技能/">互联网技能</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><img src="http://ovot91g2e.bkt.clouddn.com/Python%20%E8%AF%AD%E8%A8%80%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8..png" alt=""><br>《Python 语言及其应用》 读后感&amp;笔记<br><a id="more"></a></p>
+<h1 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h1><p><img src="http://ovot91g2e.bkt.clouddn.com/Python%20%E8%AF%AD%E8%A8%80%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8.jpg" alt=""></p>
+<h1 id="Pythonの资源网站"><a href="#Pythonの资源网站" class="headerlink" title="Pythonの资源网站"></a>Pythonの资源网站</h1><p><a href="http://www.codingpy.com/" target="_blank" rel="external">论坛：编程派</a><br><a href="http://www.okpython.com/" target="_blank" rel="external">论坛：Python中国</a><br><a href="http://docs.python.org/3/library/" target="_blank" rel="external">标准库</a><br><a href="https://pypi.python.org/pypi" target="_blank" rel="external">第三方库</a><br><a href="https://github.com/trending?l=python" target="_blank" rel="external">Github</a><br><a href="http://code.activestate.com/recipes/langs/python/" target="_blank" rel="external">Python recipes</a><br><a href="http://legacy.python.org/dev/peps/pep-0008/#constants" target="_blank" rel="external">PEP8格式规范</a></p>
+<h1 id="Pythonの技巧"><a href="#Pythonの技巧" class="headerlink" title="Pythonの技巧"></a>Pythonの技巧</h1><blockquote>
+<p>介绍<br>Python安装、使用IDE、测试、调试、日志、版本控制和文档，还会介绍如何寻找并安装有用的第三方包、打包自己的代码以供重用，以及如何寻找更多有用的信息</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="https://www.python.org/downloads/" target="_blank" rel="external">官网地址</a>  </p>
+<h3 id="MAC"><a href="#MAC" class="headerlink" title="MAC"></a>MAC</h3><p>点 击<a href="https://www.python.org/ftp/python/3.4.1/python-3.4.1-macosx10.6.dmg" target="_blank" rel="external">Mac  OS  X  64-bit/32-bit  installer</a>  链接下载Mac中使用的.dmg文件。下载完成后双击它，桌面上会弹出一个包含4个图标的窗口。右键单击Python.mpkg，在弹出的对话框中点击“打开”。点击大约三次“继续”按钮，期间会显示一些法律声明，最后的对话框出现后点击“安装”。<br>Python 3的所有内容都会被安装到 <strong>/usr/local/bin/python3</strong> ，不会对电脑上已安装的Python 2产生任何影响。</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>参考之前的教程</p>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>点击适当的安装包链接（.msi文件）。下载完成后双击打开，并根据安装指导进行安装<br><a href="https://www.python.org/ftp/python/3.4.1/python-3.4.1.msi" target="_blank" rel="external">Windows  x86  MSI  installer 32位</a><br><a href="https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64.msi" target="_blank" rel="external">Windows  x86-64  MSI  installer 64位</a></p>
+<h2 id="包管理"><a href="#包管理" class="headerlink" title="包管理"></a>包管理</h2><p>有3种安装Python包的方法</p>
+<ol>
+<li>使用pip</li>
+<li>使用包管理工具</li>
+<li>从源代码安装</li>
+</ol>
+<h2 id="IDE的使用"><a href="#IDE的使用" class="headerlink" title="IDE的使用"></a>IDE的使用</h2><p>==Todo==</p>
+<h2 id="代码的测试"><a href="#代码的测试" class="headerlink" title="代码的测试"></a>代码的测试</h2><h3 id="代码风格测试"><a href="#代码风格测试" class="headerlink" title="代码风格测试"></a>代码风格测试</h3><blockquote>
+<p>pylint、pyflakes和pep8检查代码</p>
+</blockquote>
+<p>==Todo==</p>
+<h3 id="程序逻辑测试"><a href="#程序逻辑测试" class="headerlink" title="程序逻辑测试"></a>程序逻辑测试</h3><ol>
+<li>使用unittest测试  </li>
+<li>==Todo==  </li>
+<li>使用doctest测试  </li>
+<li>==Todo==  </li>
+<li>使用nose测试    </li>
+<li>==Todo==  </li>
+<li>使用测试框架  </li>
+<li>==Todo==  </li>
+<li>使用持续集成<br>①：<a href="http://buildbot.net/" target="_blank" rel="external">buildbot</a><br>用Python写成的源码控制系统，可以自动构建、测试和发布。<br>②：<a href="http://jenkins-ci.org/" target="_blank" rel="external">jenkins</a><br>用Java写成，应该是目前最受欢迎的CI(持续集成)系统。<br>③：<a href="http://travis-ci.com/" target="_blank" rel="external">travis-ci</a><br>这个自动化项目托管在GitHub上 </li>
+</ol>
+<h2 id="代码的调试"><a href="#代码的调试" class="headerlink" title="代码的调试"></a>代码的调试</h2><p>==Todo==</p>
+<h2 id="错误日志处理"><a href="#错误日志处理" class="headerlink" title="错误日志处理"></a>错误日志处理</h2><p>==Todo==</p>
+<h2 id="优化代码"><a href="#优化代码" class="headerlink" title="优化代码"></a>优化代码</h2><h3 id="测量时间"><a href="#测量时间" class="headerlink" title="测量时间"></a>测量时间</h3><p>==Todo==</p>
+<h3 id="算法和数据结构"><a href="#算法和数据结构" class="headerlink" title="算法和数据结构"></a>算法和数据结构</h3><p>==Todo==</p>
+<h1 id="Pythonの初级"><a href="#Pythonの初级" class="headerlink" title="Pythonの初级"></a>Pythonの初级</h1><h2 id="对象和类"><a href="#对象和类" class="headerlink" title="对象和类"></a>对象和类</h2><blockquote>
+<p>学习对象和类的适用场景</p>
+</blockquote>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ol>
+<li>对象就像一个盒子，里面装的是不同数据。  </li>
+<li>对象的类型还决定了它装着的数据是允许被修改的变量（可变的）还是不可被修改的常量（不可变的）  </li>
+<li>不可变对象可理解为一个透明但封闭的盒子：可以看到里面装的数据，但是无法改变它。  可变对象可理解为一个开着口的盒子：不仅可以看到里面的数据，还可以拿出来修改它，但无法改变这个盒本身，即无法改变对象的类型。</li>
+</ol>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><ol>
+<li>类是对象的定义</li>
+<li>Python中“类”和“类型”一般不加区分</li>
+</ol>
+<h2 id="原子-基本元素：变量、数字、字符串"><a href="#原子-基本元素：变量、数字、字符串" class="headerlink" title="原子/基本元素：变量、数字、字符串"></a>原子/基本元素：变量、数字、字符串</h2><blockquote>
+<p>介绍最简单的数据类型：布尔值、整数、浮点数和文本字符串，学习基础的数学和文本操作。</p>
+</blockquote>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ol>
+<li>变量只是一个名字，就像贴在盒子上的标签。</li>
+<li>赋值操作并不会实际复制值，只是为数据对象取个相关的名字。名字指对象的引用而不是对象本身。</li>
+<li>变量名只能包含以下字符：<br>• 小写字母（a~z）<br>• 大写字母（A~Z）<br>• 数字（0~9）<br>• 下划线（_）  </li>
+<li>变量名不允许以数字开头；以下划线开头的名字有特殊的含义</li>
+</ol>
+<h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><h4 id="运算符、优先级和数学函数"><a href="#运算符、优先级和数学函数" class="headerlink" title="运算符、优先级和数学函数"></a>运算符、优先级和数学函数</h4><ol>
+<li><strong>运算符</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>描述</th>
+<th>示例</th>
+<th>运算结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>加法</td>
+<td>5 + 8</td>
+<td>13</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减法</td>
+<td>90 – 10</td>
+<td>80</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘法</td>
+<td>4 * 7</td>
+<td>28</td>
+</tr>
+<tr>
+<td>/</td>
+<td>浮点数除法</td>
+<td>7 / 2</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td>//</td>
+<td>整数除法</td>
+<td>7 // 2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>%</td>
+<td>模（求余）</td>
+<td>7 % 3</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>幂</td>
+<td>3<code>**</code> 4</td>
+<td>81</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>优先级</strong><br>详见附录C      </li>
+<li><strong>数学函数</strong><br>详见附录C    </li>
+</ol>
+<h4 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h4><ol>
+<li>可以显式地在前面加上正号+或负号-</li>
+<li>布尔、浮点数、科学计数等数据类型转换成整数</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">print(int(<span class="keyword">True</span>))  <span class="comment"># 1</span></div><div class="line">print(int(<span class="keyword">False</span>))  <span class="comment"># 0</span></div></pre></td></tr></table></figure>
+<h4 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h4><ol>
+<li>包含小数点的数字</li>
+<li>布尔、整数、科学计数等数据类型转换成浮点数</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">print(float(<span class="keyword">True</span>))  <span class="comment"># 1.0</span></div><div class="line">print(float(<span class="keyword">False</span>))  <span class="comment"># 0.0</span></div><div class="line">print(float(<span class="string">'98'</span>))  <span class="comment"># 98.0</span></div><div class="line">print(float(<span class="string">'-1'</span>))  <span class="comment"># -1.0</span></div><div class="line">print(float(<span class="string">'1.0e4'</span>))  <span class="comment"># 10000.0</span></div></pre></td></tr></table></figure>
+<h4 id="进制数"><a href="#进制数" class="headerlink" title="进制数"></a>进制数</h4><ol>
+<li>0b或0B代表二进制（以2为底）</li>
+<li>0o或0O代表八进制（以8为底）</li>
+<li>0x或0X代表十六进制（以16为底）</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">print(<span class="number">0b10</span>)  <span class="comment"># 2</span></div><div class="line">print(<span class="number">0o10</span>)  <span class="comment"># 8</span></div><div class="line">print(<span class="number">0x10</span>)  <span class="comment"># 10</span></div></pre></td></tr></table></figure>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>与其他语言不同的是Python字符串是不可变的（无法对原字符串进行修改，但可以将字符串的一部分复制到新字符串来达到相同的修改效果）</p>
+<h4 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h4><ol>
+<li>创建–使用引号  <blockquote>
+<p>字符串是单行输出：使用单引号或双引号包裹<br>字符串是多行输出：使用3个单引号包裹</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">'Vito'</span>)</div><div class="line">print(<span class="string">"Vito"</span>)</div><div class="line"></div><div class="line">poem1 =<span class="string">"""There was a Young Lady of Norway,</span></div><div class="line"><span class="string">Who casually sat in a doorway; </span></div><div class="line"><span class="string">When the door squeezed her flat, </span></div><div class="line"><span class="string">She exclaimed, "What of that?" </span></div><div class="line"><span class="string">This courageous Young Lady of Norway."""</span></div><div class="line">print(poem1)</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">Vito</span></div><div class="line"><span class="string">Vito</span></div><div class="line"><span class="string">There was a Young Lady of Norway,</span></div><div class="line"><span class="string">Who casually sat in a doorway; </span></div><div class="line"><span class="string">When the door squeezed her flat, </span></div><div class="line"><span class="string">She exclaimed, "What of that?" </span></div><div class="line"><span class="string">This courageous Young Lady of Norway.</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>类型转换–使用<code>str（）</code>   </li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">print(str(<span class="number">98.6</span>))</div><div class="line">print(str(<span class="number">1.0e4</span>))</div><div class="line">print(<span class="keyword">True</span>)</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">98.6</span></div><div class="line"><span class="string">10000.0</span></div><div class="line"><span class="string">True</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>转义–使用<code>\</code>  <blockquote>
+<p>①：<code>\n</code>，代表换行符，用于在一行内创建多行字符串<br>②：<code>\t</code>，代表tab制表符，用于对齐文本<br>③：<code>\&#39;</code>和<code>\&quot;</code>，代表单、双引号<br>④：<code>\\</code>, 代表一个反斜线字符  </p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">'a\tbc'</span>)</div><div class="line">palindrome = <span class="string">'A man,\nA plan,\nA canal:\nPanama.'</span></div><div class="line">print(palindrome)</div><div class="line">speech = <span class="string">'Today we honor our friend, the backslash: \\.'</span></div><div class="line">print(speech)</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">a	bc</span></div><div class="line"><span class="string">A man,</span></div><div class="line"><span class="string">A plan,</span></div><div class="line"><span class="string">A canal:</span></div><div class="line"><span class="string">Panama.</span></div><div class="line"><span class="string">Today we honor our friend, the backslash: \.</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>拼接–使用<code>+</code>  </li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">a = <span class="string">'Vito '</span></div><div class="line">b = <span class="string">'Wong'</span></div><div class="line">print(a+b)</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">Vito Wong</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>复制–使用<code>*</code>  </li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">a = <span class="string">'Va'</span>*<span class="number">2</span> + <span class="string">'\n'</span></div><div class="line">b = <span class="string">'Good luck!'</span></div><div class="line">print(a+b)</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">VaVa</span></div><div class="line"><span class="string">Good luck!</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>提取–使用<code>[]</code>  <blockquote>
+<p>①：[]中的数字理解为偏移量<br>②：偏移量从0开始增加到字符串长度-1<br>③：指定的偏移量超过了字符串的长度会报错  </p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">letters = <span class="string">'abcdefghijklmnopqrstuvwxyz'</span></div><div class="line">print(letters[<span class="number">0</span>])</div><div class="line">print(letters[<span class="number">-1</span>])</div><div class="line"><span class="comment"># print(letters[100]) # IndexError: string index out of range</span></div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">a</span></div><div class="line"><span class="string">z</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>分片–使用<code>[start:end:step]</code>  <blockquote>
+<p>①：起始偏移量start、终止偏移量end以及可选的步长step来定义一个分片<br>②: 偏移量从左至右从0开始，依次增加；从右至左从-1开始，依次减小。如果省略start，分片会默认使用偏移量0（开头）；如果省略end，分片会默认使用偏移量-1或<strong>len(字符串名)</strong>（结尾）。<br>③：提取操作不包含最后一个偏移量对应的字符<br>④：  </p>
+<blockquote>
+<p>• [:]提取从开头到结尾的整个字符串<br>• [start:]从start提取到结尾<br>• [:end]从开头提取到end - 1<br>• [start:end]从start提取到end - 1<br>• [start:end:step]从start提取到end - 1，每step个字符提取一个  </p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">letters = &apos;abcdefghijklmnopqrstuvwxyz&apos;</div><div class="line">print(letters[:])  # 等价于[0:-1]和[0:len(letters)],也就是提取整个字符串</div><div class="line">print(letters[::-1])  # 指定的步长为负数则从右到左反向进行提取操作</div><div class="line">print(letters[1:3])  # 截取偏移量是1到3的字符串，不包含偏移量是3的字符</div><div class="line">print(letters[-3:-1])  # 截取偏移量是-3到-1的字符串，不包含偏移量是-1的字符</div><div class="line">print(letters[::2])  # 步长设为2</div><div class="line"></div><div class="line">&quot;&quot;&quot;输出</div><div class="line">abcdefghijklmnopqrstuvwxyz</div><div class="line">zyxwvutsrqponmlkjihgfedcba</div><div class="line">bc</div><div class="line">xy</div><div class="line">acegikmoqsuwy</div><div class="line">&quot;&quot;&quot;</div></pre></td></tr></table></figure>
+<ol>
+<li><p>获取长度–使用<code>len()</code> </p>
+<blockquote>
+<p>len()函数可用于计算字符串包含的字符数</p>
+</blockquote>
+</li>
+<li><p>分割–使用<code>split()</code>  </p>
+<blockquote>
+<p>split()用于基于分隔符将字符串分割成由若干<strong>子串组成的列表</strong><br>split()将默认使用空白字符——换行符、空格、制表符</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">website = <span class="string">"Google;    Biadu; Ali; JD  "</span></div><div class="line">print(website)</div><div class="line">print(website.split())</div><div class="line">print(website.strip().replace(<span class="string">' '</span>, <span class="string">''</span>).split(<span class="string">";"</span>))  <span class="comment"># strip()删除字符串两边的空格；replace(' ', '')删除字符串中间的空格；spilt(";")以;作为分隔符处理</span></div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">Google;    Biadu; Ali; JD  </span></div><div class="line"><span class="string">['Google;', 'Biadu;', 'Ali;', 'JD']</span></div><div class="line"><span class="string">['Google', 'Biadu', 'Ali', 'JD']</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>合并–使用<code>join()</code>  <blockquote>
+<p>join()用于将包含若干子串的列表分解后将这些子串合成一个完整的大的字符串</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">website_list = [<span class="string">'Google'</span>, <span class="string">'Biadu'</span>, <span class="string">'Ali'</span>, <span class="string">'JD'</span>]</div><div class="line">website_string1 = <span class="string">','</span>.join(website_list)</div><div class="line">website_string2 = <span class="string">'\n'</span>.join(website_list)</div><div class="line">print(website_string1)</div><div class="line">print(website_string2)</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">Google,Biadu,Ali,JD</span></div><div class="line"><span class="string">Google</span></div><div class="line"><span class="string">Biadu</span></div><div class="line"><span class="string">Ali</span></div><div class="line"><span class="string">JD</span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>剪接，大小写转换，对齐  <blockquote>
+<p>①：由于字符串是不可变的，实际上没有一个对字符串真正做了修改。仅是获取了setup的值进行操作后将操作结果赋值给了另一个新的字符串而已。<br>②：  </p>
+<blockquote>
+<p>• strip()：剪接<br>• upper()：所有字母都变成大写<br>• lower()：所有字母转换成小写<br>• title()：所有单词的开头字母变成大写<br>• swapcase()：字母的大小写反转<br>• ljust()：左对齐<br>• rjust()：右对齐<br>• center()：居中  </p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">setup = <span class="string">'     A duck goes into a bar...  '</span></div><div class="line">print(setup.strip(<span class="string">'.'</span>))</div><div class="line">print(setup.upper())</div><div class="line">print(setup.lower())</div><div class="line">print(setup.swapcase())</div><div class="line">print(setup.title())</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">     A duck goes into a bar...  </span></div><div class="line"><span class="string">     A DUCK GOES INTO A BAR...  </span></div><div class="line"><span class="string">     a duck goes into a bar...  </span></div><div class="line"><span class="string">     a DUCK GOES INTO A BAR...  </span></div><div class="line"><span class="string">     A Duck Goes Into A Bar... </span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+<ol>
+<li>替换–使用<code>replace()</code>   <blockquote>
+<p>①：replace()用于简单的子串替换<br>②：需要传入的参数包括：需要被替换的子串，用于替换的新子串，以及需要替换多少处。最后一个参数如果省略则默认只替换第一次出现的位置<br>③：若要替换的子串是一个完整的词，或者某一个词的开头借助正则表达式，不能使用replace方法    </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">setup = <span class="string">'     a duck goes into a bar...  '</span></div><div class="line">print(setup.replace(<span class="string">'duck'</span>, <span class="string">'chicken'</span>))</div><div class="line"></div><div class="line"><span class="string">"""输出</span></div><div class="line"><span class="string">     a chicken goes into a bar...  </span></div><div class="line"><span class="string">"""</span></div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ol>
+<h2 id="分子-容器：列表、元组、字典与集合"><a href="#分子-容器：列表、元组、字典与集合" class="headerlink" title="分子/容器：列表、元组、字典与集合"></a>分子/容器：列表、元组、字典与集合</h2><blockquote>
+<p>学习高级内置数据结构：列表、元组、字典和集合。用与构建更复杂的结构并学到如何使用迭代器和推导式来遍历容器。<br>Python共有3种序列结构：字符串，元组和列表。与字符串不同的是，元组和列表并不要求所含元素的种类相同，每个元素都可以是任何Python类型的对象。</p>
+</blockquote>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><blockquote>
+<p>①：与字符串不同，列表是元素种类不一定相同且元素可变的。可以直接对原始列表进行修改：添加新元素、删除或覆盖已有元素。<br>②：相同值的元素允许出现多次。<br>③：适合利用顺序和位置定位某一元素，尤其是当元素的顺序或内容经常发生改变时。</p>
+</blockquote>
+<h4 id="操作-1"><a href="#操作-1" class="headerlink" title="操作"></a>操作</h4><ol>
+<li>创建– 使用<code>[]</code>或<code>list()</code>  </li>
+<li>其他数据类型转换成列表– 使用<code>list()</code>   </li>
+<li>转换为字符串–使用<code>join()</code>  </li>
+<li>修改元素– 使用<code>[offset]</code>  </li>
+<li>获取元素– 使用<code>[offset]</code>  </li>
+<li>指定范围提取元素–使用<code>切片</code>  </li>
+<li>添加元素至尾部–使用<code>append()</code>  </li>
+<li>插入元素至指定位置–使用<code>insert()</code>  </li>
+<li>删除指定位置的元素–使用<code>del()</code>  </li>
+<li>删除具有指定值的元素–使用<code>remove()</code>  </li>
+<li>获取后删除指定位置的元素–使用<code>pop()</code>  </li>
+<li>判断元素是否存在–使用<code>in</code>  </li>
+<li>查询特定值的元素位置–使用<code>index()</code>  </li>
+<li>记录特定值出现的次数–使用<code>count()</code>  </li>
+<li>排列元素– 使用<code>sort()</code>  </li>
+<li>获取长度– 使用<code>len()</code>  </li>
+<li>赋值– 使用<code>=</code>  </li>
+<li>复制–使用<code>copy()</code>  </li>
+<li>列表嵌套  </li>
+</ol>
+<h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h3><h4 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h4><blockquote>
+<p>①：与字符串不同，元组是元素种类不一定相同且元素不变的。一旦元组被定义，将无法再进行增加、删除或修改元素等操作<br>②：元组像是一个常量列表。  </p>
+</blockquote>
+<h4 id="操作-2"><a href="#操作-2" class="headerlink" title="操作"></a>操作</h4><ol>
+<li>创建–使用()</li>
+<li>赋值/元组解包  </li>
+<li></li>
+</ol>
+<h4 id="与列表优缺点比较"><a href="#与列表优缺点比较" class="headerlink" title="与列表优缺点比较"></a>与列表优缺点比较</h4><blockquote>
+<p>①：元组一旦创建便无法修改，没有<code>append()</code>、<code>insert()</code>等方法。实际编程中，更多场合用到的是列表和字典<br>②：  </p>
+<blockquote>
+<p>• 元组占用的空间较小<br>• 可将元组用作字典的键<br>• 命名元组可以作为对象的替代<br>• 函数的参数是以元组形式传递的  </p>
+</blockquote>
+</blockquote>
+<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><h4 id="简介-3"><a href="#简介-3" class="headerlink" title="简介"></a>简介</h4><blockquote>
+<p>①：字典与列表类似，但元素不是通过偏移量访问，而是通过每个元素对应的唯一键访问<br>②：字典是可变的，因此可以增加、删除或修改其中的键值对。<br>③：键通常是字符串，但也可以是<br>Python中其他任意的不可变类型：布尔型、<br>整型、浮点型、元组。</p>
+</blockquote>
+<h4 id="操作-3"><a href="#操作-3" class="headerlink" title="操作"></a>操作</h4><ol>
+<li>创建–使用<code>{}</code>  </li>
+<li>其他数据类型转换为字典– 使用<code>dict()</code>  </li>
+<li>获取元素–使用<code>[key]</code>  </li>
+<li>获取所有键–使用<code>[key]</code>  </li>
+<li>获取所有键值对– 使用<code>items()</code>  </li>
+<li>获取所有值– 使用<code>values()</code>  </li>
+<li>添加或修改元素–使用<code>[key]</code>  </li>
+<li>删除具有指定键的元素– 使用<code>del</code>  </li>
+<li>删除所有元素–使用<code>clear()</code>  </li>
+<li>赋值– 使用<code>=</code>  </li>
+<li>复制–使用<code>copy()</code>  </li>
+<li>合并–使用<code>update()</code>  </li>
+<li>判断元素是否存在– 使用<code>in</code>  </li>
+</ol>
+<h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><h4 id="简介-4"><a href="#简介-4" class="headerlink" title="简介"></a>简介</h4><h4 id="操作-4"><a href="#操作-4" class="headerlink" title="操作"></a>操作</h4><h2 id="代码结构"><a href="#代码结构" class="headerlink" title="代码结构"></a>代码结构</h2><blockquote>
+<p>学习数据结构上实现比较、选择和重复操作。通过函数来组织代码，用异常来处理错误。</p>
+</blockquote>
+<h2 id="盒子：模块、包和程序"><a href="#盒子：模块、包和程序" class="headerlink" title="盒子：模块、包和程序"></a>盒子：模块、包和程序</h2><blockquote>
+<p>学习使用模块、包和程序组织代码，划分代码和数据、数据的输入输出、处理选项、使用标准库并了解标准库的内部实现。</p>
+</blockquote>
+<h2 id="数据的处理"><a href="#数据的处理" class="headerlink" title="数据的处理"></a>数据的处理</h2><blockquote>
+<p>学到如何处理文本和二进制数据以及Unicode字符和I/O。</p>
+<h3 id="文本字符串"><a href="#文本字符串" class="headerlink" title="文本字符串"></a>文本字符串</h3></blockquote>
+<h3 id="二进制数据"><a href="#二进制数据" class="headerlink" title="二进制数据"></a>二进制数据</h3><h1 id="Pythonの高级"><a href="#Pythonの高级" class="headerlink" title="Pythonの高级"></a>Pythonの高级</h1><h2 id="数据的归宿"><a href="#数据的归宿" class="headerlink" title="数据的归宿"></a>数据的归宿</h2><blockquote>
+<p>学习使用普通文件、目录和文件系统，学习如何处理常用文件格式，如CSV、JSON和XML,了解如何从关系型数据库和最新的NoSQL数据库中存取数据</p>
+</blockquote>
+<h2 id="剖析Web"><a href="#剖析Web" class="headerlink" title="剖析Web"></a>剖析Web</h2><blockquote>
+<p>学习Web客户端、服务器、数据抓取、API和框架，编写一个带请求参数处理和模板的真实网站</p>
+</blockquote>
+<h2 id="系统"><a href="#系统" class="headerlink" title="系统"></a>系统</h2><blockquote>
+<p>学习管理系统程序、进程和线程，处理日期和时间，实现系统管理任务自动化。</p>
+</blockquote>
+<h2 id="并发和网络"><a href="#并发和网络" class="headerlink" title="并发和网络"></a>并发和网络</h2><blockquote>
+<p>学习网络相关内容：服务、协议和API。如底层TCP套接字、消息库以及队列系统、云端部署</p>
+</blockquote>
+<h1 id="Pythonの实践"><a href="#Pythonの实践" class="headerlink" title="Pythonの实践"></a>Pythonの实践</h1><h2 id="附录A：在艺术领域的应用"><a href="#附录A：在艺术领域的应用" class="headerlink" title="附录A：在艺术领域的应用"></a>附录A：在艺术领域的应用</h2><blockquote>
+<p>图像、音乐、动画和游戏</p>
+</blockquote>
+<h2 id="附录B-在商业领域也有应用"><a href="#附录B-在商业领域也有应用" class="headerlink" title="附录B: 在商业领域也有应用"></a>附录B: 在商业领域也有应用</h2><blockquote>
+<p>数据可视化（图表、图形和地图）、安全和管理。</p>
+</blockquote>
+<h2 id="附录C-在科学领域应用"><a href="#附录C-在科学领域应用" class="headerlink" title="附录C: 在科学领域应用"></a>附录C: 在科学领域应用</h2><blockquote>
+<p>数学和统计学、物理科学、生物科学以及医学。<br>    ⁃     </p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
+  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/28/健身的训练方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">健身的训练方法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#思维导图"><span class="nav-number">1.</span> <span class="nav-text">思维导图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pythonの资源网站"><span class="nav-number">2.</span> <span class="nav-text">Pythonの资源网站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pythonの技巧"><span class="nav-number">3.</span> <span class="nav-text">Pythonの技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MAC"><span class="nav-number">3.1.1.</span> <span class="nav-text">MAC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">3.1.2.</span> <span class="nav-text">Linux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows"><span class="nav-number">3.1.3.</span> <span class="nav-text">Windows</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包管理"><span class="nav-number">3.2.</span> <span class="nav-text">包管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IDE的使用"><span class="nav-number">3.3.</span> <span class="nav-text">IDE的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码的测试"><span class="nav-number">3.4.</span> <span class="nav-text">代码的测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码风格测试"><span class="nav-number">3.4.1.</span> <span class="nav-text">代码风格测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序逻辑测试"><span class="nav-number">3.4.2.</span> <span class="nav-text">程序逻辑测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码的调试"><span class="nav-number">3.5.</span> <span class="nav-text">代码的调试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#错误日志处理"><span class="nav-number">3.6.</span> <span class="nav-text">错误日志处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优化代码"><span class="nav-number">3.7.</span> <span class="nav-text">优化代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#测量时间"><span class="nav-number">3.7.1.</span> <span class="nav-text">测量时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法和数据结构"><span class="nav-number">3.7.2.</span> <span class="nav-text">算法和数据结构</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pythonの初级"><span class="nav-number">4.</span> <span class="nav-text">Pythonの初级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#对象和类"><span class="nav-number">4.1.</span> <span class="nav-text">对象和类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对象"><span class="nav-number">4.1.1.</span> <span class="nav-text">对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类"><span class="nav-number">4.1.2.</span> <span class="nav-text">类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原子-基本元素：变量、数字、字符串"><span class="nav-number">4.2.</span> <span class="nav-text">原子/基本元素：变量、数字、字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量"><span class="nav-number">4.2.1.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字"><span class="nav-number">4.2.2.</span> <span class="nav-text">数字</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#运算符、优先级和数学函数"><span class="nav-number">4.2.2.1.</span> <span class="nav-text">运算符、优先级和数学函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整数"><span class="nav-number">4.2.2.2.</span> <span class="nav-text">整数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮点数"><span class="nav-number">4.2.2.3.</span> <span class="nav-text">浮点数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#进制数"><span class="nav-number">4.2.2.4.</span> <span class="nav-text">进制数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">4.2.3.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">4.2.3.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作"><span class="nav-number">4.2.3.2.</span> <span class="nav-text">操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分子-容器：列表、元组、字典与集合"><span class="nav-number">4.3.</span> <span class="nav-text">分子/容器：列表、元组、字典与集合</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">4.3.1.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介-1"><span class="nav-number">4.3.1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作-1"><span class="nav-number">4.3.1.2.</span> <span class="nav-text">操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元组"><span class="nav-number">4.3.2.</span> <span class="nav-text">元组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介-2"><span class="nav-number">4.3.2.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作-2"><span class="nav-number">4.3.2.2.</span> <span class="nav-text">操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#与列表优缺点比较"><span class="nav-number">4.3.2.3.</span> <span class="nav-text">与列表优缺点比较</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字典"><span class="nav-number">4.3.3.</span> <span class="nav-text">字典</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介-3"><span class="nav-number">4.3.3.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作-3"><span class="nav-number">4.3.3.2.</span> <span class="nav-text">操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合"><span class="nav-number">4.3.4.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介-4"><span class="nav-number">4.3.4.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#操作-4"><span class="nav-number">4.3.4.2.</span> <span class="nav-text">操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码结构"><span class="nav-number">4.4.</span> <span class="nav-text">代码结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#盒子：模块、包和程序"><span class="nav-number">4.5.</span> <span class="nav-text">盒子：模块、包和程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据的处理"><span class="nav-number">4.6.</span> <span class="nav-text">数据的处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文本字符串"><span class="nav-number">4.6.1.</span> <span class="nav-text">文本字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二进制数据"><span class="nav-number">4.6.2.</span> <span class="nav-text">二进制数据</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pythonの高级"><span class="nav-number">5.</span> <span class="nav-text">Pythonの高级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据的归宿"><span class="nav-number">5.1.</span> <span class="nav-text">数据的归宿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#剖析Web"><span class="nav-number">5.2.</span> <span class="nav-text">剖析Web</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统"><span class="nav-number">5.3.</span> <span class="nav-text">系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#并发和网络"><span class="nav-number">5.4.</span> <span class="nav-text">并发和网络</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pythonの实践"><span class="nav-number">6.</span> <span class="nav-text">Pythonの实践</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#附录A：在艺术领域的应用"><span class="nav-number">6.1.</span> <span class="nav-text">附录A：在艺术领域的应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录B-在商业领域也有应用"><span class="nav-number">6.2.</span> <span class="nav-text">附录B: 在商业领域也有应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录C-在科学领域应用"><span class="nav-number">6.3.</span> <span class="nav-text">附录C: 在科学领域应用</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2017 海球的博客 All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/pictures" class="mobile-nav-link">Pictures</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+  <script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            海球的博客
+          </div>
+          <div class="panel-body">
+            Copyright © 2017 海球的博客 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
