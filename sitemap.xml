@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/11/06/Pandas%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</loc>
+    
+    <lastmod>2017-11-05T18:22:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/11/02/Djang%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</loc>
     
-    <lastmod>2017-11-05T02:04:50.000Z</lastmod>
+    <lastmod>2017-11-05T18:22:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/11/06/Scrapy%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</loc>
+    
+    <lastmod>2017-11-05T17:46:50.000Z</lastmod>
     
   </url>
   
