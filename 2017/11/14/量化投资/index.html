@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>量化投资 | 海球的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Python量化投资" />
+  
+  
+  
+  
+  <meta name="keywords" content="Python,量化投资">
+<meta property="og:type" content="article">
+<meta property="og:title" content="量化投资">
+<meta property="og:url" content="http://yoursite.com/2017/11/14/量化投资/index.html">
+<meta property="og:site_name" content="海球的博客">
+<meta property="og:locale" content="de">
+<meta property="og:image" content="http://ouyxzbi9n.bkt.clouddn.com/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90%E5%B8%88.jpeg">
+<meta property="og:updated_time" content="2017-11-13T16:31:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="量化投资">
+<meta name="twitter:image" content="http://ouyxzbi9n.bkt.clouddn.com/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90%E5%B8%88.jpeg">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.JPG">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.JPG">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/dialog.css">
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.JPG">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home🔝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives📝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories🗂</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags🏷</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/pictures">Pictures📽</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About🙄</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键字" />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Seiten',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Unbenannt)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-量化投资" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      量化投资
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/11/14/量化投资/" class="article-date">
+	  <time datetime="2017-11-13T16:04:32.000Z" itemprop="datePublished">2017-11-14</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/工作/">工作</a><a class="article-category-link" href="/categories/工作/互联网技能/">互联网技能</a><a class="article-category-link" href="/categories/工作/互联网技能/Python/">Python</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><img src="http://ouyxzbi9n.bkt.clouddn.com/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90%E5%B8%88.jpeg" alt=""></p>
+<a id="more"></a>
+<h1 id="编程基本术语"><a href="#编程基本术语" class="headerlink" title="编程基本术语"></a>编程基本术语</h1><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p><a href="https://bigquant.com/docs/learn_python_in_10_minutes.html" target="_blank" rel="external">10分钟学会Python</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E5%88%97%E8%A1%A8/226" target="_blank" rel="external">数据类型之列表</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E5%AD%97%E5%85%B8/227" target="_blank" rel="external">数据类型之字典</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E5%85%83%E7%BB%84%E3%80%81%E9%9B%86%E5%90%88/228" target="_blank" rel="external">数据类型之元组、集合</a> </p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF%EF%BC%9Aif%E3%80%81while%E3%80%81for/229" target="_blank" rel="external">条件与循环：if、while、for</a> | <a href="https://community.bigquant.com/t/%E5%87%BD%E6%95%B0/230" target="_blank" rel="external">函数</a></p>
+<p><a href="https://bigquant.com/docs/python_lib_list.html" target="_blank" rel="external">金融开发的第三方库</a></p>
+<h2 id="Pandas-的使用"><a href="#Pandas-的使用" class="headerlink" title="Pandas 的使用"></a>Pandas 的使用</h2><p><a href="https://bigquant.com/docs/learn_pandas_in_10_minutes.html" target="_blank" rel="external">10分钟学会Pandas</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8BPandas%E6%9F%A5%E7%9C%8B%E5%92%8C%E9%80%89%E6%8B%A9%E6%95%B0%E6%8D%AE/232" target="_blank" rel="external">Pandas查看和选择数据</a> | <a href="https://community.bigquant.com/t/Pandas%E5%BA%93%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E4%B8%8E%E8%A7%84%E6%95%B4/233" target="_blank" rel="external">Python编程Pandas库之数据处理与规整</a></p>
+<h2 id="Numpy-的使用"><a href="#Numpy-的使用" class="headerlink" title="Numpy 的使用"></a>Numpy 的使用</h2><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8BNumpy%E5%BA%93/231" target="_blank" rel="external">Numpy库介绍</a></p>
+<h1 id="金融基本术语"><a href="#金融基本术语" class="headerlink" title="金融基本术语"></a>金融基本术语</h1><p><a href="https://community.bigquant.com/t/%E5%81%9A%E9%87%8F%E5%8C%96%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E6%9C%AF%E8%AF%AD%EF%BC%81%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/1079" target="_blank" rel="external">基本术语</a> </p>
+<p><a href="https://community.bigquant.com/t/%E6%97%A0%E9%9C%80%E4%BB%A3%E7%A0%81%E6%9E%84%E9%80%A0%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A1%8D%E7%94%9F%E5%9B%A0%E5%AD%90/1066" target="_blank" rel="external">构造衍生因子</a> | <a href="https://community.bigquant.com/t/%E5%A6%82%E4%BD%95%E6%8C%89%E8%87%AA%E5%B7%B1%E9%9C%80%E6%B1%82%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%A0%E5%AD%90%E8%AE%A1%E7%AE%97%EF%BC%9F/541" target="_blank" rel="external">构造自定义因子</a> | <a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%9B%A0%E5%AD%90%E9%A2%84%E5%A4%84%E7%90%86/1532" target="_blank" rel="external">因子预处理</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E5%9B%A0%E5%AD%90%E9%A3%8E%E9%99%A9%E6%9A%B4%E9%9C%B2/269" target="_blank" rel="external">因子风险暴露</a> | <a href="https://community.bigquant.com/t/WorldQuant-101alpha%E5%9B%A0%E5%AD%90%E6%9E%84%E5%BB%BA%E5%8F%8A%E5%9B%A0%E5%AD%90%E6%B5%8B%E8%AF%95/2143" target="_blank" rel="external">alpha因子构建及测试</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BABeta%E5%AF%B9%E5%86%B2/265" target="_blank" rel="external">Beta对冲</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E8%B7%8C%E4%BA%86%E8%BF%99%E4%B9%88%E5%A4%9A%EF%BC%8C%E5%88%9B%E4%B8%9A%E6%9D%BF%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BA%86%E5%90%97%EF%BC%9F/277" target="_blank" rel="external">市盈率</a> | <a href="https://community.bigquant.com/t/%E9%A3%8E%E9%99%A9%E5%B9%B3%E4%BB%B7%E7%BB%84%E5%90%88risk-parity%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E8%B7%B5/327" target="_blank" rel="external">风险平价组合</a> </p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BABarra%E9%A3%8E%E9%99%A9%E7%BB%93%E6%9E%84%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9E%8B/270" target="_blank" rel="external">Barra风险结构管理模型</a></p>
+<h1 id="数学基本术语"><a href="#数学基本术语" class="headerlink" title="数学基本术语"></a>数学基本术语</h1><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%AD%E8%B6%8B%E5%8A%BF%E7%9A%84%E5%BA%A6%E9%87%8F%EF%BC%9A%E5%B9%B3%E5%9D%87%E5%80%BC/272" target="_blank" rel="external">平均值(数据集中趋势的度量)</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%95%B0%E6%8D%AE%E7%A6%BB%E6%95%A3%E7%8A%B6%E5%86%B5%E7%9A%84%E6%B5%8B%E9%87%8F%EF%BC%9A%E7%A6%BB%E6%95%A3%E5%BA%A6/273" target="_blank" rel="external">离散度(数据离散状况的测量)</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E5%B3%B0%E5%BA%A6%E5%92%8C%E5%81%8F%E5%BA%A6/275" target="_blank" rel="external">峰度和偏度</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E5%88%9D%E8%AF%86%E5%8D%8F%E6%95%B4/267" target="_blank" rel="external">协整上</a> | <a href="https://community.bigquant.com/t/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%8D%8F%E6%95%B4/268" target="_blank" rel="external">协整下</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E7%9B%B8%E5%85%B3%E5%85%B3%E7%B3%BB/264" target="_blank" rel="external">相关系数</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/261" target="_blank" rel="external">线性回归</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E5%A4%9A%E5%85%83%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/262" target="_blank" rel="external">多元线性回归</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BC%82%E5%B8%B8%E5%80%BC%E5%A4%84%E7%90%86/276" target="_blank" rel="external">数据异常值处理</a></p>
+<h1 id="策略开发"><a href="#策略开发" class="headerlink" title="策略开发"></a>策略开发</h1><p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%BC%80%E5%8F%91%E4%BC%A0%E7%BB%9F%E8%B6%8B%E5%8A%BF%E7%AD%96%E7%95%A5/1092" target="_blank" rel="external">传统趋势投资策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E5%A4%A7%E5%B8%88%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BB%B7%E5%80%BC%E6%8A%95%E8%B5%84%E6%B3%95/255" target="_blank" rel="external">价值投资策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E5%80%9F%E5%8A%A9talib%E4%BD%BF%E7%94%A8%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90%E6%8C%87%E6%A0%87%E6%9D%A5%E7%82%92%E8%82%A1/254" target="_blank" rel="external">技术分析指标策略</a> | <a href="https://community.bigquant.com/t/%E5%9F%BA%E6%9C%AC%E9%9D%A2%E9%87%8F%E5%8C%96%EF%BC%88Quantamental%EF%BC%89%E2%80%94%E2%80%94%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5/598" target="_blank" rel="external">财务指标量化策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E7%AD%96%E7%95%A5%EF%BC%88%E5%9F%BA%E4%BA%8E%E4%B8%9A%E7%BB%A9%E5%BF%AB%E6%8A%A5%EF%BC%89/256" target="_blank" rel="external">事件驱动策略（基于业绩快报</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B9%B0%E5%85%A5%E5%8D%96%E5%87%BA%E7%AD%96%E7%95%A5/1121" target="_blank" rel="external">自定义买入卖出策略</a> | <a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E7%AD%96%E7%95%A5%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F/1113" target="_blank" rel="external">止盈止损策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E9%80%89%E8%82%A1%E6%8B%A9%E6%97%B6%E7%AD%96%E7%95%A5%E7%BB%84%E5%90%88/1605" target="_blank" rel="external">选股+择时策略组合</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E9%87%91%E5%8F%89%E6%AD%BB%E5%8F%89%E7%AD%96%E7%95%A5/249" target="_blank" rel="external">金叉死叉策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E6%B5%B7%E9%BE%9F%E7%AD%96%E7%95%A5/250" target="_blank" rel="external">海龟策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E6%B5%85%E8%B0%88%E5%B0%8F%E5%B8%82%E5%80%BC%E7%AD%96%E7%95%A5/251" target="_blank" rel="external">小市值策略</a> | <a href="https://community.bigquant.com/t/量化学堂-策略开发多头排列回踩买入策略/253" target="_blank" rel="external">多头排列回踩买入策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E5%9F%BA%E4%BA%8E%E5%8D%8F%E6%95%B4%E7%9A%84%E9%85%8D%E5%AF%B9%E4%BA%A4%E6%98%93/260" target="_blank" rel="external">配对交易策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E4%BD%BF%E7%94%A8cvxopt%E5%8C%85%E5%AE%9E%E7%8E%B0%E9%A9%AC%E7%A7%91%E7%BB%B4%E8%8C%A8%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96%E4%BB%A5%E4%B8%80%E4%B8%AA%E8%82%A1%E7%A5%A8%E7%AD%96%E7%95%A5%E4%B8%BA%E4%BE%8B/274" target="_blank" rel="external">Markowitz投资策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%A4%9A%E4%B8%AA%E7%AD%96%E7%95%A5%E7%BB%84%E5%90%88/1470" target="_blank" rel="external">多个策略组合</a></p>
+<h1 id="策略验证"><a href="#策略验证" class="headerlink" title="策略验证"></a>策略验证</h1><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E7%AD%96%E7%95%A5%E5%9B%9E%E6%B5%8B%E7%BB%93%E6%9E%9C%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/257" target="_blank" rel="external">策略回测结果指标详解</a> |<br><a href="https://community.bigquant.com/t/%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E6%94%B6%E7%9B%8A%E5%88%86%E6%9E%90/1873" target="_blank" rel="external">策略收益分析</a> |<br><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E7%AD%96%E7%95%A5%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90/1522" target="_blank" rel="external">策略风险分析</a> | <a href="https://community.bigquant.com/t/%E5%9C%A8AI%E7%AD%96%E7%95%A5%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%BB%9A%E5%8A%A8%E8%AE%AD%E7%BB%83/3542" target="_blank" rel="external">滚动训练AI策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%9B%9E%E6%B5%8B%E6%95%B0%E6%8D%AE%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90/1323" target="_blank" rel="external">回测数据深入分析</a></p>
+<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/242" target="_blank" rel="external">机器学习的含义</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/243" target="_blank" rel="external">机器学习的算法</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/278" target="_blank" rel="external">特征工程</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0AI%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E7%9A%84%E5%88%9D%E6%AD%A5%E7%90%86%E8%A7%A3/280" target="_blank" rel="external">AI量化策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0StockRanker%E6%A8%A1%E5%9E%8B%E5%8F%AF%E8%A7%86%E5%8C%96/279" target="_blank" rel="external">StockRanker模型（可视化）</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E4%BA%8ELSTM%E7%9A%84%E8%82%A1%E7%A5%A8%E4%BB%B7%E6%A0%BC%E9%A2%84%E6%B5%8B%E6%A8%A1%E5%9E%8B/201" target="_blank" rel="external">LSTM模型（股票价格预测</a> | <a href="https://community.bigquant.com/t/%E4%BD%BF%E7%94%A8sklearn%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/1533" target="_blank" rel="external">sklearn模型（数据预处理）</a></p>
+<h1 id="BigQuant的使用"><a href="#BigQuant的使用" class="headerlink" title="BigQuant的使用"></a>BigQuant的使用</h1><h2 id="高效使用指南"><a href="#高效使用指南" class="headerlink" title="高效使用指南"></a>高效使用指南</h2><p><a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E7%25AD%2596%25E7%2595%25A5%25E7%25A0%2594%25E7%25A9%25B6%25E5%25B9%25B3%25E5%258F%25B0%25E5%25B8%25B8%25E7%2594%25A8%25E5%25BF%25AB%25E6%258D%25B7%25E9%2594%25AE%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F615&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">常用快捷键</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F3&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">代码提示：自动补全和文档帮助</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E5%25A6%2582%25E4%25BD%2595%25E4%25B8%258A%25E4%25BC%25A0%25E6%259C%25AC%25E5%259C%25B0%25E6%2595%25B0%25E6%258D%25AE%25E5%2588%25B0%25E7%25AD%2596%25E7%2595%25A5%25E7%25A0%2594%25E7%25A9%25B6%25E5%25B9%25B3%25E5%258F%25B0%25EF%25BC%259F%25EF%25BC%2581%2F1987%2F1&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">上传和下载数据</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F2&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">对比策略效果</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F4&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">修改策略名称</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F5&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">使用“我的交易”功能</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E5%25A6%2582%25E4%25BD%2595%25E5%259C%25A8BigQuant%25E7%25AD%2596%25E7%2595%25A5%25E7%25A0%2594%25E7%25A9%25B6%25E5%25B9%25B3%25E5%258F%25B0%25E8%2587%25AA%25E5%25AE%259A%25E4%25B9%2589library%25EF%25BC%259F%2F3565&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">自定义library</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E5%259C%25A8AI%25E7%25AD%2596%25E7%2595%25A5%25E4%25B8%25AD%25E5%25AF%25B9%25E8%2582%25A1%25E7%25A5%25A8%25E7%2589%25B9%25E5%25BE%2581%25E5%2581%259A%25E8%25BF%2587%25E6%25BB%25A4%25EF%25BC%258C%25E4%25BB%25A5%25E8%25BF%2587%25E6%25BB%25A4ST%25E8%2582%25A1%25E7%25A5%25A8%25E4%25B8%25BA%25E4%25BE%258B%2F3641&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">对股票特征做过滤</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E6%2595%25B4%25E7%2599%25BE%25E4%25B8%258B%25E5%258D%2595%25E7%259A%2584%25E4%25B8%2580%25E4%25B8%25AA%25E4%25BE%258B%25E5%25AD%2590%2F3760&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">实现整百下单</a></p>
+<h2 id="编写策略"><a href="#编写策略" class="headerlink" title="编写策略"></a>编写策略</h2><h3 id="Meta"><a href="#Meta" class="headerlink" title="Meta"></a>Meta</h3><p><a href="https://bigquant.com/docs/module_introduction.html" target="_blank" rel="external">M/模块</a> | <a href="https://bigquant.com/docs/data_introduction.html" target="_blank" rel="external">D/数据</a> | <a href="https://bigquant.com/docs/tools.html" target="_blank" rel="external">T/工具–绘图函数</a> | <a href="https://bigquant.com/docs/datasource.html" target="_blank" rel="external">DataSource/数据源</a></p>
+<h3 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h3><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%96%B0%E6%89%8B%E4%B8%93%E5%8C%BABigQuant%E6%95%B0%E6%8D%AEAPI%E8%AF%A6%E8%A7%A3/247" target="_blank" rel="external">数据API的使用</a></p>
+<p><a href="https://bigquant.com/docs/data_trading_days.html" target="_blank" rel="external">交易日历</a> | <a href="https://bigquant.com/docs/exchange_markets.html" target="_blank" rel="external">交易市场</a> | <a href="https://bigquant.com/docs/data_market_indexes.html" target="_blank" rel="external">市场指数</a> | <a href="https://bigquant.com/docs/data_industry.html" target="_blank" rel="external">行业列表</a> | <a href="https://bigquant.com/docs/data_instruments.html" target="_blank" rel="external">股票代码</a> | <a href="https://bigquant.com/docs/data_history_data.html" target="_blank" rel="external">历史数据</a> | <a href="https://bigquant.com/docs/data_macro_data.html" target="_blank" rel="external">宏观经济数据</a> <a href="https://bigquant.com/docs/data_features.html" target="_blank" rel="external">因子库</a></p>
+<p><a href="https://bigquant.com/docs/data_financial_statements.html" target="_blank" rel="external">财报数据</a> | <a href="https://bigquant.com/docs/module_fast_auto_labeler.html" target="_blank" rel="external">数据标注 M.fast_auto_labeler</a> | <a href="https://bigquant.com/docs/module_advanced_auto_labeler.html" target="_blank" rel="external">高级数据标注 M.advanced_auto_labeler</a> | <a href="https://bigquant.com/docs/module_general_feature_extractor.html" target="_blank" rel="external">基础特征抽取 M.general_feature_extractor</a> | <a href="https://bigquant.com/docs/module_derived_feature_extractor.html" target="_blank" rel="external">衍生特征抽取 M.derived_feature_extractor</a> | <a href="https://bigquant.com/docs/module_user_feature_extractor.html" target="_blank" rel="external">用户自定义特征抽取 M.user_feature_extractor</a> | <a href="https://bigquant.com/docs/module_transform.html" target="_blank" rel="external">数据变换 M.transform</a> | <a href="https://bigquant.com/docs/module_join.html" target="_blank" rel="external">数据连接 M.join</a> | <a href="https://bigquant.com/docs/module_filter.html" target="_blank" rel="external">数据过滤 M.filter</a></p>
+<h3 id="AI算法模型"><a href="#AI算法模型" class="headerlink" title="AI算法模型"></a>AI算法模型</h3><p><a href="https://bigquant.com/docs/module_stock_ranker_train.html" target="_blank" rel="external">股票排序学习模型 M.stock_ranker_train</a> | <a href="https://bigquant.com/docs/module_stock_ranker_predict.html" target="_blank" rel="external">股票排序学习模型 M.stock_ranker_predict</a> | <a href="https://bigquant.com/docs/module_stock_ranker_train_rolling.html" target="_blank" rel="external">股票排序学习模型 (滚动版) M.stock_ranker_train_rolling</a> | <a href="https://bigquant.com/docs/module_random_forest_train.html" target="_blank" rel="external">随机森林模型 M.random_forest_train</a> | <a href="https://bigquant.com/docs/module_random_forest_predict.html" target="_blank" rel="external">随机森林模型 M.random_forest_predict</a> | <a href="https://bigquant.com/docs/module_linear_sgd_train.html" target="_blank" rel="external">线性随机梯度下降模型 M.linear_sgd_train</a> | <a href="https://bigquant.com/docs/module_linear_sgd_predict.html" target="_blank" rel="external">线性随机梯度下降模型 M.linear_sgd_predict</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%A6%82%E4%BD%95%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E4%B8%80%E5%AE%9A%E6%9D%A1%E4%BB%B6%E7%9A%84%E8%82%A1%E7%A5%A8/2564" target="_blank" rel="external">选出符合条件的股票</a></p>
+<h2 id="策略回测"><a href="#策略回测" class="headerlink" title="策略回测"></a>策略回测</h2><p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E7%AD%96%E7%95%A5%E5%9B%9E%E6%B5%8B%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB/1067" target="_blank" rel="external">回测结果解读</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%96%B0%E6%89%8B%E4%B8%93%E5%8C%BABigQuant%E5%9B%9E%E6%B5%8B%E6%9C%BA%E5%88%B6/246" target="_blank" rel="external">回测机制</a> | <a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91StockRanker%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB/1084" target="_blank" rel="external">StockRanker结果解读</a></p>
+<h2 id="量化交易引擎"><a href="#量化交易引擎" class="headerlink" title="量化交易引擎"></a>量化交易引擎</h2><p><a href="https://bigquant.com/docs/big_expr.html" target="_blank" rel="external">表达式引擎</a> | <a href="https://bigquant.com/docs/module_trade.html" target="_blank" rel="external">交易(支持回测和实盘) M.trade</a> | <a href="https://bigquant.com/docs/module_multi_strategy_analysis.html" target="_blank" rel="external">多策略组合分析 M.multi_strategy_analysis</a></p>
+<h2 id="BigStudio可视化使用文档"><a href="#BigStudio可视化使用文档" class="headerlink" title="BigStudio可视化使用文档"></a>BigStudio可视化使用文档</h2><p><a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%B8%80%EF%BC%89/2791" target="_blank" rel="external">BigStudio使用文档介绍(一)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%BA%8C%EF%BC%89/2796" target="_blank" rel="external">BigStudio使用文档介绍(二)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%B8%89%EF%BC%89/2866" target="_blank" rel="external">BigStudio使用文档介绍(三)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E5%9B%9B%EF%BC%89/2913" target="_blank" rel="external">BigStudio使用文档介绍(四)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%BA%94%EF%BC%89/3077" target="_blank" rel="external">BigStudio使用文档介绍(五)</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '',
+  alipayImage: ''
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/量化投资/">量化投资</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/06/Pandas官方文档/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Pandas官方文档</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#编程基本术语"><span class="nav-number">1.</span> <span class="nav-text">编程基本术语</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python"><span class="nav-number">1.1.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pandas-的使用"><span class="nav-number">1.2.</span> <span class="nav-text">Pandas 的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Numpy-的使用"><span class="nav-number">1.3.</span> <span class="nav-text">Numpy 的使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#金融基本术语"><span class="nav-number">2.</span> <span class="nav-text">金融基本术语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数学基本术语"><span class="nav-number">3.</span> <span class="nav-text">数学基本术语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#策略开发"><span class="nav-number">4.</span> <span class="nav-text">策略开发</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#策略验证"><span class="nav-number">5.</span> <span class="nav-text">策略验证</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#机器学习"><span class="nav-number">6.</span> <span class="nav-text">机器学习</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BigQuant的使用"><span class="nav-number">7.</span> <span class="nav-text">BigQuant的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#高效使用指南"><span class="nav-number">7.1.</span> <span class="nav-text">高效使用指南</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编写策略"><span class="nav-number">7.2.</span> <span class="nav-text">编写策略</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Meta"><span class="nav-number">7.2.1.</span> <span class="nav-text">Meta</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取数据"><span class="nav-number">7.2.2.</span> <span class="nav-text">获取数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AI算法模型"><span class="nav-number">7.2.3.</span> <span class="nav-text">AI算法模型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#策略回测"><span class="nav-number">7.3.</span> <span class="nav-text">策略回测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#量化交易引擎"><span class="nav-number">7.4.</span> <span class="nav-text">量化交易引擎</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BigStudio可视化使用文档"><span class="nav-number">7.5.</span> <span class="nav-text">BigStudio可视化使用文档</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2017 海球的博客 All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/pictures" class="mobile-nav-link">Pictures</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+  <script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            海球的博客
+          </div>
+          <div class="panel-body">
+            Copyright © 2017 海球的博客 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
