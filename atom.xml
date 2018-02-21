@@ -5,10 +5,62 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-21T17:05:12.000Z</updated>
+  <updated>2018-02-21T17:59:23.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「数据挖掘篇」</title>
+    <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（下）/</id>
+    <published>2018-02-21T17:59:23.000Z</published>
+    <updated>2018-02-21T17:59:23.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「数据挖掘篇」</title>
+    <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%AD%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（中）/</id>
+    <published>2018-02-21T17:58:59.000Z</published>
+    <updated>2018-02-21T17:58:59.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「数据挖掘篇」</title>
+    <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8A%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（上）/</id>
+    <published>2018-02-21T17:57:53.000Z</published>
+    <updated>2018-02-21T18:01:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="理论准备"><a href="#理论准备" class="headerlink" title="理论准备"></a>理论准备</h2><h2 id="数据处理-amp-相似-异性度量"><a href="#数据处理-amp-相似-异性度量" class="headerlink" title="数据处理&amp;相似/异性度量"></a>数据处理&amp;相似/异性度量</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;MindMap&quot;&gt;&lt;a href=&quot;#MindMap&quot; class=&quot;headerlink&quot; title=&quot;MindMap&quot;&gt;&lt;/a&gt;MindMap&lt;/h1&gt;&lt;h2 id=&quot;理论准备&quot;&gt;&lt;a href=&quot;#理论准备&quot; class=&quot;headerlink&quot; titl
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="机器学习/数据挖掘" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    
+  </entry>
   
   <entry>
     <title>【汇总】Linux基础知识</title>
@@ -848,138 +900,6 @@
     
     
       <category term="思考总结" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【读书笔记】利用Python进行数据分析</title>
-    <link href="http://yoursite.com/2017/09/15/%E3%80%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%91%E5%88%A9%E7%94%A8Python%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    <id>http://yoursite.com/2017/09/15/【读书笔记】利用Python进行数据分析/</id>
-    <published>2017-09-15T15:21:18.000Z</published>
-    <updated>2018-02-21T17:03:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://ovot91g2e.bkt.clouddn.com/%E5%88%A9%E7%94%A8Python%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.png" alt=""><br>《利用Python进行数据分析》 读后感&amp;笔记<br><a id="more"></a></p>
-<h1 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h1><p><img src="http://ovot91g2e.bkt.clouddn.com/%E5%88%A9%E7%94%A8python%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%9001.png" alt=""></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://ovot91g2e.bkt.clouddn.com/%E5%88%A9%E7%94%A8Python%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;《利用Python进行数据分析》 读后感&amp;amp;笔记&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【读书笔记】Python网络数据采集</title>
-    <link href="http://yoursite.com/2017/09/04/%E3%80%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%91Python%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/"/>
-    <id>http://yoursite.com/2017/09/04/【读书笔记】Python网络数据采集/</id>
-    <published>2017-09-04T06:58:27.000Z</published>
-    <updated>2018-02-21T17:02:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://ovot91g2e.bkt.clouddn.com/python%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86.jpg" alt=""><br>《python网络数据采集》 读后感&amp;笔记<br><a id="more"></a></p>
-<h1 id="网络采集基本知识"><a href="#网络采集基本知识" class="headerlink" title="网络采集基本知识"></a>网络采集基本知识</h1><h2 id="互联网基础知识"><a href="#互联网基础知识" class="headerlink" title="互联网基础知识"></a>互联网基础知识</h2><ol>
-<li><p>常见的互联网数据交换方式<br>①：请求域名的服务器地址<br>②：服务器间请求资源（网页，图片等）<br>③：服务器上传资源<br><img src="http://note.youdao.com/favicon.ico" alt="常见客户端-服务器互联网模型数据交换方式"></p>
-</li>
-<li><p>协议的定义和常见类型<br>每个协议都为请求头定义了不同的字段，采用不同的数据编码、收发地址或名称，以及其他数据类型。<br>①：<strong>HTTP（Hypertext  Transfer Protocol，超文本传输协议）</strong>：用于远程络服务器通信（网站信息的请求、发送和接收）的协议<br>②：<strong>VOIP协议</strong>：打电话<br>③：<strong>SMTP协议</strong>：收邮件<br>④：<strong>FTP协议</strong>：上传邮件    </p>
-</li>
-<li><p>HTTP协议简介<br>①：<strong>组成</strong>：一个HTTP消息包括两部分：头字段（header field）和数据字段（data field）。每个头字段由一对标题和值构成。这些字段的标题是HTTP标准预先定义好的。<br>②：<strong>常见的头字段</strong>：<br>|名  称|描  述|示  例<br>|-|-|-<br>|User-Agent|字符串，表示发出请求的浏览器和操作系统信息|Mozilla/5.0  (X11;  Ubuntu;  Linux  x86_64;  rv:28.0) Gecko/20100101 Firefox/28.</p>
-</li>
-</ol>
-<h2 id="BeautifulSoup"><a href="#BeautifulSoup" class="headerlink" title="BeautifulSoup"></a>BeautifulSoup</h2><p>安装<br>运行<br>建立可靠的网络连接</p>
-<h2 id="HTML解析"><a href="#HTML解析" class="headerlink" title="HTML解析"></a>HTML解析</h2><h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><h3 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h3><h1 id="初级采集处理"><a href="#初级采集处理" class="headerlink" title="初级采集处理"></a>初级采集处理</h1><h2 id="采集遍历单个域名"><a href="#采集遍历单个域名" class="headerlink" title="采集遍历单个域名"></a>采集遍历单个域名</h2><h2 id="采集整个网站"><a href="#采集整个网站" class="headerlink" title="采集整个网站"></a>采集整个网站</h2><h2 id="通过互联网采集"><a href="#通过互联网采集" class="headerlink" title="通过互联网采集"></a>通过互联网采集</h2><h2 id="通过Scrapy采集"><a href="#通过Scrapy采集" class="headerlink" title="通过Scrapy采集"></a>通过Scrapy采集</h2><h1 id="中级采集处理"><a href="#中级采集处理" class="headerlink" title="中级采集处理"></a>中级采集处理</h1><h2 id="通过API采集"><a href="#通过API采集" class="headerlink" title="通过API采集"></a>通过API采集</h2><h3 id="Twitter-API"><a href="#Twitter-API" class="headerlink" title="Twitter API"></a>Twitter API</h3><h3 id="Google-API"><a href="#Google-API" class="headerlink" title="Google API"></a>Google API</h3><h2 id="存储数据"><a href="#存储数据" class="headerlink" title="存储数据"></a>存储数据</h2><h3 id="数据存储到CSV"><a href="#数据存储到CSV" class="headerlink" title="数据存储到CSV"></a>数据存储到CSV</h3><h3 id="数据存储到MySQL"><a href="#数据存储到MySQL" class="headerlink" title="数据存储到MySQL"></a>数据存储到MySQL</h3><h2 id="读取文档"><a href="#读取文档" class="headerlink" title="读取文档"></a>读取文档</h2><h3 id="文档编码"><a href="#文档编码" class="headerlink" title="文档编码"></a>文档编码</h3><h3 id="纯文本"><a href="#纯文本" class="headerlink" title="纯文本"></a>纯文本</h3><h3 id="CSV"><a href="#CSV" class="headerlink" title="CSV"></a>CSV</h3><h3 id="Word"><a href="#Word" class="headerlink" title="Word"></a>Word</h3><h3 id="PDF"><a href="#PDF" class="headerlink" title="PDF"></a>PDF</h3><h2 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h2><h3 id="直接编写代码后清洗数据"><a href="#直接编写代码后清洗数据" class="headerlink" title="直接编写代码后清洗数据"></a>直接编写代码后清洗数据</h3><h3 id="数据存储后清洗数据"><a href="#数据存储后清洗数据" class="headerlink" title="数据存储后清洗数据"></a>数据存储后清洗数据</h3><h1 id="高级采集处理"><a href="#高级采集处理" class="headerlink" title="高级采集处理"></a>高级采集处理</h1><h2 id="穿越网页表单与登录窗口进行采集"><a href="#穿越网页表单与登录窗口进行采集" class="headerlink" title="穿越网页表单与登录窗口进行采集"></a>穿越网页表单与登录窗口进行采集</h2><h2 id="JavaScript采集"><a href="#JavaScript采集" class="headerlink" title="JavaScript采集"></a>JavaScript采集</h2><h2 id="远程采集"><a href="#远程采集" class="headerlink" title="远程采集"></a>远程采集</h2><h3 id="远程采集工具包和资源"><a href="#远程采集工具包和资源" class="headerlink" title="远程采集工具包和资源"></a>远程采集工具包和资源</h3><h3 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h3><ol>
-<li>避免IP地址被封杀</li>
-<li>移植性与扩展性</li>
-</ol>
-<h3 id="Tor代理服务器"><a href="#Tor代理服务器" class="headerlink" title="Tor代理服务器"></a>Tor代理服务器</h3><h3 id="远程主机"><a href="#远程主机" class="headerlink" title="远程主机"></a>远程主机</h3><ol>
-<li>从网站主机运行</li>
-<li>从云主机运行</li>
-</ol>
-<h2 id="避免采集陷阱"><a href="#避免采集陷阱" class="headerlink" title="避免采集陷阱"></a>避免采集陷阱</h2><h3 id="修改请求头"><a href="#修改请求头" class="headerlink" title="修改请求头"></a>修改请求头</h3><h3 id="处理cookie"><a href="#处理cookie" class="headerlink" title="处理cookie"></a>处理cookie</h3><h3 id="常见表单安全措施"><a href="#常见表单安全措施" class="headerlink" title="常见表单安全措施"></a>常见表单安全措施</h3><ol>
-<li>隐含输入字段值</li>
-<li></li>
-</ol>
-<h2 id="自然语言处理"><a href="#自然语言处理" class="headerlink" title="自然语言处理"></a>自然语言处理</h2><h3 id="自然语言工具包"><a href="#自然语言工具包" class="headerlink" title="自然语言工具包"></a>自然语言工具包</h3><h3 id="马尔可夫模型"><a href="#马尔可夫模型" class="headerlink" title="马尔可夫模型"></a>马尔可夫模型</h3><h2 id="图像识别与文字处理"><a href="#图像识别与文字处理" class="headerlink" title="图像识别与文字处理"></a>图像识别与文字处理</h2><h3 id="图像识别与文字处理工具包"><a href="#图像识别与文字处理工具包" class="headerlink" title="图像识别与文字处理工具包"></a>图像识别与文字处理工具包</h3><h3 id="操作：处理格式规范的文字"><a href="#操作：处理格式规范的文字" class="headerlink" title="操作：处理格式规范的文字"></a>操作：处理格式规范的文字</h3><h3 id="操作：读取验证码与训练Tesseract"><a href="#操作：读取验证码与训练Tesseract" class="headerlink" title="操作：读取验证码与训练Tesseract"></a>操作：读取验证码与训练Tesseract</h3><h3 id="操作：获取验证码提交答案"><a href="#操作：获取验证码提交答案" class="headerlink" title="操作：获取验证码提交答案"></a>操作：获取验证码提交答案</h3><h2 id="爬虫测试网站"><a href="#爬虫测试网站" class="headerlink" title="爬虫测试网站"></a>爬虫测试网站</h2><h3 id="Python单元测试"><a href="#Python单元测试" class="headerlink" title="Python单元测试"></a>Python单元测试</h3><h3 id="Selenium单元测试"><a href="#Selenium单元测试" class="headerlink" title="Selenium单元测试"></a>Selenium单元测试</h3><h3 id="两种测试的选择"><a href="#两种测试的选择" class="headerlink" title="两种测试的选择"></a>两种测试的选择</h3><h1 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h1><hr>
-<blockquote>
-<p>向网络服务器发送GET请求以获取具体网页，再从网页中读取HTML内容，最后做一些简单的信息提取，将我们要寻找的内容分离出来。</p>
-</blockquote>
-<h1 id="标准库"><a href="#标准库" class="headerlink" title="标准库"></a>标准库</h1><h2 id="urllib"><a href="#urllib" class="headerlink" title="urllib"></a>urllib</h2><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="https://docs.python.org/3/library/urllib.html" target="_blank" rel="external">官方API</a>  </p>
-<ol>
-<li>urllib是Python的标准库（就是说你不用额外安装就可以运行这个例子），包含了从网络请求数据，处理cookie，甚至改变像请求头和用户代理这些元数据的函数</li>
-<li>Python 3.x里，urllib2改名为urllib，被分成一些子模块：urllib.request、urllib.parse和urllib.error。尽管函数名称大多和原来一样，但是在用新的urllib库时需要注意哪些函数被移动到子模块里了  </li>
-<li>urlopen用来打开并读取一个从网络获取的远程对象（读取HTML文件、图像文件，或其他任何文件流）</li>
-</ol>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><ol>
-<li><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> urllib.request <span class="keyword">import</span> urlopen</div><div class="line">html = urlopen(<span class="string">"https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html#"</span>)</div><div class="line">print(html.read())</div></pre></td></tr></table></figure>
-</li>
-<li><p>用Python抓网页的注意事项：<a href="http://www.mamicode.com/info-detail-314948.html" target="_blank" rel="external">http://www.mamicode.com/info-detail-314948.html</a></p>
-</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://ovot91g2e.bkt.clouddn.com/python%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;《python网络数据采集》 读后感&amp;amp;笔记&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【读书笔记】流畅的Python</title>
-    <link href="http://yoursite.com/2017/09/03/%E3%80%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%91%E6%B5%81%E7%95%85%E7%9A%84Python/"/>
-    <id>http://yoursite.com/2017/09/03/【读书笔记】流畅的Python/</id>
-    <published>2017-09-03T15:13:40.000Z</published>
-    <updated>2018-02-21T17:01:13.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://ovot91g2e.bkt.clouddn.com/%E6%B5%81%E7%95%85%E7%9A%84Python.png" alt=""><br>《流畅的Python》 读后感&amp;笔记<br><a id="more"></a></p>
-<h1 id="Python的数据模型"><a href="#Python的数据模型" class="headerlink" title="Python的数据模型"></a>Python的数据模型</h1><blockquote>
-<p>讲解Python 的数据模型（datamodel），以及如何为了保证行为一致性而使用特殊方法</p>
-</blockquote>
-<h1 id="Python的数据结构"><a href="#Python的数据结构" class="headerlink" title="Python的数据结构"></a>Python的数据结构</h1><blockquote>
-<p>序列（sequence）、映射（mapping）和集合（set），字符串（str）和字节序列（bytes）</p>
-</blockquote>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h2 id="字典和集合"><a href="#字典和集合" class="headerlink" title="字典和集合"></a>字典和集合</h2><h2 id="文本和字节序列"><a href="#文本和字节序列" class="headerlink" title="文本和字节序列"></a>文本和字节序列</h2><h1 id="函数视为对象"><a href="#函数视为对象" class="headerlink" title="函数视为对象"></a>函数视为对象</h1><blockquote>
-<p>把函数作为一等对象（first-order object）来使用。如何利用闭包（closure）的概念来实现函数装饰器（function decorator）。还包括Python的这些基本概念：可调用（callable）、函数属性（functionattribute）、内省（introspection）、参数注解（parameter annotation）和Python 3 里新出现的nonlocal声明。</p>
-</blockquote>
-<h2 id="一等函数简介"><a href="#一等函数简介" class="headerlink" title="一等函数简介"></a>一等函数简介</h2><h2 id="一等函数实现的设计模式"><a href="#一等函数实现的设计模式" class="headerlink" title="一等函数实现的设计模式"></a>一等函数实现的设计模式</h2><h2 id="函数装饰器和闭包"><a href="#函数装饰器和闭包" class="headerlink" title="函数装饰器和闭包"></a>函数装饰器和闭包</h2><p># </p>
-<blockquote>
-<p>解释了引用（reference）的原理、“可变性”的概念、实例的生命周期、如何构建自定义的集合类型和ABC、多重继承该怎么理顺、什么时候应该使用操作符重载及其方法。</p>
-</blockquote>
-<h1 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h1><blockquote>
-<p>从生成器（generator）上下文管理器（context manager）和协程（coroutine），涵盖新增的功能强大但又不容易理解的yield from语法。这一部分以并发性和面向事件的I/O来结尾，跟并发性相关的是collections.futures这个很新的包，它借助futures包把线程和进程的概念给封装了起来；而跟面向事件I/O相关的则是asyncio，它的背后是基于协程和yieldfrom的futures包。</p>
-</blockquote>
-<h2 id="可迭代的对象、迭代器和生成器"><a href="#可迭代的对象、迭代器和生成器" class="headerlink" title="可迭代的对象、迭代器和生成器"></a>可迭代的对象、迭代器和生成器</h2><h2 id="上下文管理器和else块"><a href="#上下文管理器和else块" class="headerlink" title="上下文管理器和else块"></a>上下文管理器和else块</h2><h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><h2 id="使用期物处理并发"><a href="#使用期物处理并发" class="headerlink" title="使用期物处理并发"></a>使用期物处理并发</h2><h2 id="使用asyncio包处理并发"><a href="#使用asyncio包处理并发" class="headerlink" title="使用asyncio包处理并发"></a>使用asyncio包处理并发</h2><h1 id="元编程"><a href="#元编程" class="headerlink" title="元编程"></a>元编程</h1><blockquote>
-<p>如何动态创建带属性的类，用以处理诸如JSON这类半结构化的数据。然后会从大家已经熟悉的特性（property）机制入手，用描述符从底层来解释Python 对象属性的存取。同时，函数、方法和描述符的关系也会被梳理一遍。第六部分会从头至尾地实现一个字段验证器，在这个过程中我们会遇到一些微妙的问题，然后在最后一章中就自然引出像类装饰器（class decorator）和元类（metaclass）这些高级的概念</p>
-</blockquote>
-<h2 id="动态属性和特性"><a href="#动态属性和特性" class="headerlink" title="动态属性和特性"></a>动态属性和特性</h2><h2 id="属性描述符"><a href="#属性描述符" class="headerlink" title="属性描述符"></a>属性描述符</h2><h2 id="类元编程"><a href="#类元编程" class="headerlink" title="类元编程"></a>类元编程</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://ovot91g2e.bkt.clouddn.com/%E6%B5%81%E7%95%85%E7%9A%84Python.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;《流畅的Python》 读后感&amp;amp;笔记&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
