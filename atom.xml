@@ -5,51 +5,92 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-21T17:59:23.000Z</updated>
+  <updated>2018-02-21T18:42:46.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【汇总】机器学习基础之「数据挖掘篇」</title>
+    <title>【汇总】机器学习基础之「数据挖掘篇」（下）</title>
     <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
     <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（下）/</id>
     <published>2018-02-21T17:59:23.000Z</published>
-    <updated>2018-02-21T17:59:23.000Z</updated>
+    <updated>2018-02-21T18:42:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】机器学习基础之「数据挖掘篇」（下）</p>
+<a id="more"></a>
+<h1 id="维归约"><a href="#维归约" class="headerlink" title="维归约"></a>维归约</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%BB%B4%E5%BD%92%E7%BA%A6-1.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%BB%B4%E5%BD%92%E7%BA%A6-2.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="分类方法-理论篇"><a href="#分类方法-理论篇" class="headerlink" title="分类方法-理论篇"></a>分类方法-理论篇</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="分类-基本概念"><a href="#分类-基本概念" class="headerlink" title="分类-基本概念"></a>分类-基本概念</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-1.png" alt=""></p>
+<h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-2.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-3.png" alt=""></p>
+<h3 id="基于规则的分类器"><a href="#基于规则的分类器" class="headerlink" title="基于规则的分类器"></a>基于规则的分类器</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-4.png" alt=""></p>
+<h3 id="最近邻-amp-贝叶斯"><a href="#最近邻-amp-贝叶斯" class="headerlink" title="最近邻 &amp; 贝叶斯"></a>最近邻 &amp; 贝叶斯</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-5.png" alt=""></p>
+<h3 id="人工神经网络ANN"><a href="#人工神经网络ANN" class="headerlink" title="人工神经网络ANN"></a>人工神经网络ANN</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-6.png" alt=""></p>
+<h3 id="支持向量机"><a href="#支持向量机" class="headerlink" title="支持向量机"></a>支持向量机</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-7.png" alt=""></p>
+<h3 id="集成学习"><a href="#集成学习" class="headerlink" title="集成学习"></a>集成学习</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-8.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-9.png" alt=""></p>
+<h3 id="不平衡类-amp-多类-问题"><a href="#不平衡类-amp-多类-问题" class="headerlink" title="不平衡类&amp;多类 问题"></a>不平衡类&amp;多类 问题</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-10.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;【汇总】机器学习基础之「数据挖掘篇」（下）&lt;/p&gt;
+    
     </summary>
     
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="机器学习/数据挖掘" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
   </entry>
   
   <entry>
-    <title>【汇总】机器学习基础之「数据挖掘篇」</title>
+    <title>【汇总】机器学习基础之「数据挖掘篇」（中）</title>
     <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%AD%EF%BC%89/"/>
     <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（中）/</id>
     <published>2018-02-21T17:58:59.000Z</published>
-    <updated>2018-02-21T17:58:59.000Z</updated>
+    <updated>2018-02-21T18:26:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】机器学习基础之「数据挖掘篇」（中）<br><a id="more"></a></p>
+<h1 id="数学基础之「线性代数」"><a href="#数学基础之「线性代数」" class="headerlink" title="数学基础之「线性代数」"></a>数学基础之「线性代数」</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E3%80%8D-1.png" alt=""></p>
+<h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E3%80%8D-2.png" alt=""></p>
+<h3 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E3%80%8D-3.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="特征工程-amp-模型评估"><a href="#特征工程-amp-模型评估" class="headerlink" title="特征工程&amp;模型评估"></a>特征工程&amp;模型评估</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="特征工程"><a href="#特征工程" class="headerlink" title="特征工程"></a>特征工程</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B&amp;%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0-1.png" alt=""></p>
+<h3 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B&amp;%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0-2.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;【汇总】机器学习基础之「数据挖掘篇」（中）&lt;br&gt;
+    
     </summary>
     
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="机器学习/数据挖掘" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
   </entry>
   
   <entry>
-    <title>【汇总】机器学习基础之「数据挖掘篇」</title>
+    <title>【汇总】机器学习基础之「数据挖掘篇」（上）</title>
     <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8A%EF%BC%89/"/>
     <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（上）/</id>
     <published>2018-02-21T17:57:53.000Z</published>
-    <updated>2018-02-21T18:01:34.000Z</updated>
+    <updated>2018-02-21T18:17:01.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="理论准备"><a href="#理论准备" class="headerlink" title="理论准备"></a>理论准备</h2><h2 id="数据处理-amp-相似-异性度量"><a href="#数据处理-amp-相似-异性度量" class="headerlink" title="数据处理&amp;相似/异性度量"></a>数据处理&amp;相似/异性度量</h2>]]></content>
+    <content type="html"><![CDATA[<p>【汇总】机器学习基础之「数据挖掘篇」（上）<br><a id="more"></a></p>
+<h1 id="理论准备"><a href="#理论准备" class="headerlink" title="理论准备"></a>理论准备</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E8%83%8C%E6%99%AF-1.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E8%83%8C%E6%99%AF-2.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="数据处理-amp-相似-异性度量"><a href="#数据处理-amp-相似-异性度量" class="headerlink" title="数据处理&amp;相似/异性度量"></a>数据处理&amp;相似/异性度量</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86&amp;%E7%9B%B8%E4%BC%BC:%E5%BC%82%E6%80%A7%E5%BA%A6%E9%87%8F-1.png" alt=""></p>
+<h3 id="相似-异性度量"><a href="#相似-异性度量" class="headerlink" title="相似/异性度量"></a>相似/异性度量</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86&amp;%E7%9B%B8%E4%BC%BC:%E5%BC%82%E6%80%A7%E5%BA%A6%E9%87%8F-2.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;MindMap&quot;&gt;&lt;a href=&quot;#MindMap&quot; class=&quot;headerlink&quot; title=&quot;MindMap&quot;&gt;&lt;/a&gt;MindMap&lt;/h1&gt;&lt;h2 id=&quot;理论准备&quot;&gt;&lt;a href=&quot;#理论准备&quot; class=&quot;headerlink&quot; titl
+      &lt;p&gt;【汇总】机器学习基础之「数据挖掘篇」（上）&lt;br&gt;
     
     </summary>
     
