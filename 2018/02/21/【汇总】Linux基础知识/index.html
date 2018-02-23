@@ -22,7 +22,9 @@
 <meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-1.png">
 <meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-2.png">
 <meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3.png">
-<meta property="og:updated_time" content="2018-02-21T17:05:12.000Z">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com//PDF/Linux.jpg">
+<meta property="og:image" content="http://ojifsovoq.bkt.clouddn.com//PDF/vim%E6%80%BB%E7%BB%93.jpg">
+<meta property="og:updated_time" content="2018-02-23T11:49:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【汇总】Linux基础知识">
 <meta name="twitter:description" content="梳理了Linux 知识体系中必备的知识">
@@ -203,7 +205,44 @@
 <h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-1.png" alt=""></p>
 <h2 id="文件-目录"><a href="#文件-目录" class="headerlink" title="文件|目录"></a>文件|目录</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-2.png" alt=""></p>
 <h2 id="文本处理"><a href="#文本处理" class="headerlink" title="文本处理"></a>文本处理</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3.png" alt=""></p>
-
+<h1 id="知识点详解"><a href="#知识点详解" class="headerlink" title="知识点详解"></a>知识点详解</h1><h2 id="文件系统结构"><a href="#文件系统结构" class="headerlink" title="文件系统结构"></a>文件系统结构</h2><p><img src="http://ovot91g2e.bkt.clouddn.com//PDF/Linux.jpg" alt="image"></p>
+<h2 id="软件安装的三种方法"><a href="#软件安装的三种方法" class="headerlink" title="软件安装的三种方法"></a>软件安装的三种方法</h2><ol>
+<li><strong>apt-get方法</strong></li>
+</ol>
+<p>1.1 格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential</div></pre></td></tr></table></figure></p>
+<p>1.2. apt-get的的各种参数：<br><strong>apt-get install xxx</strong> 安装xxx  。如果带有参数，那么-d 表示仅下载 ，-f 表示强制安装<br><strong>apt-get remove xxx</strong> 卸载xxx<br><strong>apt-get update</strong> 更新软件信息数据库<br><strong>apt-get upgrade</strong> 进行系统升级<br><strong>apt-cache search</strong> 搜索软件包<br>Tips：建议经常使用“apt-get update”命令来更新您的软件信息数据库 </p>
+<p>1.3. 使用apt-get方法安装的软件，所有下载的deb包都缓存到了/var/cache/apt /archives目录下了，所以可以把常用的deb包备份出来，甚至做成ISO工具包、刻盘，以后安装Ubuntu时就可以在没有网络环境的情况下进行了。<br>下面的命令是拷贝archives这个目录到/var/cache/apt/目录下，替换原有的archives<br>enadmin@ubuntu-server:~/ftp$ sudo cp -r archives/ /var/cache/apt/</p>
+<ol>
+<li><strong>dpkg安装deb包</strong></li>
+</ol>
+<p>2.1. 格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo  dpkg  -i  package.deb</div></pre></td></tr></table></figure></p>
+<p>2.2. dpkg的的各种参数：<br><strong>dpkg -i package.deb</strong>     安装包<br><strong>dpkg -r package</strong>     删除包<br><strong>dpkg -P package</strong>     删除包（包括配置文件）<br><strong>dpkg -L package</strong>     列出与该包关联的文件<br><strong>dpkg -l package</strong>     显示该包的版本<br><strong>dpkg –unpack package.deb</strong>     解开 deb 包的内容<br><strong>dpkg -S keyword</strong>     搜索所属的包内容<br><strong>dpkg -l</strong>     列出当前已安装的包<br><strong>dpkg -c package.deb</strong>     列出 deb 包的内容<br><strong>dpkg –configure package</strong>     配置包</p>
+<ol>
+<li><strong>make install源代码安装</strong></li>
+</ol>
+<p>3.1. 源码安装大致可以分为三步骤：（./configure）–＞ 编译（sudo make） –＞ 安装（sudo make install）。<br>配置：这是编译源代码的第一步，通过<strong>./configure</strong>命令完成。执行此步以便为编译源代码作准备。常用的选项有<strong>–prefix=PREFIX</strong>，用以指定程序的安装位置。更多的选项可通过–help 查询。也有某些程序无需执行此步。<br>编译：一旦配置通过，可即刻使用make指令来执行源代码的编译过程。视软件的具体情况而定，编译所需的时间也各有差异，我们所要做的就是耐心等候和静观其变。此步虽然仅下简单的指令，但有时候所遇到的问题却十分复杂。较常碰到的情形是程序编译到中途却无法圆满结束。此时，需要根据出错提示分析以便找到应对之策。<br>安装：如果编译没有问题，那么执行 <strong>sudo make install</strong> 就可以将程序安装到系统中了。</p>
+<p>3.2. 下面以安装nagios为例进行说明。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//1.解压缩</div><div class="line">tar -zxf nagios-4.0.2.tar.gz  </div><div class="line">//2.进入目录</div><div class="line">cd nagios-4.0.2</div><div class="line">//3.配置</div><div class="line">./configure --prefix=/usr/local/nagios     </div><div class="line">//4.编译</div><div class="line">make all</div><div class="line">//5.安装</div><div class="line">make install &amp;&amp; make install-init &amp;&amp; make install-commandmode &amp;&amp; make install-config</div></pre></td></tr></table></figure></p>
+<h2 id="设置别名"><a href="#设置别名" class="headerlink" title="设置别名"></a>设置别名</h2><ol>
+<li><p>查看系统中所有的命令别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alias</div></pre></td></tr></table></figure>
+</li>
+<li><p>删除别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">unalias 别名</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>3.设定别名（临时）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alias 别名=&apos;原命令&apos;</div></pre></td></tr></table></figure></p>
+<p>4.设定别名（永久）<br>4.1 修改 家目录/.bashrc：<strong>vim  ~/.bashrc</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">示例：</div><div class="line"># vim  ~/.bashrc</div><div class="line">　　　　# User specific aliases and functions</div><div class="line"></div><div class="line">　　　　alias rm=&apos;rm -i&apos;</div><div class="line">　　　　alias cp=&apos;cp -i&apos;</div><div class="line">　　　　alias mv=&apos;mv -i&apos;</div><div class="line"></div><div class="line">　　　　# Source global definitions</div><div class="line">　　　　if [ -f /etc/bashrc ]; then</div><div class="line">　　　　　　. /etc/bashrc</div><div class="line">　　　　fi</div></pre></td></tr></table></figure>
+<p>4.2 编辑完之后记得使环境变量生效: <strong>source .bashrc</strong></p>
+<h2 id="文件目录管理与操作"><a href="#文件目录管理与操作" class="headerlink" title="文件目录管理与操作"></a>文件目录管理与操作</h2><ol>
+<li><p>文件目录管理<br>递归生成：<strong>mkdir -p 新文件</strong><br>递归复制：<strong>cp -r 原文件 新文件</strong><br>递归删除：<strong>rm -r 原文件 新文件</strong><br>（粗略）显示 更新时间 显示隐藏 递归：<strong>ls -t -a -R 目录</strong><br>（详细）显示递归：<strong>ll -R 目录 </strong><br>目录下所有文件所占用大小统计：<strong>du -h 目录</strong><br>目录所占用总大小统计：<strong>du -sh 目录</strong><br>磁盘占用大小统计：<strong>df -h</strong> </p>
+</li>
+<li><p>文件查看<br><img src="http://ojifsovoq.bkt.clouddn.com//PDF/vim%E6%80%BB%E7%BB%93.jpg" alt="image"></p>
+</li>
+<li><p>文件操作</p>
+</li>
+</ol>
+<h2 id="管道操作命令"><a href="#管道操作命令" class="headerlink" title="管道操作命令"></a>管道操作命令</h2>
       
     </div>
     <footer class="article-footer">
@@ -282,7 +321,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MindMap"><span class="nav-number">1.</span> <span class="nav-text">MindMap</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础知识"><span class="nav-number">1.1.</span> <span class="nav-text">基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件-目录"><span class="nav-number">1.2.</span> <span class="nav-text">文件|目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本处理"><span class="nav-number">1.3.</span> <span class="nav-text">文本处理</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MindMap"><span class="nav-number">1.</span> <span class="nav-text">MindMap</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础知识"><span class="nav-number">1.1.</span> <span class="nav-text">基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件-目录"><span class="nav-number">1.2.</span> <span class="nav-text">文件|目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本处理"><span class="nav-number">1.3.</span> <span class="nav-text">文本处理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#知识点详解"><span class="nav-number">2.</span> <span class="nav-text">知识点详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件系统结构"><span class="nav-number">2.1.</span> <span class="nav-text">文件系统结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件安装的三种方法"><span class="nav-number">2.2.</span> <span class="nav-text">软件安装的三种方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置别名"><span class="nav-number">2.3.</span> <span class="nav-text">设置别名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件目录管理与操作"><span class="nav-number">2.4.</span> <span class="nav-text">文件目录管理与操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管道操作命令"><span class="nav-number">2.5.</span> <span class="nav-text">管道操作命令</span></a></li></ol></li></ol>
     
     </div>
   </aside>
