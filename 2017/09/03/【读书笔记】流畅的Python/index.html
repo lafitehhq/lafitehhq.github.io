@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【读书笔记】流畅的python | 海球的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Python" />
+  
+  
+  
+  
+  <meta name="description" content="《流畅的Python》 读后感&amp;amp;笔记">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【读书笔记】流畅的Python">
+<meta property="og:url" content="http://yoursite.com/2017/09/03/【读书笔记】流畅的Python/index.html">
+<meta property="og:site_name" content="海球的博客">
+<meta property="og:description" content="《流畅的Python》 读后感&amp;amp;笔记">
+<meta property="og:locale" content="de">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/%E6%B5%81%E7%95%85%E7%9A%84Python.png">
+<meta property="og:updated_time" content="2018-02-21T17:01:13.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【读书笔记】流畅的Python">
+<meta name="twitter:description" content="《流畅的Python》 读后感&amp;amp;笔记">
+<meta name="twitter:image" content="http://ovot91g2e.bkt.clouddn.com/%E6%B5%81%E7%95%85%E7%9A%84Python.png">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.JPG">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.JPG">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/dialog.css">
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.JPG">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home🔝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives📝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories🗂</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags🏷</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/pictures">Pictures📽</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About🙄</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键字" />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Seiten',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Unbenannt)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-【读书笔记】流畅的Python" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      【读书笔记】流畅的Python
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/09/03/【读书笔记】流畅的Python/" class="article-date">
+	  <time datetime="2017-09-03T15:13:40.000Z" itemprop="datePublished">2017-09-03</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/工作/">工作</a><a class="article-category-link" href="/categories/工作/编程之魅/">编程之魅</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p><img src="http://ovot91g2e.bkt.clouddn.com/%E6%B5%81%E7%95%85%E7%9A%84Python.png" alt=""><br>《流畅的Python》 读后感&amp;笔记<br><a id="more"></a></p>
+<h1 id="Python的数据模型"><a href="#Python的数据模型" class="headerlink" title="Python的数据模型"></a>Python的数据模型</h1><blockquote>
+<p>讲解Python 的数据模型（datamodel），以及如何为了保证行为一致性而使用特殊方法</p>
+</blockquote>
+<h1 id="Python的数据结构"><a href="#Python的数据结构" class="headerlink" title="Python的数据结构"></a>Python的数据结构</h1><blockquote>
+<p>序列（sequence）、映射（mapping）和集合（set），字符串（str）和字节序列（bytes）</p>
+</blockquote>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h2 id="字典和集合"><a href="#字典和集合" class="headerlink" title="字典和集合"></a>字典和集合</h2><h2 id="文本和字节序列"><a href="#文本和字节序列" class="headerlink" title="文本和字节序列"></a>文本和字节序列</h2><h1 id="函数视为对象"><a href="#函数视为对象" class="headerlink" title="函数视为对象"></a>函数视为对象</h1><blockquote>
+<p>把函数作为一等对象（first-order object）来使用。如何利用闭包（closure）的概念来实现函数装饰器（function decorator）。还包括Python的这些基本概念：可调用（callable）、函数属性（functionattribute）、内省（introspection）、参数注解（parameter annotation）和Python 3 里新出现的nonlocal声明。</p>
+</blockquote>
+<h2 id="一等函数简介"><a href="#一等函数简介" class="headerlink" title="一等函数简介"></a>一等函数简介</h2><h2 id="一等函数实现的设计模式"><a href="#一等函数实现的设计模式" class="headerlink" title="一等函数实现的设计模式"></a>一等函数实现的设计模式</h2><h2 id="函数装饰器和闭包"><a href="#函数装饰器和闭包" class="headerlink" title="函数装饰器和闭包"></a>函数装饰器和闭包</h2><p># </p>
+<blockquote>
+<p>解释了引用（reference）的原理、“可变性”的概念、实例的生命周期、如何构建自定义的集合类型和ABC、多重继承该怎么理顺、什么时候应该使用操作符重载及其方法。</p>
+</blockquote>
+<h1 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h1><blockquote>
+<p>从生成器（generator）上下文管理器（context manager）和协程（coroutine），涵盖新增的功能强大但又不容易理解的yield from语法。这一部分以并发性和面向事件的I/O来结尾，跟并发性相关的是collections.futures这个很新的包，它借助futures包把线程和进程的概念给封装了起来；而跟面向事件I/O相关的则是asyncio，它的背后是基于协程和yieldfrom的futures包。</p>
+</blockquote>
+<h2 id="可迭代的对象、迭代器和生成器"><a href="#可迭代的对象、迭代器和生成器" class="headerlink" title="可迭代的对象、迭代器和生成器"></a>可迭代的对象、迭代器和生成器</h2><h2 id="上下文管理器和else块"><a href="#上下文管理器和else块" class="headerlink" title="上下文管理器和else块"></a>上下文管理器和else块</h2><h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><h2 id="使用期物处理并发"><a href="#使用期物处理并发" class="headerlink" title="使用期物处理并发"></a>使用期物处理并发</h2><h2 id="使用asyncio包处理并发"><a href="#使用asyncio包处理并发" class="headerlink" title="使用asyncio包处理并发"></a>使用asyncio包处理并发</h2><h1 id="元编程"><a href="#元编程" class="headerlink" title="元编程"></a>元编程</h1><blockquote>
+<p>如何动态创建带属性的类，用以处理诸如JSON这类半结构化的数据。然后会从大家已经熟悉的特性（property）机制入手，用描述符从底层来解释Python 对象属性的存取。同时，函数、方法和描述符的关系也会被梳理一遍。第六部分会从头至尾地实现一个字段验证器，在这个过程中我们会遇到一些微妙的问题，然后在最后一章中就自然引出像类装饰器（class decorator）和元类（metaclass）这些高级的概念</p>
+</blockquote>
+<h2 id="动态属性和特性"><a href="#动态属性和特性" class="headerlink" title="动态属性和特性"></a>动态属性和特性</h2><h2 id="属性描述符"><a href="#属性描述符" class="headerlink" title="属性描述符"></a>属性描述符</h2><h2 id="类元编程"><a href="#类元编程" class="headerlink" title="类元编程"></a>类元编程</h2>
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '',
+  alipayImage: ''
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/04/【读书笔记】Python网络数据采集/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          【读书笔记】Python网络数据采集
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/03/【读书笔记】Python语言及应用/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">【读书笔记】Python语言及应用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python的数据模型"><span class="nav-number">1.</span> <span class="nav-text">Python的数据模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python的数据结构"><span class="nav-number">2.</span> <span class="nav-text">Python的数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组"><span class="nav-number">2.1.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典和集合"><span class="nav-number">2.2.</span> <span class="nav-text">字典和集合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文本和字节序列"><span class="nav-number">2.3.</span> <span class="nav-text">文本和字节序列</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数视为对象"><span class="nav-number">3.</span> <span class="nav-text">函数视为对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一等函数简介"><span class="nav-number">3.1.</span> <span class="nav-text">一等函数简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一等函数实现的设计模式"><span class="nav-number">3.2.</span> <span class="nav-text">一等函数实现的设计模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数装饰器和闭包"><span class="nav-number">3.3.</span> <span class="nav-text">函数装饰器和闭包</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#控制流程"><span class="nav-number">4.</span> <span class="nav-text">控制流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#可迭代的对象、迭代器和生成器"><span class="nav-number">4.1.</span> <span class="nav-text">可迭代的对象、迭代器和生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上下文管理器和else块"><span class="nav-number">4.2.</span> <span class="nav-text">上下文管理器和else块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#协程"><span class="nav-number">4.3.</span> <span class="nav-text">协程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用期物处理并发"><span class="nav-number">4.4.</span> <span class="nav-text">使用期物处理并发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用asyncio包处理并发"><span class="nav-number">4.5.</span> <span class="nav-text">使用asyncio包处理并发</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#元编程"><span class="nav-number">5.</span> <span class="nav-text">元编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#动态属性和特性"><span class="nav-number">5.1.</span> <span class="nav-text">动态属性和特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性描述符"><span class="nav-number">5.2.</span> <span class="nav-text">属性描述符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类元编程"><span class="nav-number">5.3.</span> <span class="nav-text">类元编程</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2018 海球的博客 All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/pictures" class="mobile-nav-link">Pictures</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+  <script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            海球的博客
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 海球的博客 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>

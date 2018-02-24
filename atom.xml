@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>海球的博客</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-02-21T18:42:46.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「数据挖掘篇」（下）</title>
+    <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（下）/</id>
+    <published>2018-02-21T17:59:23.000Z</published>
+    <updated>2018-02-21T18:42:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】机器学习基础之「数据挖掘篇」（下）</p>
+<a id="more"></a>
+<h1 id="维归约"><a href="#维归约" class="headerlink" title="维归约"></a>维归约</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%BB%B4%E5%BD%92%E7%BA%A6-1.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%BB%B4%E5%BD%92%E7%BA%A6-2.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="分类方法-理论篇"><a href="#分类方法-理论篇" class="headerlink" title="分类方法-理论篇"></a>分类方法-理论篇</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="分类-基本概念"><a href="#分类-基本概念" class="headerlink" title="分类-基本概念"></a>分类-基本概念</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-1.png" alt=""></p>
+<h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-2.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-3.png" alt=""></p>
+<h3 id="基于规则的分类器"><a href="#基于规则的分类器" class="headerlink" title="基于规则的分类器"></a>基于规则的分类器</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-4.png" alt=""></p>
+<h3 id="最近邻-amp-贝叶斯"><a href="#最近邻-amp-贝叶斯" class="headerlink" title="最近邻 &amp; 贝叶斯"></a>最近邻 &amp; 贝叶斯</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-5.png" alt=""></p>
+<h3 id="人工神经网络ANN"><a href="#人工神经网络ANN" class="headerlink" title="人工神经网络ANN"></a>人工神经网络ANN</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-6.png" alt=""></p>
+<h3 id="支持向量机"><a href="#支持向量机" class="headerlink" title="支持向量机"></a>支持向量机</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-7.png" alt=""></p>
+<h3 id="集成学习"><a href="#集成学习" class="headerlink" title="集成学习"></a>集成学习</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-8.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-9.png" alt=""></p>
+<h3 id="不平衡类-amp-多类-问题"><a href="#不平衡类-amp-多类-问题" class="headerlink" title="不平衡类&amp;多类 问题"></a>不平衡类&amp;多类 问题</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95-%E7%90%86%E8%AE%BA%E7%AF%87-10.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;【汇总】机器学习基础之「数据挖掘篇」（下）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="机器学习/数据挖掘" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「数据挖掘篇」（中）</title>
+    <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%AD%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（中）/</id>
+    <published>2018-02-21T17:58:59.000Z</published>
+    <updated>2018-02-21T18:26:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】机器学习基础之「数据挖掘篇」（中）<br><a id="more"></a></p>
+<h1 id="数学基础之「线性代数」"><a href="#数学基础之「线性代数」" class="headerlink" title="数学基础之「线性代数」"></a>数学基础之「线性代数」</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E3%80%8D-1.png" alt=""></p>
+<h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E3%80%8D-2.png" alt=""></p>
+<h3 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E3%80%8D-3.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="特征工程-amp-模型评估"><a href="#特征工程-amp-模型评估" class="headerlink" title="特征工程&amp;模型评估"></a>特征工程&amp;模型评估</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="特征工程"><a href="#特征工程" class="headerlink" title="特征工程"></a>特征工程</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B&amp;%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0-1.png" alt=""></p>
+<h3 id="模型评估"><a href="#模型评估" class="headerlink" title="模型评估"></a>模型评估</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B&amp;%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0-2.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;【汇总】机器学习基础之「数据挖掘篇」（中）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="机器学习/数据挖掘" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「数据挖掘篇」（上）</title>
+    <link href="http://yoursite.com/2018/02/22/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8A%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/22/【汇总】机器学习基础之「数据挖掘篇」（上）/</id>
+    <published>2018-02-21T17:57:53.000Z</published>
+    <updated>2018-02-21T18:17:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】机器学习基础之「数据挖掘篇」（上）<br><a id="more"></a></p>
+<h1 id="理论准备"><a href="#理论准备" class="headerlink" title="理论准备"></a>理论准备</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E8%83%8C%E6%99%AF-1.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E8%83%8C%E6%99%AF-2.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="数据处理-amp-相似-异性度量"><a href="#数据处理-amp-相似-异性度量" class="headerlink" title="数据处理&amp;相似/异性度量"></a>数据处理&amp;相似/异性度量</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86&amp;%E7%9B%B8%E4%BC%BC:%E5%BC%82%E6%80%A7%E5%BA%A6%E9%87%8F-1.png" alt=""></p>
+<h3 id="相似-异性度量"><a href="#相似-异性度量" class="headerlink" title="相似/异性度量"></a>相似/异性度量</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86&amp;%E7%9B%B8%E4%BC%BC:%E5%BC%82%E6%80%A7%E5%BA%A6%E9%87%8F-2.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;【汇总】机器学习基础之「数据挖掘篇」（上）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="机器学习/数据挖掘" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】Linux基础知识</title>
+    <link href="http://yoursite.com/2018/02/21/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://yoursite.com/2018/02/21/【汇总】Linux基础知识/</id>
+    <published>2018-02-21T08:16:26.000Z</published>
+    <updated>2018-02-24T13:47:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>梳理了Linux 知识体系中必备的知识<br><a id="more"></a></p>
+<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-1.png" alt=""></p>
+<h2 id="文件-目录"><a href="#文件-目录" class="headerlink" title="文件|目录"></a>文件|目录</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-2.png" alt=""></p>
+<h2 id="文本处理"><a href="#文本处理" class="headerlink" title="文本处理"></a>文本处理</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-3.png" alt=""></p>
+<h1 id="知识点详解"><a href="#知识点详解" class="headerlink" title="知识点详解"></a>知识点详解</h1><h2 id="文件系统结构"><a href="#文件系统结构" class="headerlink" title="文件系统结构"></a>文件系统结构</h2><p><img src="http://ovot91g2e.bkt.clouddn.com//PDF/Linux.jpg" alt="image"></p>
+<h2 id="软件安装的三种方法"><a href="#软件安装的三种方法" class="headerlink" title="软件安装的三种方法"></a>软件安装的三种方法</h2><ol>
+<li><strong>apt-get方法</strong></li>
+</ol>
+<p>1.1 格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential</div></pre></td></tr></table></figure></p>
+<p>1.2. apt-get的的各种参数：<br><strong>apt-get install xxx</strong> 安装xxx  。如果带有参数，那么-d 表示仅下载 ，-f 表示强制安装<br><strong>apt-get remove xxx</strong> 卸载xxx<br><strong>apt-get update</strong> 更新软件信息数据库<br><strong>apt-get upgrade</strong> 进行系统升级<br><strong>apt-cache search</strong> 搜索软件包<br>Tips：建议经常使用“apt-get update”命令来更新您的软件信息数据库 </p>
+<p>1.3. 使用apt-get方法安装的软件，所有下载的deb包都缓存到了/var/cache/apt /archives目录下了，所以可以把常用的deb包备份出来，甚至做成ISO工具包、刻盘，以后安装Ubuntu时就可以在没有网络环境的情况下进行了。<br>下面的命令是拷贝archives这个目录到/var/cache/apt/目录下，替换原有的archives<br>enadmin@ubuntu-server:~/ftp$ sudo cp -r archives/ /var/cache/apt/</p>
+<ol>
+<li><strong>dpkg安装deb包</strong></li>
+</ol>
+<p>2.1. 格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo  dpkg  -i  package.deb</div></pre></td></tr></table></figure></p>
+<p>2.2. dpkg的的各种参数：<br><strong>dpkg -i package.deb</strong>     安装包<br><strong>dpkg -r package</strong>     删除包<br><strong>dpkg -P package</strong>     删除包（包括配置文件）<br><strong>dpkg -L package</strong>     列出与该包关联的文件<br><strong>dpkg -l package</strong>     显示该包的版本<br><strong>dpkg –unpack package.deb</strong>     解开 deb 包的内容<br><strong>dpkg -S keyword</strong>     搜索所属的包内容<br><strong>dpkg -l</strong>     列出当前已安装的包<br><strong>dpkg -c package.deb</strong>     列出 deb 包的内容<br><strong>dpkg –configure package</strong>     配置包</p>
+<ol>
+<li><strong>make install源代码安装</strong></li>
+</ol>
+<p>3.1. 源码安装大致可以分为三步骤：（./configure）–＞ 编译（sudo make） –＞ 安装（sudo make install）。<br>配置：这是编译源代码的第一步，通过<strong>./configure</strong>命令完成。执行此步以便为编译源代码作准备。常用的选项有<strong>–prefix=PREFIX</strong>，用以指定程序的安装位置。更多的选项可通过–help 查询。也有某些程序无需执行此步。<br>编译：一旦配置通过，可即刻使用make指令来执行源代码的编译过程。视软件的具体情况而定，编译所需的时间也各有差异，我们所要做的就是耐心等候和静观其变。此步虽然仅下简单的指令，但有时候所遇到的问题却十分复杂。较常碰到的情形是程序编译到中途却无法圆满结束。此时，需要根据出错提示分析以便找到应对之策。<br>安装：如果编译没有问题，那么执行 <strong>sudo make install</strong> 就可以将程序安装到系统中了。</p>
+<p>3.2. 下面以安装nagios为例进行说明。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//1.解压缩</div><div class="line">tar -zxf nagios-4.0.2.tar.gz  </div><div class="line">//2.进入目录</div><div class="line">cd nagios-4.0.2</div><div class="line">//3.配置</div><div class="line">./configure --prefix=/usr/local/nagios     </div><div class="line">//4.编译</div><div class="line">make all</div><div class="line">//5.安装</div><div class="line">make install &amp;&amp; make install-init &amp;&amp; make install-commandmode &amp;&amp; make install-config</div></pre></td></tr></table></figure></p>
+<h2 id="设置别名"><a href="#设置别名" class="headerlink" title="设置别名"></a>设置别名</h2><ol>
+<li><p>查看系统中所有的命令别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alias</div></pre></td></tr></table></figure>
+</li>
+<li><p>删除别名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">unalias 别名</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>3.设定别名（临时）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alias 别名=&apos;原命令&apos;</div></pre></td></tr></table></figure></p>
+<p>4.设定别名（永久）<br>4.1 修改 家目录/.bashrc：<strong>vim  ~/.bashrc</strong>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">示例：</div><div class="line"># vim  ~/.bashrc</div><div class="line">　　　　# User specific aliases and functions</div><div class="line"></div><div class="line">　　　　alias rm=&apos;rm -i&apos;</div><div class="line">　　　　alias cp=&apos;cp -i&apos;</div><div class="line">　　　　alias mv=&apos;mv -i&apos;</div><div class="line"></div><div class="line">　　　　# Source global definitions</div><div class="line">　　　　if [ -f /etc/bashrc ]; then</div><div class="line">　　　　　　. /etc/bashrc</div><div class="line">　　　　fi</div></pre></td></tr></table></figure>
+<p>4.2 编辑完之后记得使环境变量生效: <strong>source .bashrc</strong></p>
+<h2 id="管道操作命令"><a href="#管道操作命令" class="headerlink" title="管道操作命令"></a>管道操作命令</h2><h2 id="文本处理命令"><a href="#文本处理命令" class="headerlink" title="文本处理命令"></a>文本处理命令</h2><ol>
+<li>编辑：sed<blockquote>
+<p>sed 是一种非交互式的编辑器,能执行与编辑器 vi 和 ex 相同的编辑任务。sed 编辑器没有破坏性，它不会修改文件，除非使用 shell 重定向来保存输出结果。默认情况下，所有的输出行都被打印到屏幕上。</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div><div class="line">278</div><div class="line">279</div><div class="line">280</div><div class="line">281</div><div class="line">282</div><div class="line">283</div><div class="line">284</div><div class="line">285</div><div class="line">286</div><div class="line">287</div><div class="line">288</div><div class="line">289</div><div class="line">290</div><div class="line">291</div><div class="line">292</div><div class="line">293</div><div class="line">294</div><div class="line">295</div><div class="line">296</div><div class="line">297</div><div class="line">298</div><div class="line">299</div><div class="line">300</div><div class="line">301</div><div class="line">302</div><div class="line">303</div><div class="line">304</div><div class="line">305</div><div class="line">306</div><div class="line">307</div><div class="line">308</div><div class="line">309</div><div class="line">310</div><div class="line">311</div><div class="line">312</div><div class="line">313</div><div class="line">314</div><div class="line">315</div><div class="line">316</div><div class="line">317</div><div class="line">318</div><div class="line">319</div><div class="line">320</div><div class="line">321</div><div class="line">322</div><div class="line">323</div><div class="line">324</div><div class="line">325</div></pre></td><td class="code"><pre><div class="line">下面给出测试文件作为输入文件：</div><div class="line">[root@Gin scripts]# cat ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line"></div><div class="line">1.1. 打印： p 命令</div><div class="line">命令 p 是打印命令，用于显示模式缓存区的内容。默认情况下， sed 把输入行打印在屏幕上，选项-n 用于取消默认打印操纵。当选项-n 和命令 p 同时出现时， sed 可打印选定的内容</div><div class="line"></div><div class="line">案例1：</div><div class="line">[root@Gin scripts]# sed &apos;/north/p&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：默认情况下， sed 把所有输入行都打印在标准输出上。如果在某一行匹配到 north， sed就把该行另外打印一遍。 </div><div class="line"></div><div class="line">案例2：</div><div class="line">[root@Gin scripts]# sed -n &apos;/north/p&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">说明：默认情况下， sed 打印当前缓存区中的输入行。命令 p 指示 sed 将再次打印该行。选项-n 取消 sed 取消默认打印操作。选线-n 和命令配合使用，模式缓冲区内的输入行，只被打印一次。如果不指定-n 选项， sed 就会像上例中那样，打印出重复的行。如果指定了-n，则sed 只打印包含模式 north 的行。</div><div class="line"></div><div class="line">1.2 删除： d 命令</div><div class="line">命令 d 用于删除输入行。sed 先将输入行从文件复制到模式缓存区，然后对该行执行 sed命令，最后将模式缓存区的内容显示在屏幕上。如果发出的是命令 d，当前模式缓存区的输入行会被删除，不被显示。</div><div class="line"></div><div class="line">案例 3：</div><div class="line">[root@Gin scripts]# sed &apos;3d&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：删除第 3 行。默认情况下，其余的行都被打印到屏幕上。</div><div class="line"></div><div class="line">案例 4：</div><div class="line">[root@Gin scripts]# sed &apos;3,$d&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">说明：删除从第三行到最后一行内容，剩余各行被打印。地址范围是开始第 3 行，结束最后一行。</div><div class="line"></div><div class="line">案例 5：</div><div class="line">[root@Gin scripts]# sed &apos;/north/d&apos; ceshi.txt</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：所有包含模式 north 的行都被动删除，其余行被打印。</div><div class="line"></div><div class="line">1.3 替换： s 命令</div><div class="line">命令 s 是替换命令。替换和取代文件中的文本可以通过 sed 中的 s 来实现， s 后包含在斜杠中的文本是正则表达式，后面跟着的是需要替换的文本。可以通过 g 标志对行进行全局替换</div><div class="line"></div><div class="line">案例 6：</div><div class="line">[root@Gin scripts]# sed &apos;s/west/north/g&apos; ceshi.txt</div><div class="line">northnorth      NW      Charles Main    3.0     .98     3       34</div><div class="line">northern                WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southnorth      SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：s 命令用于替换。命令末端的 g 表示在行内全局替换；也就是说如果每一行里出现多个west，所有的 west 都会被替换为 north。如果没有 g 命令，则只将每一行的第一 west 替换为 north。</div><div class="line"></div><div class="line">案例 7：</div><div class="line">[root@Gin scripts]# sed -n &apos;s/^west/north/p&apos; ceshi.txt</div><div class="line">northern                WE      Sharon Gray     5.3     .97     5       23</div><div class="line">说明：s 命令用于替换。选线-n 与命令行末尾的标志 p 结合，告诉 sed 只打印发生替换的那些行；也就是说，如果只有在行首找到 west 并替换成 north 时才会打印此行。</div><div class="line"></div><div class="line">案例 8：</div><div class="line">[root@Gin scripts]# sed &apos;s/[0-9][0-9]$/&amp;.5/&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34.5</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23.5</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18.5</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15.5</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17.5</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20.5</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13.5</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13.5</div><div class="line">说明：当“与”符号（ &amp;）用在替换串中时，它代表在查找串中匹配到的内容时。这个示例中所有以 2 位数结尾的行后面都被加上.5。</div><div class="line"></div><div class="line">案例 9：</div><div class="line">[root@Gin scripts]# sed -n &apos;s/Hemenway/Jones/gp&apos; ceshi.txt</div><div class="line">southeast       SE      Patricia Jones  4.0     .7      4       17</div><div class="line">说明：文件中出现的所有的 Hemenway 都被替换为 Jones，只有发生变化的行才会打印出来。选项-n 与命令 p 的组合取消了默认的输出。标志 g 的含义是表示在行内全局替换。</div><div class="line"></div><div class="line">案例 10：</div><div class="line">[root@Gin scripts]# sed &apos;s/\(Mar\)got/\1linanne/p&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Marlinanne Weber        4.5     .89     5       9</div><div class="line">north           NO      Marlinanne Weber        4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：包含在圆括号里的模式 Mar 作为标签 1 保存在特定的寄存器中。替换串可以通过\1 来引用它。则 Margot 被替换为 Marlinane。</div><div class="line"></div><div class="line">案例 11：</div><div class="line">[root@Gin scripts]# sed &apos;s#3#88#g&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    88.0    .98     88      884</div><div class="line">western         WE      Sharon Gray     5.88    .97     5       288</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     88      188</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       188</div><div class="line">说明：紧跟在 s 命令后的字符就是查找串和替换串之间的分隔符。分隔符默认默认为正斜杠，但可以改变。无论什么字符（换行符，反斜线除外），只要紧跟在 s 命令，就成了新的串分隔符。这个方法在查找包含正斜杠模式时很管用，例如查找路径名或生日。</div><div class="line">指定行的范围：逗号行的范围从文件中的一个地址开始，在另一个地址结束。地址范围可以是行号（例如5,10），正则表达式（例如/Dick/和/Joe/），或者两者的结合（例如/north/,$）范围是闭合的——包含开始条件的行，结束条件的行，以及两者之间的行。如果结束条件无法满足，就会一直操作到文件结尾。如果结束条件满足，则继续查找满足开始条件的位置，范围重新开始。</div><div class="line"></div><div class="line">案例 12：</div><div class="line">[root@Gin scripts]# sed -n &apos;/west/,/east/p&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">说明：打印模式 west 和 east 之间所有的行。如果 west 出现在 east 之后的某一行，则打印的范围从 west 所在行开始，到下一个出现 east 的行或文件的末尾（如果前者未出现）。图中用箭头表示出了该范围。</div><div class="line"></div><div class="line"></div><div class="line">案例 13：</div><div class="line">[root@Gin scripts]# sed -n &apos;5,/northeast/p&apos; ceshi.txt</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">说明：打印从第 5 行开始第一个以 northeast 开头的行之间的所有行。</div><div class="line"></div><div class="line">案例 14：</div><div class="line">[root@Gin scripts]# sed &apos;/west/,/east/s/$/**VACA**/&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34**VACA**</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23**VACA**</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18**VACA**</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15**VACA**</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17**VACA**</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：修改从模式 wast 和 east 之间的所有行，将各行的行尾($)替换为字符串**VACA**。换行符被移到新的字符串后面。</div><div class="line"></div><div class="line">1.4 多重编辑： e 命令</div><div class="line">-e 命令是编辑命令，用于 sed 执行多个编辑任务的情况下。在下一行开始编辑前，所有的编辑动作将应用到模式缓存区的行上。</div><div class="line"></div><div class="line">案例 15：</div><div class="line">[root@Gin scripts]# sed -e &apos;1,3d&apos; -e &apos;s/Hemenway/Jones/&apos; ceshi.txt</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Jones  4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：选项-e 用于进行多重编辑。第一重编辑编辑删除第 1~3 行。第二重编辑将Hemenway 替换为 Jones。因为是逐行进行这两行编辑（即这两个命令都在模式空间的当前行上执行），所以编辑命令的顺序会影响结果。例如，如果两条命令都执行的是替换，前一次替换会影响后一次替换。</div><div class="line"></div><div class="line">1.5 追加： a 命令</div><div class="line">a 命令是追加命令，追加将新文本到文件中当前行(即读入模式的缓存区行)的后面。不管是在命令行中，还是在 sed 脚本中， a 命令总是在反斜杠的后面。</div><div class="line"></div><div class="line">案例 16：</div><div class="line">[root@Gin scripts]# sed &apos;/^north/a Hello world!&apos; ceshi.txt </div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">Hello world!</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">Hello world!</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">Hello world!</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：命令 a 用于追加。字符串 Hello， World！被加在以 north 开头的各行之后。如果要追加的内容超过一行，则除最后一行外，其他各行都必须以反斜杠结尾。</div><div class="line"></div><div class="line">1.6 插入： i 命令</div><div class="line">i 命令是插入命令，类似于 a 命令，但不是在当前行后增加文本，而是在当前行前面插入新的文本，即刚读入缓存区模式的行。</div><div class="line"></div><div class="line">案例 17：</div><div class="line">[root@Gin scripts]# sed &apos;/eastern/i Hello,world!\</div><div class="line">&gt; -----------------------&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">Hello,world!</div><div class="line">-----------------------</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：命令 i 是插入命令。如果在某一行匹配到模式 eastern,i 命令就在该行的上方插入命令中插入反斜杠后面后的文本。除了最后一行，</div><div class="line"></div><div class="line">1.7 修改： c 命令</div><div class="line">c 命令是修改命令。 sed 使用该命令将已有的文本修改成新的文本。旧文本被覆盖。 </div><div class="line"></div><div class="line">案例 18：</div><div class="line">[root@Gin scripts]# sed &apos;/eastern/c Hello,world! \</div><div class="line">&gt; ------------------&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">Hello,world!</div><div class="line">------------------</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：c 命令是修改命令。该命令将完整地修改在模式缓冲区行的当前行。如果模式 eastern被匹配， c 命令将其后的文本替换包含 eastern 的行。</div><div class="line"></div><div class="line">1.8 获取下一行： n 命令</div><div class="line">n 命令表示下一条命令。 sed 使用该命令获取输入文件的下一行，并将其读入到模式缓冲区中，任何 sed 命令都将应用到匹配行，紧接着的下一行上。</div><div class="line"></div><div class="line">案例 19：</div><div class="line">[root@Gin scripts]# sed &apos;/eastern/&#123;n;s/AM/Archie/;&#125;&apos; ceshi.txt </div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      Archie Main Jr. 5.1     .94     3       13     ## 此行就是被替换的行</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：如果在某一行匹配到模式 eastern， n 命令就指示 sed 用下一个输入行（即包含 AM MainJr 的那行）替换模式空间中的当前行，并用 Archie 替换 AM，然后打印该行，再继续往下处理</div><div class="line"></div><div class="line">1.9 转换： y，命令</div><div class="line">y 命令表示转换。该命令与 tr 命令相似，字符按照一对一的方式从左到右进行转换。例如 y/abc/ABC/，会把小写字母转换成大写字母， a--&gt;A,b--&gt;B,c--&gt;C。 </div><div class="line"></div><div class="line">案例 20：</div><div class="line">[root@Gin scripts]# sed &apos;1,3y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/&apos; ceshi.txt</div><div class="line">NORTHWEST       NW      CHARLES MAIN    3.0     .98     3       34</div><div class="line">WESTERN         WE      SHARON GRAY     5.3     .97     5       23</div><div class="line">SOUTHWEST       SW      LEWIS DALSASS   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">eastern         EA      TB Savage       4.4     .84     5       20</div><div class="line">northeast       NE      AM Main Jr.     5.1     .94     3       13</div><div class="line">north           NO      Margot Weber    4.5     .89     5       9</div><div class="line">central         CT      Ann Stephens    5.7     .94     5       13</div><div class="line">说明：y 命令把 1~3 行中所有的小写命令字母都转换成了大写。正则表达式元字符对 y 命令不起作用。与替分隔符一样，斜杠可以被替换成其他字符。</div><div class="line"></div><div class="line">1.10 退出： q 命令</div><div class="line">q 命令表示退出命令。该命令将导致 sed 程序退出，且不再进行其他的处理。</div><div class="line"></div><div class="line">案例 21：</div><div class="line">[root@Gin scripts]# sed &apos;5q&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Lewis Dalsass   2.7     .8      2       18</div><div class="line">southern        SO      Suan Chin       5.1     .95     4       15</div><div class="line">southeast       SE      Patricia Hemenway       4.0     .7      4       17</div><div class="line">说明：打印完第 5 行之后， q 让 sed 程序退出。</div><div class="line"></div><div class="line">案例 22：</div><div class="line">[root@Gin scripts]# sed &apos;/Lewis/&#123; s/Lewis/Joseph/;q; &#125;&apos; ceshi.txt</div><div class="line">northwest       NW      Charles Main    3.0     .98     3       34</div><div class="line">western         WE      Sharon Gray     5.3     .97     5       23</div><div class="line">southwest       SW      Joseph Dalsass  2.7     .8      2       18</div><div class="line">说明：在某行匹配到模式 Lewis 时， s 表示先用 Joseph 替换 Lewis，然后 q 命令让 sed 退出。</div><div class="line"></div><div class="line">1.11 生产环境案例</div><div class="line">在实际生产中，在修改配置文件的时候，有一些空格、空行、带“ #”开头的注释都要删除或替换，下面为大家介绍几个实用的例子</div><div class="line"></div><div class="line">案例 23：</div><div class="line">[root@Gin scripts]# cat sed.txt</div><div class="line"> today is nice day</div><div class="line"> you can walk out on the street</div><div class="line"> it will be import to you</div><div class="line">##每行的前面都有空格</div><div class="line">[root@Gin scripts]# sed &apos;s/^[ ]*//&apos; sed.txt</div><div class="line">today is nice day</div><div class="line">you can walk out on the street</div><div class="line">it will be import to you</div><div class="line">## 注：[ ]里面有个空格</div><div class="line">或者：</div><div class="line">[root@Gin scripts]# sed &apos;s/^[[:space:]]*//&apos; sed.txt</div><div class="line">today is nice day</div><div class="line">you can walk out on the street</div><div class="line">it will be import to you</div><div class="line"></div><div class="line">案例24：删除文本中空行和空格组成的行及#号注释的行</div><div class="line">[root@Gin scripts]# grep -Eiv &quot;^#|^$&quot; ssh_config</div><div class="line">Host *</div><div class="line">        GSSAPIAuthentication yes</div><div class="line">        ForwardX11Trusted yes</div><div class="line">        SendEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES</div><div class="line">        SendEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT</div><div class="line">        SendEnv LC_IDENTIFICATION LC_ALL LANGUAGE</div><div class="line">        SendEnv XMODIFIERS</div><div class="line"></div><div class="line">案例 25：从 Google 上下载下来的配置文件往往都带有数字，现在需要删除所有行的首数字。</div><div class="line">[root@Gin scripts]# cat sed.txt</div><div class="line">1today is nice day</div><div class="line">2you can walk out on the street</div><div class="line">3it will be import to you</div><div class="line">[root@Gin scripts]# sed &apos;s/^[0-9][0-9]*//g&apos; sed.txt</div><div class="line">today is nice day</div><div class="line">you can walk out on the street</div><div class="line">it will be import to you</div></pre></td></tr></table></figure>
+<ol>
+<li>查找搜索 ：grep<blockquote>
+<p>grep是根据<strong>文件的内容</strong>进行查找，会对文件的每一行按照给定的模式(patter)进行匹配查找</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">1.主要参数</div><div class="line">    [options]主要参数：</div><div class="line">　　　　－c：只输出匹配行的计数。</div><div class="line">　　　　－i：不区分大小写</div><div class="line">　　　　－h：查询多文件时不显示文件名。</div><div class="line">　　　　－l：查询多文件时只输出包含匹配字符的文件名。</div><div class="line">　　　　－n：显示匹配行及行号。</div><div class="line">　　　　－s：不显示不存在或无匹配文本的错误信息。</div><div class="line">　　　　－v：显示不包含匹配文本的所有行。</div><div class="line">　　　　</div><div class="line">    pattern正则表达式主要参数：</div><div class="line">　　　　\： 忽略正则表达式中特殊字符的原有含义。</div><div class="line">　　　　^：匹配正则表达式的开始行。</div><div class="line">　　　　$: 匹配正则表达式的结束行。</div><div class="line">　　　　\&lt;：从匹配正则表达 式的行开始。</div><div class="line">　　　　\&gt;：到匹配正则表达式的行结束。</div><div class="line">　　　　[ ]：单个字符，如[A]即A符合要求 。</div><div class="line">　　　　[ - ]：范围，如[A-Z]，即A、B、C一直到Z都符合要求 。</div><div class="line">　　　　.：所有的单个字符。</div><div class="line">　　　　* ：有字符，长度可以为0</div><div class="line">2.实例</div><div class="line">    (1)grep &apos;test&apos; d*　　#显示所有以d开头的文件中包含 test的行</div><div class="line">    (2)grep ‘test’ aa bb cc 　　 #显示在aa，bb，cc文件中包含test的行</div><div class="line">    (3)grep ‘[a-z]\&#123;5\&#125;’ aa 　　#显示在aa文件中所有包含每行字符串至少有5个连续小写字符的字符串的行</div><div class="line">    (4)grep magic /usr/src　　#显示/usr/src目录下的文件(不含子目录)包含magic的行</div><div class="line">    (5)grep -r magic /usr/src　　#显示/usr/src目录下的文件(包含子目录)包含magic的行</div><div class="line">    (6)grep -w pattern files     #只匹配整个单词，而不是字符串的一部分(如匹配’magic’，而不是’magical’)，</div></pre></td></tr></table></figure>
+<ol>
+<li>排序：sort<blockquote>
+<p>将文本文件内容加以排序,sort可针对文本文件的内容，以行为单位来排序。</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line">主要参数：</div><div class="line">  -b   忽略每行前面开始出的空格字符。</div><div class="line">  -c   检查文件是否已经按照顺序排序。</div><div class="line">  -d   排序时，处理英文字母、数字及空格字符外，忽略其他的字符。</div><div class="line">  -f   排序时，将小写字母视为大写字母。</div><div class="line">  -i   排序时，除了040至176之间的ASCII字符外，忽略其他的字符。</div><div class="line">  -m   将几个排序好的文件进行合并。</div><div class="line">  -M   将前面3个字母依照月份的缩写进行排序。</div><div class="line">  -n   依照数值的大小排序。</div><div class="line">  -o&lt;输出文件&gt;   将排序后的结果存入指定的文件。</div><div class="line">  -r   以相反的顺序来排序。</div><div class="line">  -t&lt;分隔字符&gt;   指定排序时所用的栏位分隔字符。</div><div class="line">  +&lt;起始栏位&gt;-&lt;结束栏位&gt;   以指定的栏位来排序，范围由起始栏位到结束栏位的前一栏位。</div><div class="line">  --help   显示帮助。</div><div class="line">  --version   显示版本信息</div><div class="line"></div><div class="line">实例：</div><div class="line">    3.1 sort将文件的每一行作为一个单位，相互比较，比较原则是从首字符向后，依次按ASCII码值进行比较，最后将他们按升序输出。</div><div class="line">    [root@zhoucentos log]# cat seq </div><div class="line">    banana</div><div class="line">    apple</div><div class="line">    pear</div><div class="line">    orange</div><div class="line">    [root@zhoucentos log]# sort seq </div><div class="line">    apple</div><div class="line">    banana</div><div class="line">    orange</div><div class="line">    pear</div><div class="line">    </div><div class="line">    3.2 -u 选项 ：在输出行中去除重复行。</div><div class="line">    [root@zhoucentos log]# cat seq </div><div class="line">    banana</div><div class="line">    apple</div><div class="line">    pear</div><div class="line">    orange</div><div class="line">    apple</div><div class="line">    pear</div><div class="line">    [root@zhoucentos log]# sort -u seq </div><div class="line">    apple</div><div class="line">    banana</div><div class="line">    orange</div><div class="line">    pear</div><div class="line">    </div><div class="line">    3.3 -n选项，由于排序程序将这些数字按字符来排序了，排序程序会先比较1和2，显然1小，所以就将10放在2前面喽。这也是sort的一贯作风。</div><div class="line">    [root@zhoucentos log]# cat number </div><div class="line">    1</div><div class="line">    3</div><div class="line">    2</div><div class="line">    5</div><div class="line">    78</div><div class="line">    11</div><div class="line">    4</div><div class="line">    [root@zhoucentos log]# sort -n number </div><div class="line">    1</div><div class="line">    2</div><div class="line">    3</div><div class="line">    4</div><div class="line">    5</div><div class="line">    11</div><div class="line">    78</div><div class="line">    </div><div class="line">    3.4 -o选项，把排序结果输出到原文件中，用重定向可就不行了。</div><div class="line">    [root@zhoucentos log]# cat number </div><div class="line">    78</div><div class="line">    5</div><div class="line">    4</div><div class="line">    3</div><div class="line">    2</div><div class="line">    11</div><div class="line">    1</div><div class="line">    [root@zhoucentos log]# sort -nr number -o number </div><div class="line">    [root@zhoucentos log]# cat number </div><div class="line">    78</div><div class="line">    11</div><div class="line">    5</div><div class="line">    4</div><div class="line">    3</div><div class="line">    2</div><div class="line">    1</div><div class="line">    </div><div class="line">    3.5 -t选项和-k选项</div><div class="line">    [root@zhoucentos log]# cat date</div><div class="line">    2017-12-02</div><div class="line">    2017-01-09</div><div class="line">    2017-10-23</div><div class="line">    2017-04-24</div><div class="line">    这个文件有三列，列与列之间用“-”隔开了，第一列表示年，第二列表示月，第三列表示日。那么我想以月来排序，也就是以第二列来排序，如何利用sort实现？幸好，sort提供了-t选项，后面可以设定间隔符。指定了间隔符之后，就可以用-k来指定列数了。</div><div class="line">    [root@zhoucentos log]# sort -n -k 2 -t&apos;-&apos; date      // -t&lt;分隔字符&gt;   指定排序时所用的栏位分隔字符。  -k  选择以哪个区间进行排序</div><div class="line">    2017-01-09</div><div class="line">    2017-04-24</div><div class="line">    2017-10-23</div><div class="line">    2017-12-02</div></pre></td></tr></table></figure>
+<h2 id="文件目录管理与操作"><a href="#文件目录管理与操作" class="headerlink" title="文件目录管理与操作"></a>文件目录管理与操作</h2><h3 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h3><p>递归生成：<code>mkdir -p 新文件</code><br>递归复制：<code>cp -r 原文件 新文件</code><br>递归删除：<code>rm -r 原文件 新文件</code><br>（粗略）显示 更新时间 显示隐藏 递归：<code>ls -t -a -R 目录</code><br>（详细）显示递归：<code>ll -R 目录</code><br>目录下所有文件所占用大小统计：<code>du -h 目录</code><br>目录所占用总大小统计：<code>du -sh 目录</code><br>磁盘占用大小统计：<code>df -h</code>   </p>
+<h3 id="文件查看"><a href="#文件查看" class="headerlink" title="文件查看"></a>文件查看</h3><p><img src="http://ojifsovoq.bkt.clouddn.com//PDF/vim%E6%80%BB%E7%BB%93.jpg" alt="image"></p>
+<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><p>3.1 常用命令<br>创建文件：<code>vim 文件名</code><br>重命名：<code>rename 原文件名 新文件名</code>  或 <code>mv 原目录名 新目录名</code><br>建立(软)链接：<code>ln -s file_source file_link</code><br>建立(硬)链接：<code>ln file_source file_link</code><br>打包文件：  </p>
+<p>1)<strong>打包成.gz结尾的文件；tar调用gzip</strong><br><code>tar -czf all.tar.gz *.jpg # 将所有.jpg的文件打成一个tar包，并且将其用gzip压缩，生成一个gzip压缩过的包，包名为all.tar.gz</code> </p>
+<p>2)打包成.bz2结尾的文件；tar调用bzip2【bzip2是一个压缩能力更强的压缩程序，以.bz2结尾的文件】<br><code>tar -cjf all.tar.bz2 *.jpg # 将所有.jpg的文件打成一个tar包，并且调用bzip2压缩，生成一个bzip2压缩过的包，包名为all.tar.bz2</code></p>
+<p>3)打包成.zip结尾的文件对于zip文件<br><code>zip all.zip *.jpg #将所有.jpg的文件压缩成一个zip包
+zip -r temp.zip temp #如果要压缩的是个目录，则要加上-r参数，表示调用递归压缩</code>  </p>
+<p>压缩文件：<br>1)<strong>压缩成.gz结尾的文件</strong> <code>gzip -c 1.jpg &gt; 1.gz</code><br>2)压缩成.bz2结尾的文件 <code>bzip -c 1.jpg &gt; 1.bz2</code><br>3)压缩成.zip结尾的文件 <code>zip 1.jpg &gt; 1.zip</code></p>
+<p>解压文件：<br>1)对于.tar结尾的文件 <code>tar -xf all.tar</code><br>2)<strong>对于.gz结尾的文件</strong> <code>gzip -d all.gz</code>或<code>gunzip all.gz</code><br>3)<strong>对于.tgz或.tar.gz结尾的文件</strong> <code>tar -xzf all.tar.gz</code>或<code>tar -xzf all.tgz</code><br>4)对于.bz2结尾的文件<code>bzip2 -d all.bz2``bunzip2 all.bz2</code><br>5)对于tar.bz2结尾的文件 <code>tar -xjf all.tar.bz2</code><br>6)对于.Z结尾的文件 <code>uncompress all.Z</code><br>7)对于.tar.Z结尾的文件 <code>tar -xZf all.tar.z</code><br>8)对于.zip结尾的文件 <code>unzip all.zip</code><br>9)对于.rar结尾的文件 <code>unrar e all.rar #将all.rar中的所有文件解压出来</code></p>
+<h3 id="查找文件"><a href="#查找文件" class="headerlink" title="查找文件"></a>查找文件</h3><blockquote>
+<p>find命令是根据<strong>文件的属性</strong>进行查找，如文件名，文件大小，所有者，所属组，是否为空，访问时间，修改时间等。<br>grep是根据<strong>文件的内容</strong>进行查找，会对文件的每一行按照给定的模式(patter)进行匹配查找</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">1.按照文件名查找</div><div class="line">    (1)find / -name httpd.conf　　#在根目录下查找文件httpd.conf，表示在整个硬盘查找</div><div class="line">    (2)find /etc -name httpd.conf　　#在/etc目录下文件httpd.conf</div><div class="line">    (3)find /etc -name &apos;*srm*&apos;　　#使用通配符*(0或者任意多个)。表示在/etc目录下查找文件名中含有字符串‘srm’的文件</div><div class="line">    (4)find . -name &apos;srm*&apos; 　　#表示当前目录下查找文件名开头是字符串‘srm’的文件</div><div class="line">2.按照文件特征查找 　　　　</div><div class="line">    (1)find / -amin -10 　　# 查找在系统中最后10分钟访问的文件(access time)</div><div class="line">    (2)find / -atime -2　　 # 查找在系统中最后48小时访问的文件</div><div class="line">    (3)find / -mmin -5 　　# 查找在系统中最后5分钟里修改过的文件(modify time)</div><div class="line">    (4)find / -mtime -1 　　#查找在系统中最后24小时里修改过的文件</div><div class="line">    (5)find / -empty 　　# 查找在系统中为空的文件或者文件夹</div><div class="line">    (6)find / -user fred 　　#查找在系统中属于fred这个用户的文件</div><div class="line">    (7)find / -group cat 　　# 查找在系统中属于 group为cat的文件</div><div class="line">    (8)find / -size +10000c　　#查找出大于10000000字节的文件(c:字节，w:双字，k:KB，M:MB，G:GB)</div><div class="line">    (9)find / -size -1000k 　　#查找出小于1000KB的文件</div><div class="line">3.使用混合查找方式查找文件</div><div class="line">    参数有： ！，-and(-a)，-or(-o)。</div><div class="line">    (1)find /tmp -size +10000c -and -mtime +2 　　#在/tmp目录下查找大于10000字节并在最后2分钟内修改的文件</div><div class="line">    (2)find / -user fred -or -user george 　　#在/目录下查找用户是fred或者george的文件文件</div><div class="line">    (3)find /tmp ! -user panda　　#在/tmp目录中查找所有不属于panda用户的文件</div></pre></td></tr></table></figure>
+<h3 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h3><p>3.2.1 <strong>软链和硬链的区别？</strong><br>①：硬链接不能对目录进行创建，只可对文件创建。软链接可对文件或目录创建。<br>②：硬链接是一个文件有两个不同的名字。它们可以有不同的权限，必须在同一个分区，删除其中一个并不会删除这个文件，只有把两个硬链接全部删除，文件才被删除。软链接就是快捷方式，可以跨文件系统，跨磁盘，跨分区，源文件删了，软链接就没用了。<br>3.2.2 <strong>常用的打包，压缩，解压文件分析</strong><br>①：打包是指将一大堆文件或目录什么的变成一个总的文件，压缩则是将一个大的文件通过一些压缩算法变成一个小文件。<br>②：打包：.tar结尾文件是。生成tar包后，就可以用其它的程序来进行压缩了；<br>压缩：<br>③：windows只有.zip和.rar两种压缩文件，Linux有.tar、.gz、.tar.gz、.tgz、.bz2、.tar.bz2、. Z、.tar.Z、.zip、.rar这10种压缩文件<br>④：要在linux下处理.rar文件，需要安装RAR for Linux</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># tar -xzpvf rarlinux-3.2.0.tar.gz</div><div class="line"># cd rar</div><div class="line"># make</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;梳理了Linux 知识体系中必备的知识&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】SQL &amp; MySQL</title>
+    <link href="http://yoursite.com/2018/02/20/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91SQL%20&amp;%20MySQL/"/>
+    <id>http://yoursite.com/2018/02/20/【汇总】SQL &amp; MySQL/</id>
+    <published>2018-02-19T21:19:01.000Z</published>
+    <updated>2018-02-21T16:51:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>基本的 SQL 语法，具体应用的 RDBMS 以 MySQL 为例，穿插一点数据库的知识。总结如何利用第三方库，结合 Python 使用 MySQL。</p>
+<a id="more"></a>
+<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="SQL基础"><a href="#SQL基础" class="headerlink" title="SQL基础"></a>SQL基础</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/SQL-1.png" alt=""></p>
+<h2 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/SQL-2.png" alt=""></p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/SQL-3.png" alt=""></p>
+<h2 id="数据表"><a href="#数据表" class="headerlink" title="数据表"></a>数据表</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/SQL-4.png" alt=""></p>
+<h2 id="补充话题"><a href="#补充话题" class="headerlink" title="补充话题"></a>补充话题</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/SQL-6.png" alt=""></p>
+<h2 id="MySQL-Python"><a href="#MySQL-Python" class="headerlink" title="MySQL_Python"></a>MySQL_Python</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/SQL-7.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;基本的 SQL 语法，具体应用的 RDBMS 以 MySQL 为例，穿插一点数据库的知识。总结如何利用第三方库，结合 Python 使用 MySQL。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「统计篇」(下)</title>
+    <link href="http://yoursite.com/2018/02/20/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BB%9F%E8%AE%A1%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/20/【汇总】机器学习基础之「统计篇」（下）/</id>
+    <published>2018-02-19T20:32:33.000Z</published>
+    <updated>2018-02-21T17:41:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>机器学习基础之「统计篇」（下）<br><a id="more"></a></p>
+<h1 id="简单线性回归"><a href="#简单线性回归" class="headerlink" title="简单线性回归"></a>简单线性回归</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="简单线性回归-1"><a href="#简单线性回归-1" class="headerlink" title="简单线性回归"></a>简单线性回归</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%AE%80%E5%8D%95%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.pdf" alt=""></p>
+<h3 id="残差分析"><a href="#残差分析" class="headerlink" title="残差分析"></a>残差分析</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%AE%8B%E5%B7%AE%E5%88%86%E6%9E%90.pdf" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="多元回归-amp-回归分析"><a href="#多元回归-amp-回归分析" class="headerlink" title="多元回归&amp;回归分析"></a>多元回归&amp;回归分析</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="多元回归"><a href="#多元回归" class="headerlink" title="多元回归"></a>多元回归</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%A4%9A%E5%85%83%E5%9B%9E%E5%BD%92.pdf" alt=""></p>
+<h3 id="回归分析"><a href="#回归分析" class="headerlink" title="回归分析"></a>回归分析</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90.pdf" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2><h1 id="时间序列及预测-amp-非参数方法"><a href="#时间序列及预测-amp-非参数方法" class="headerlink" title="时间序列及预测&amp;非参数方法"></a>时间序列及预测&amp;非参数方法</h1><h2 id="MindMap-2"><a href="#MindMap-2" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="时间序列及预测"><a href="#时间序列及预测" class="headerlink" title="时间序列及预测"></a>时间序列及预测</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90%E5%8F%8A%E9%A2%84%E6%B5%8B.pdf" alt=""></p>
+<h3 id="非参数方法"><a href="#非参数方法" class="headerlink" title="非参数方法"></a>非参数方法</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E9%9D%9E%E5%8F%82%E6%95%B0%E6%96%B9%E6%B3%95.pdf" alt=""></p>
+<h2 id="Reference-2"><a href="#Reference-2" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;机器学习基础之「统计篇」（下）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="统计" scheme="http://yoursite.com/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「统计篇」(中)</title>
+    <link href="http://yoursite.com/2018/02/20/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BB%9F%E8%AE%A1%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%AD%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/20/【汇总】机器学习基础之「统计篇」（中）/</id>
+    <published>2018-02-19T20:32:29.000Z</published>
+    <updated>2018-02-21T17:41:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>机器学习基础之「统计篇」（中）<br><a id="more"></a></p>
+<h1 id="两总体均值之差和比例之差的推断"><a href="#两总体均值之差和比例之差的推断" class="headerlink" title="两总体均值之差和比例之差的推断"></a>两总体均值之差和比例之差的推断</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E4%B8%A4%E6%80%BB%E4%BD%93%E5%9D%87%E5%80%BC&amp;%20%E6%AF%94%E4%BE%8B%E7%9A%84%E6%8E%A8%E6%96%AD.pdf" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="总体方差的统计推断"><a href="#总体方差的统计推断" class="headerlink" title="总体方差的统计推断"></a>总体方差的统计推断</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%80%BB%E4%BD%93%E6%96%B9%E5%B7%AE%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%8E%A8%E6%96%AD.pdf" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2><h1 id="多个比率的比较-amp-独立性检验-amp-拟合优度检验"><a href="#多个比率的比较-amp-独立性检验-amp-拟合优度检验" class="headerlink" title="多个比率的比较&amp;独立性检验&amp;拟合优度检验"></a>多个比率的比较&amp;独立性检验&amp;拟合优度检验</h1><h2 id="MindMap-2"><a href="#MindMap-2" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%A4%9A%E4%B8%AA%E6%AF%94%E7%8E%87%E7%9A%84%E6%AF%94%E8%BE%83%20%20%E7%8B%AC%E7%AB%8B%E6%80%A7%20%E6%8B%9F%E5%90%88%E4%BC%98%E5%BA%A6%E6%A3%80%E9%AA%8C.pdf" alt=""></p>
+<h2 id="Reference-2"><a href="#Reference-2" class="headerlink" title="Reference"></a>Reference</h2><h1 id="实验设计-amp-方差分析"><a href="#实验设计-amp-方差分析" class="headerlink" title="实验设计&amp;方差分析"></a>实验设计&amp;方差分析</h1><h2 id="MindMap-3"><a href="#MindMap-3" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1%20%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90.png" alt=""></p>
+<h2 id="Reference-3"><a href="#Reference-3" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;机器学习基础之「统计篇」（中）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="统计" scheme="http://yoursite.com/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】机器学习基础之「统计篇」(上)</title>
+    <link href="http://yoursite.com/2018/02/20/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E4%B9%8B%E3%80%8C%E7%BB%9F%E8%AE%A1%E7%AF%87%E3%80%8D%EF%BC%88%E4%B8%8A%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/20/【汇总】机器学习基础之「统计篇」（上）/</id>
+    <published>2018-02-19T20:32:24.000Z</published>
+    <updated>2018-02-21T17:42:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>机器学习基础之「统计篇」（上）<br><a id="more"></a></p>
+<h1 id="描述性统计"><a href="#描述性统计" class="headerlink" title="描述性统计"></a>描述性统计</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="描述性统计-表格和图形法"><a href="#描述性统计-表格和图形法" class="headerlink" title="描述性统计-表格和图形法"></a>描述性统计-表格和图形法</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%8F%8F%E8%BF%B0%E6%80%A7%E7%BB%9F%E8%AE%A1%EF%BC%9A%20%E3%80%8C%E8%A1%A8%E6%A0%BC%E5%92%8C%E5%9B%BE%E5%BD%A2%E6%B3%95%E3%80%8D.pdf" alt=""></p>
+<h3 id="描述性统计-数值方法"><a href="#描述性统计-数值方法" class="headerlink" title="描述性统计-数值方法"></a>描述性统计-数值方法</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%8F%8F%E8%BF%B0%E6%80%A7%E7%BB%9F%E8%AE%A1%EF%BC%9A%E6%95%B0%E5%80%BC%E6%96%B9%E6%B3%95.pdf" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="概率-amp-概率分布"><a href="#概率-amp-概率分布" class="headerlink" title="概率&amp;概率分布"></a>概率&amp;概率分布</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="概率"><a href="#概率" class="headerlink" title="概率"></a>概率</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%A6%82%E7%8E%87.pdf" alt=""></p>
+<h3 id="概率分布"><a href="#概率分布" class="headerlink" title="概率分布"></a>概率分布</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83.pdf" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2><h1 id="抽样分布-amp-区间估计"><a href="#抽样分布-amp-区间估计" class="headerlink" title="抽样分布&amp;区间估计"></a>抽样分布&amp;区间估计</h1><h2 id="MindMap-2"><a href="#MindMap-2" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="抽样分布"><a href="#抽样分布" class="headerlink" title="抽样分布"></a>抽样分布</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83.pdf" alt=""></p>
+<h3 id="区间估计"><a href="#区间估计" class="headerlink" title="区间估计"></a>区间估计</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%8C%BA%E9%97%B4%E4%BC%B0%E8%AE%A1.pdf" alt=""></p>
+<h2 id="Reference-2"><a href="#Reference-2" class="headerlink" title="Reference"></a>Reference</h2><h1 id="假设检验"><a href="#假设检验" class="headerlink" title="假设检验"></a>假设检验</h1><h2 id="MindMap-3"><a href="#MindMap-3" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%81%87%E8%AE%BE%E6%A3%80%E9%AA%8C.pdf" alt=""></p>
+<h2 id="Reference-3"><a href="#Reference-3" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;机器学习基础之「统计篇」（上）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="数据科学" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/"/>
+    
+    
+      <category term="统计" scheme="http://yoursite.com/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】Shell基础知识</title>
+    <link href="http://yoursite.com/2018/02/20/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Shell%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://yoursite.com/2018/02/20/【汇总】Shell基础知识/</id>
+    <published>2018-02-19T17:48:43.000Z</published>
+    <updated>2018-02-21T16:54:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在 Linux 的基础上再度深入学习 Shell，可以极大的减少重复工作的压力。毕竟批量处理才是工作的常态。</p>
+<a id="more"></a>
+<p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Shell%E8%84%9A%E6%9C%AC-1.png" alt=""></p>
+<p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/shell%E8%84%9A%E6%9C%AC-2.png" alt=""></p>
+<p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/shell%E8%84%9A%E6%9C%AC-3.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在 Linux 的基础上再度深入学习 Shell，可以极大的减少重复工作的压力。毕竟批量处理才是工作的常态。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Shell" scheme="http://yoursite.com/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】Python编程核心知识体系（下）</title>
+    <link href="http://yoursite.com/2018/02/19/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Python%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/19/【汇总】Python编程核心知识体系（下）/</id>
+    <published>2018-02-18T19:05:35.000Z</published>
+    <updated>2018-02-21T17:41:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Python编程核心知识体系（下）<br><a id="more"></a></p>
+<h1 id="常用扩展库"><a href="#常用扩展库" class="headerlink" title="常用扩展库"></a>常用扩展库</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="标准库"><a href="#标准库" class="headerlink" title="标准库"></a>标准库</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%B8%B8%E7%94%A8%E6%89%A9%E5%B1%95%E5%BA%93-1.png" alt=""></p>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%B8%B8%E7%94%A8%E6%89%A9%E5%B1%95%E5%BA%93-2.png" alt=""></p>
+<h3 id="日期-amp-时间"><a href="#日期-amp-时间" class="headerlink" title="日期 &amp; 时间"></a>日期 &amp; 时间</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%B8%B8%E7%94%A8%E6%89%A9%E5%B1%95%E5%BA%93-3.png" alt=""></p>
+<h3 id="路径-amp-文件-amp-存储"><a href="#路径-amp-文件-amp-存储" class="headerlink" title="路径 &amp; 文件 &amp; 存储"></a>路径 &amp; 文件 &amp; 存储</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%B8%B8%E7%94%A8%E6%89%A9%E5%B1%95%E5%BA%93-4.png" alt=""></p>
+<h3 id="进程-amp-线程"><a href="#进程-amp-线程" class="headerlink" title="进程 &amp; 线程"></a>进程 &amp; 线程</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%B8%B8%E7%94%A8%E6%89%A9%E5%B1%95%E5%BA%93-5.png" alt=""></p>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%B8%B8%E7%94%A8%E6%89%A9%E5%B1%95%E5%BA%93-6.png" alt=""></p>
+<h3 id="内建模块-补充"><a href="#内建模块-补充" class="headerlink" title="内建模块-补充"></a>内建模块-补充</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%B8%B8%E7%94%A8%E6%89%A9%E5%B1%95%E5%BA%93-7.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="爬虫常用库"><a href="#爬虫常用库" class="headerlink" title="爬虫常用库"></a>爬虫常用库</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="爬虫基础"><a href="#爬虫基础" class="headerlink" title="爬虫基础"></a>爬虫基础</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%88%AC%E8%99%AB%E5%B8%B8%E7%94%A8%E5%BA%93-1.png" alt=""></p>
+<h3 id="Request库"><a href="#Request库" class="headerlink" title="Request库"></a>Request库</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%88%AC%E8%99%AB%E5%B8%B8%E7%94%A8%E5%BA%93-2.png" alt=""></p>
+<h3 id="BeautifulSoup库"><a href="#BeautifulSoup库" class="headerlink" title="BeautifulSoup库"></a>BeautifulSoup库</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%88%AC%E8%99%AB%E5%B8%B8%E7%94%A8%E5%BA%93-3.png" alt=""></p>
+<h3 id="Scrapy爬虫框架"><a href="#Scrapy爬虫框架" class="headerlink" title="Scrapy爬虫框架"></a>Scrapy爬虫框架</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E7%88%AC%E8%99%AB%E5%B8%B8%E7%94%A8%E5%BA%93-4.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python编程核心知识体系（下）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】Python编程核心知识体系（中）</title>
+    <link href="http://yoursite.com/2018/02/19/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Python%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%EF%BC%88%E4%B8%AD%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/19/【汇总】Python编程核心知识体系（中）/</id>
+    <published>2018-02-18T19:00:48.000Z</published>
+    <updated>2018-02-21T17:40:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Python编程核心知识体系（中）<br><a id="more"></a></p>
+<h1 id="数值计算库之「NumPy」"><a href="#数值计算库之「NumPy」" class="headerlink" title="数值计算库之「NumPy」"></a>数值计算库之「NumPy」</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Numpy-1.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Numpy-2.png" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Numpy-3.png" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="数值计算库之「Pandas」"><a href="#数值计算库之「Pandas」" class="headerlink" title="数值计算库之「Pandas」"></a>数值计算库之「Pandas」</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Pandas-1.png" alt=""></p>
+<h3 id="索引对象"><a href="#索引对象" class="headerlink" title="索引对象"></a>索引对象</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Pandas-2.png" alt=""></p>
+<h3 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Pandas-3.png" alt=""></p>
+<h3 id="IO编程-Pandas"><a href="#IO编程-Pandas" class="headerlink" title="IO编程(Pandas)"></a>IO编程(Pandas)</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Pandas-4.png" alt=""></p>
+<h3 id="数据规整化"><a href="#数据规整化" class="headerlink" title="数据规整化"></a>数据规整化</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Pandas-5.png" alt=""></p>
+<h3 id="数据聚合分组"><a href="#数据聚合分组" class="headerlink" title="数据聚合分组"></a>数据聚合分组</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Pandas-6.png" alt=""></p>
+<h3 id="时间序列"><a href="#时间序列" class="headerlink" title="时间序列"></a>时间序列</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Pandas-7.png" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2><h1 id="数据可视化之「Matplotlib」"><a href="#数据可视化之「Matplotlib」" class="headerlink" title="数据可视化之「Matplotlib」"></a>数据可视化之「Matplotlib」</h1><h2 id="MindMap-2"><a href="#MindMap-2" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="Matplotlib-面向过程"><a href="#Matplotlib-面向过程" class="headerlink" title="Matplotlib-面向过程"></a>Matplotlib-面向过程</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Matplotlib-1.png" alt=""></p>
+<h3 id="Matplotlib-面向对象"><a href="#Matplotlib-面向对象" class="headerlink" title="Matplotlib-面向对象"></a>Matplotlib-面向对象</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/Matplotlib-2.png" alt=""></p>
+<h2 id="Reference-2"><a href="#Reference-2" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python编程核心知识体系（中）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】Python编程核心知识体系（上）</title>
+    <link href="http://yoursite.com/2018/02/19/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Python%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%EF%BC%88%E4%B8%8A%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/19/【汇总】Python编程核心知识体系（上）/</id>
+    <published>2018-02-18T17:46:17.000Z</published>
+    <updated>2018-02-21T17:40:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Python编程核心知识体系（上）<br><a id="more"></a></p>
+<h1 id="基础篇之「基础；数据类型；控制流」"><a href="#基础篇之「基础；数据类型；控制流」" class="headerlink" title="基础篇之「基础；数据类型；控制流」"></a>基础篇之「基础；数据类型；控制流」</h1><h2 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%201.pdf" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%202.pdf" alt=""></p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.pdf" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%BA%8F%E5%88%97.pdf" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%AD%97%E7%AC%A6%E4%B8%B2.pdf" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%88%97%E8%A1%A8%20%20%20%E5%85%83%E7%BB%84.pdf" alt=""><br><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%AD%97%E5%85%B8%20%20%20%E9%9B%86%E5%90%88.pdf" alt=""></p>
+<h3 id="循环-amp-判断"><a href="#循环-amp-判断" class="headerlink" title="循环 &amp; 判断"></a>循环 &amp; 判断</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%9D%A1%E4%BB%B6%20%20%20%E5%BE%AA%E7%8E%AF.pdf" alt=""></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><h1 id="基础篇之「函数；函数式编程」"><a href="#基础篇之「函数；函数式编程」" class="headerlink" title="基础篇之「函数；函数式编程」"></a>基础篇之「函数；函数式编程」</h1><h2 id="MindMap-1"><a href="#MindMap-1" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%87%BD%E6%95%B0%E4%B8%80.pdf" alt=""></p>
+<h3 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E5%87%BD%E6%95%B0%E4%BA%8C.pdf" alt=""></p>
+<h2 id="Reference-1"><a href="#Reference-1" class="headerlink" title="Reference"></a>Reference</h2><h1 id="基础篇之「模块；面向对象编程」"><a href="#基础篇之「模块；面向对象编程」" class="headerlink" title="基础篇之「模块；面向对象编程」"></a>基础篇之「模块；面向对象编程」</h1><h2 id="MindMap-2"><a href="#MindMap-2" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%A8%A1%E5%9D%97.pdf" alt=""></p>
+<h3 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.pdf" alt=""></p>
+<h2 id="Reference-2"><a href="#Reference-2" class="headerlink" title="Reference"></a>Reference</h2><h1 id="基础篇之「文件对象；错误处理」"><a href="#基础篇之「文件对象；错误处理」" class="headerlink" title="基础篇之「文件对象；错误处理」"></a>基础篇之「文件对象；错误处理」</h1><h2 id="MindMap-3"><a href="#MindMap-3" class="headerlink" title="MindMap"></a>MindMap</h2><h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E9%94%99%E8%AF%AF%20%EF%BC%86%20%E5%BC%82%E5%B8%B8.pdf" alt=""></p>
+<h3 id="文件对象"><a href="#文件对象" class="headerlink" title="文件对象"></a>文件对象</h3><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/%E6%96%87%E4%BB%B6%E5%AF%B9%E8%B1%A1.pdf" alt=""></p>
+<h2 id="Reference-3"><a href="#Reference-3" class="headerlink" title="Reference"></a>Reference</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python编程核心知识体系（上）&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【读书笔记】Python爬虫处理</title>
+    <link href="http://yoursite.com/2017/11/18/%E3%80%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%91Python%E7%88%AC%E8%99%AB%E5%A4%84%E7%90%86/"/>
+    <id>http://yoursite.com/2017/11/18/【读书笔记】Python爬虫处理/</id>
+    <published>2017-11-18T15:58:20.000Z</published>
+    <updated>2018-02-21T17:04:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ouyxzbi9n.bkt.clouddn.com/Python%E7%88%AC%E8%99%AB%E5%BA%94%E7%94%A8.jpg" alt=""><br><a id="more"></a></p>
+<h1 id="初级"><a href="#初级" class="headerlink" title="初级"></a>初级</h1><h2 id="爬虫的基本原理及过程"><a href="#爬虫的基本原理及过程" class="headerlink" title="爬虫的基本原理及过程"></a>爬虫的基本原理及过程</h2><blockquote>
+<p>大部分爬虫都是按“发送请求——获得页面——解析页面——抽取并储存内容”这样的流程来进行，这其实也是模拟了我们使用浏览器获取网页信息的过程。简单来说，我们向服务器发送请求后，会得到返回的页面，通过解析页面之后，我们可以抽取我们想要的那部分信息，并存储在指定的文档或数据库中。<br>在这部分你简单了解 HTTP 协议及网页基础知识，比如 POST\GET、HTML、CSS、JS，简单了解即可，不需要系统学习。</p>
+</blockquote>
+<h3 id="网页基础知识"><a href="#网页基础知识" class="headerlink" title="网页基础知识"></a>网页基础知识</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/01.%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%AC%E8%99%AB.htm" target="_blank" rel="external">什么是爬虫</a> | <a href="http://ovot91g2e.bkt.clouddn.com/html/02.%E5%88%9D%E8%AF%86Python%E7%88%AC%E8%99%AB.htm" target="_blank" rel="external">初识Python爬虫</a></p>
+<h3 id="网页分析工具"><a href="#网页分析工具" class="headerlink" title="网页分析工具"></a>网页分析工具</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/06.%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8C%85%E5%8F%8Aheaders%E8%AE%BE%E7%BD%AE%EF%BC%88%E7%88%AC%E5%8F%96%E7%9F%A5%E4%B9%8E%EF%BC%89.htm" target="_blank" rel="external">谷歌浏览器抓包分析</a></p>
+<h2 id="数据获取与解析"><a href="#数据获取与解析" class="headerlink" title="数据获取与解析"></a>数据获取与解析</h2><blockquote>
+<p>Python中爬虫相关的包很多：urllib、requests、bs4、scrapy、pyspider 等，建议从requests+Xpath 开始，requests 负责连接网站，返回网页，Xpath 用于解析网页，便于抽取数据。如果用过 BeautifulSoup，会发现 Xpath 要省事不少，一层一层检查元素代码的工作，全都省略了。掌握之后，你会发现爬虫的基本套路都差不多，一般的静态网站根本不在话下，小猪、豆瓣、糗事百科、腾讯新闻等基本上都可以上手了。当然如果需要爬取异步加载的网站，可以学习浏览器抓包分析真实请求或者学习Selenium来实现自动化，这样，知乎、时光网、猫途鹰这些动态的网站也基本没问题了。<br>这个过程中还需要了解一些Python的基础知识：  </p>
+<ul>
+<li>文件读写操作：用来读取参数、保存爬下来的内容  </li>
+<li>list(列表)、dict(字典)：用来序列化爬取的数据  </li>
+<li>条件判断(if/else)：解决爬虫中的判断是否执行  </li>
+<li>循环和迭代(for ……while)：用来循环爬虫步骤  </li>
+</ul>
+</blockquote>
+<h3 id="获取页面的包"><a href="#获取页面的包" class="headerlink" title="获取页面的包"></a>获取页面的包</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/03.%E4%BD%BF%E7%94%A8Requests%E7%88%AC%E5%8F%96%E8%B1%86%E7%93%A3%E7%9F%AD%E8%AF%84.htm" target="_blank" rel="external">使用Requests爬取豆瓣短评</a> | <a href="http://ovot91g2e.bkt.clouddn.com/html/08.%EF%BC%88%E6%A1%88%E4%BE%8B%E4%B8%89%EF%BC%9A%E7%88%AC%E5%8F%96taobao%E5%95%86%E5%93%81%EF%BC%89.htm" target="_blank" rel="external">使用自动化神器Selenium爬取动态网页（案例：爬取淘宝）</a></p>
+<h3 id="解析页面的包"><a href="#解析页面的包" class="headerlink" title="解析页面的包"></a>解析页面的包</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/04.%E4%BD%BF%E7%94%A8Xpath%E8%A7%A3%E6%9E%90%E8%B1%86%E7%93%A3%E7%9F%AD%E8%AF%84.htm" target="_blank" rel="external">使用Xpath解析豆瓣短评</a> </p>
+<h2 id="数据清理与非结构化存储"><a href="#数据清理与非结构化存储" class="headerlink" title="数据清理与非结构化存储"></a>数据清理与非结构化存储</h2><blockquote>
+<p>爬回来的数据可以直接用文档形式存在本地，也可以存入数据库中。<br>开始数据量不大的时候，可以直接通过 Python 的语法或pandas 的方法将数据存为csv这样的文件。<br>但可能会发现爬回来的数据并不是干净的，可能会有缺失、错误等等，还需要对数据进行清洗，可以学习 pandas 包的基本用法来做数据的预处理，得到更干净的数据。</p>
+</blockquote>
+<h3 id="数据清理的包"><a href="#数据清理的包" class="headerlink" title="数据清理的包"></a>数据清理的包</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/05.%E4%BD%BF%E7%94%A8pandas%E4%BF%9D%E5%AD%98%E8%B1%86%E7%93%A3%E7%9F%AD%E8%AF%84%E6%95%B0%E6%8D%AE.htm" target="_blank" rel="external">使用pandas保存豆瓣短评数据</a> </p>
+<h3 id="非结构化数据存储的工具"><a href="#非结构化数据存储的工具" class="headerlink" title="非结构化数据存储的工具"></a>非结构化数据存储的工具</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/07.%E6%95%B0%E6%8D%AE%E5%85%A5%E5%BA%93%E4%B9%8BMongoDB%EF%BC%88%E6%A1%88%E4%BE%8B%E4%BA%8C%EF%BC%9A%E7%88%AC%E5%8F%96%E6%8B%89%E5%8B%BE%EF%BC%89.htm" target="_blank" rel="external">数据入库之MongoDB（案例：爬取拉勾）</a></p>
+<h1 id="中级"><a href="#中级" class="headerlink" title="中级"></a>中级</h1><h2 id="利用scrapy框架搭建工程化的爬虫"><a href="#利用scrapy框架搭建工程化的爬虫" class="headerlink" title="利用scrapy框架搭建工程化的爬虫"></a>利用scrapy框架搭建工程化的爬虫</h2><blockquote>
+<p>掌握前面的技术一般量级的数据和代码基本没有问题了，但是在遇到非常复杂的情况，可能仍然会力不从心，这个时候，强大的scrapy 框架就非常有用了。scrapy 是一个功能非常强大的爬虫框架，它不仅能便捷地构建request，还有强大的 selector 能够方便地解析 response，然而它最让人惊喜的还是它超高的性能，让你可以将爬虫工程化、模块化。<br>学会 scrapy可以自己去搭建一些爬虫框架，你就基本具备爬虫工程师的思维了。</p>
+</blockquote>
+<h3 id="Scrapy的简介与配置"><a href="#Scrapy的简介与配置" class="headerlink" title="Scrapy的简介与配置"></a>Scrapy的简介与配置</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%8F%8AScrapy%E6%A1%86%E6%9E%B6%E7%AE%80%E4%BB%8B.htm" target="_blank" rel="external">爬虫工程化及Scrapy框架简介</a> | <a href="http://ovot91g2e.bkt.clouddn.com/html/Scrapy_%E5%AE%89%E8%A3%85%E5%8F%8A%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.htm" target="_blank" rel="external">Scrapy安装及基本使用</a> </p>
+<h3 id="Scrapy的相关概念"><a href="#Scrapy的相关概念" class="headerlink" title="Scrapy的相关概念"></a>Scrapy的相关概念</h3><p><a href="http://ovot91g2e.bkt.clouddn.com/html/Scrapy_%E9%80%89%E6%8B%A9%E5%99%A8.htm" target="_blank" rel="external">Scrapy选择器的用法</a> | <a href="http://ovot91g2e.bkt.clouddn.com/html/Scrapy_%E9%A1%B9%E7%9B%AE%E7%AE%A1%E9%81%93.htm" target="_blank" rel="external">Scrapy的项目管道</a> |<a href="http://ovot91g2e.bkt.clouddn.com/html/Scrapy_%E4%B8%AD%E9%97%B4%E4%BB%B6.htm" target="_blank" rel="external">Scrapy的中间件</a> | <a href="http://ovot91g2e.bkt.clouddn.com/html/Scrapy_Request%E5%92%8CResponse%E8%AF%A6%E8%A7%A3.htm" target="_blank" rel="external">Scrapy的Request和Response详解</a></p>
+<h2 id="利用数据库应对大规模数据存储"><a href="#利用数据库应对大规模数据存储" class="headerlink" title="利用数据库应对大规模数据存储"></a>利用数据库应对大规模数据存储</h2><blockquote>
+<p>爬回来的数据量小的时候，你可以用文档的形式来存储，一旦数据量大了，这就有点行不通了。所以掌握一种数据库是必须的，学习目前比较主流的 MongoDB 就OK。MongoDB 可以方便你去存储一些非结构化的数据，比如各种评论的文本，图片的链接等等。也可以利用PyMongo，更方便地在Python中操作MongoDB。<br>因为这里要用到的数据库知识其实非常简单，主要是数据如何入库、如何进行提取，在需要的时候再学习就行。</p>
+</blockquote>
+<p><a href="http://ovot91g2e.bkt.clouddn.com/html/%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%BF%9B%E9%98%B6%EF%BC%88%E5%85%AB%EF%BC%89_%E6%95%B0%E6%8D%AE%E5%8E%BB%E9%87%8D%E4%B8%8E%E5%85%A5%E5%BA%93.htm" target="_blank" rel="external">数据去重与入库</a><a href="http://v.youku.com/v_show/id_XMzE2Njk5Njg4OA==.html?spm=a2hzp.8253869.0.0" target="_blank" rel="external">↑</a></p>
+<h2 id="掌握技巧应对特殊网站的反爬措施"><a href="#掌握技巧应对特殊网站的反爬措施" class="headerlink" title="掌握技巧应对特殊网站的反爬措施"></a>掌握技巧应对特殊网站的反爬措施</h2><blockquote>
+<p>爬虫过程中也会经历一些绝望啊，比如被网站封IP、比如各种奇怪的验证码、userAgent访问限制、各种动态加载等等。遇到这些反爬虫的手段，当然还需要一些高级的技巧来应对，常规的比如访问频率控制、使用代理IP池、抓包、验证码的OCR处理等等。<br>往往网站在高效开发和反爬虫之间会偏向前者，这也为爬虫提供了空间，掌握这些应对反爬虫的技巧，绝大部分的网站已经难不到你了。</p>
+</blockquote>
+<h1 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h1><h2 id="利用分布式爬虫实现大规模并发采集"><a href="#利用分布式爬虫实现大规模并发采集" class="headerlink" title="利用分布式爬虫实现大规模并发采集"></a>利用分布式爬虫实现大规模并发采集</h2><blockquote>
+<p>爬取基本数据已经不是问题了，你的瓶颈会集中到爬取海量数据的效率。这个时候，相信你会很自然地接触到一个很厉害的名字：分布式爬虫。其实就是利用多线程的原理让多个爬虫同时工作，需要你掌握 Scrapy + MongoDB + Redis 这三种工具。Scrapy 前面说过了，用于做基本的页面爬取，MongoDB 用于存储爬取的数据，Redis 则用来存储要爬取的网页队列，也就是任务队列。<br>当能够写分布式的爬虫的时候，那么可以去尝试打造一些基本的爬虫架构了，实现一些更加自动化的数据获取。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ouyxzbi9n.bkt.clouddn.com/Python%E7%88%AC%E8%99%AB%E5%BA%94%E7%94%A8.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【笔记】Python量化投资</title>
+    <link href="http://yoursite.com/2017/11/14/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91Python%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84/"/>
+    <id>http://yoursite.com/2017/11/14/【笔记】Python量化投资/</id>
+    <published>2017-11-13T17:33:09.000Z</published>
+    <updated>2018-02-21T17:34:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ouyxzbi9n.bkt.clouddn.com/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90%E5%B8%88.jpeg" alt=""></p>
+<a id="more"></a>
+<h1 id="编程基本术语"><a href="#编程基本术语" class="headerlink" title="编程基本术语"></a>编程基本术语</h1><h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><p><a href="https://bigquant.com/docs/learn_python_in_10_minutes.html" target="_blank" rel="external">10分钟学会Python</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E5%88%97%E8%A1%A8/226" target="_blank" rel="external">数据类型之列表</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E5%AD%97%E5%85%B8/227" target="_blank" rel="external">数据类型之字典</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B9%8B%E5%85%83%E7%BB%84%E3%80%81%E9%9B%86%E5%90%88/228" target="_blank" rel="external">数据类型之元组、集合</a> </p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8B%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF%EF%BC%9Aif%E3%80%81while%E3%80%81for/229" target="_blank" rel="external">条件与循环：if、while、for</a> | <a href="https://community.bigquant.com/t/%E5%87%BD%E6%95%B0/230" target="_blank" rel="external">函数</a></p>
+<p><a href="https://bigquant.com/docs/python_lib_list.html" target="_blank" rel="external">金融开发的第三方库</a></p>
+<h2 id="Pandas-的使用"><a href="#Pandas-的使用" class="headerlink" title="Pandas 的使用"></a>Pandas 的使用</h2><p><a href="https://bigquant.com/docs/learn_pandas_in_10_minutes.html" target="_blank" rel="external">10分钟学会Pandas</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8BPandas%E6%9F%A5%E7%9C%8B%E5%92%8C%E9%80%89%E6%8B%A9%E6%95%B0%E6%8D%AE/232" target="_blank" rel="external">Pandas查看和选择数据</a> | <a href="https://community.bigquant.com/t/Pandas%E5%BA%93%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E4%B8%8E%E8%A7%84%E6%95%B4/233" target="_blank" rel="external">Python编程Pandas库之数据处理与规整</a></p>
+<h2 id="Numpy-的使用"><a href="#Numpy-的使用" class="headerlink" title="Numpy 的使用"></a>Numpy 的使用</h2><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-Python%E7%BC%96%E7%A8%8BNumpy%E5%BA%93/231" target="_blank" rel="external">Numpy库介绍</a></p>
+<h1 id="金融基本术语"><a href="#金融基本术语" class="headerlink" title="金融基本术语"></a>金融基本术语</h1><p><a href="https://community.bigquant.com/t/%E5%81%9A%E9%87%8F%E5%8C%96%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9B%E6%9C%AF%E8%AF%AD%EF%BC%81%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/1079" target="_blank" rel="external">基本术语</a> </p>
+<p><a href="https://community.bigquant.com/t/%E6%97%A0%E9%9C%80%E4%BB%A3%E7%A0%81%E6%9E%84%E9%80%A0%E6%82%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E8%A1%8D%E7%94%9F%E5%9B%A0%E5%AD%90/1066" target="_blank" rel="external">构造衍生因子</a> | <a href="https://community.bigquant.com/t/%E5%A6%82%E4%BD%95%E6%8C%89%E8%87%AA%E5%B7%B1%E9%9C%80%E6%B1%82%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%A0%E5%AD%90%E8%AE%A1%E7%AE%97%EF%BC%9F/541" target="_blank" rel="external">构造自定义因子</a> | <a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%9B%A0%E5%AD%90%E9%A2%84%E5%A4%84%E7%90%86/1532" target="_blank" rel="external">因子预处理</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E5%9B%A0%E5%AD%90%E9%A3%8E%E9%99%A9%E6%9A%B4%E9%9C%B2/269" target="_blank" rel="external">因子风险暴露</a> | <a href="https://community.bigquant.com/t/WorldQuant-101alpha%E5%9B%A0%E5%AD%90%E6%9E%84%E5%BB%BA%E5%8F%8A%E5%9B%A0%E5%AD%90%E6%B5%8B%E8%AF%95/2143" target="_blank" rel="external">alpha因子构建及测试</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BABeta%E5%AF%B9%E5%86%B2/265" target="_blank" rel="external">Beta对冲</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BA%E8%B7%8C%E4%BA%86%E8%BF%99%E4%B9%88%E5%A4%9A%EF%BC%8C%E5%88%9B%E4%B8%9A%E6%9D%BF%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BA%86%E5%90%97%EF%BC%9F/277" target="_blank" rel="external">市盈率</a> | <a href="https://community.bigquant.com/t/%E9%A3%8E%E9%99%A9%E5%B9%B3%E4%BB%B7%E7%BB%84%E5%90%88risk-parity%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E8%B7%B5/327" target="_blank" rel="external">风险平价组合</a> </p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E9%87%91%E8%9E%8D%E5%B8%82%E5%9C%BABarra%E9%A3%8E%E9%99%A9%E7%BB%93%E6%9E%84%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9E%8B/270" target="_blank" rel="external">Barra风险结构管理模型</a></p>
+<h1 id="数学基本术语"><a href="#数学基本术语" class="headerlink" title="数学基本术语"></a>数学基本术语</h1><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%AD%E8%B6%8B%E5%8A%BF%E7%9A%84%E5%BA%A6%E9%87%8F%EF%BC%9A%E5%B9%B3%E5%9D%87%E5%80%BC/272" target="_blank" rel="external">平均值(数据集中趋势的度量)</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%95%B0%E6%8D%AE%E7%A6%BB%E6%95%A3%E7%8A%B6%E5%86%B5%E7%9A%84%E6%B5%8B%E9%87%8F%EF%BC%9A%E7%A6%BB%E6%95%A3%E5%BA%A6/273" target="_blank" rel="external">离散度(数据离散状况的测量)</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E5%B3%B0%E5%BA%A6%E5%92%8C%E5%81%8F%E5%BA%A6/275" target="_blank" rel="external">峰度和偏度</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E5%88%9D%E8%AF%86%E5%8D%8F%E6%95%B4/267" target="_blank" rel="external">协整上</a> | <a href="https://community.bigquant.com/t/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E5%8D%8F%E6%95%B4/268" target="_blank" rel="external">协整下</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E7%9B%B8%E5%85%B3%E5%85%B3%E7%B3%BB/264" target="_blank" rel="external">相关系数</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/261" target="_blank" rel="external">线性回归</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E5%A4%9A%E5%85%83%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/262" target="_blank" rel="external">多元线性回归</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BC%82%E5%B8%B8%E5%80%BC%E5%A4%84%E7%90%86/276" target="_blank" rel="external">数据异常值处理</a></p>
+<h1 id="策略开发"><a href="#策略开发" class="headerlink" title="策略开发"></a>策略开发</h1><p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%BC%80%E5%8F%91%E4%BC%A0%E7%BB%9F%E8%B6%8B%E5%8A%BF%E7%AD%96%E7%95%A5/1092" target="_blank" rel="external">传统趋势投资策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E5%A4%A7%E5%B8%88%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BB%B7%E5%80%BC%E6%8A%95%E8%B5%84%E6%B3%95/255" target="_blank" rel="external">价值投资策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E5%80%9F%E5%8A%A9talib%E4%BD%BF%E7%94%A8%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90%E6%8C%87%E6%A0%87%E6%9D%A5%E7%82%92%E8%82%A1/254" target="_blank" rel="external">技术分析指标策略</a> | <a href="https://community.bigquant.com/t/%E5%9F%BA%E6%9C%AC%E9%9D%A2%E9%87%8F%E5%8C%96%EF%BC%88Quantamental%EF%BC%89%E2%80%94%E2%80%94%E8%B4%A2%E5%8A%A1%E6%8C%87%E6%A0%87%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5/598" target="_blank" rel="external">财务指标量化策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E7%AD%96%E7%95%A5%EF%BC%88%E5%9F%BA%E4%BA%8E%E4%B8%9A%E7%BB%A9%E5%BF%AB%E6%8A%A5%EF%BC%89/256" target="_blank" rel="external">事件驱动策略（基于业绩快报</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B9%B0%E5%85%A5%E5%8D%96%E5%87%BA%E7%AD%96%E7%95%A5/1121" target="_blank" rel="external">自定义买入卖出策略</a> | <a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E7%AD%96%E7%95%A5%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F/1113" target="_blank" rel="external">止盈止损策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E9%80%89%E8%82%A1%E6%8B%A9%E6%97%B6%E7%AD%96%E7%95%A5%E7%BB%84%E5%90%88/1605" target="_blank" rel="external">选股+择时策略组合</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E9%87%91%E5%8F%89%E6%AD%BB%E5%8F%89%E7%AD%96%E7%95%A5/249" target="_blank" rel="external">金叉死叉策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E6%B5%B7%E9%BE%9F%E7%AD%96%E7%95%A5/250" target="_blank" rel="external">海龟策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E6%B5%85%E8%B0%88%E5%B0%8F%E5%B8%82%E5%80%BC%E7%AD%96%E7%95%A5/251" target="_blank" rel="external">小市值策略</a> | <a href="https://community.bigquant.com/t/量化学堂-策略开发多头排列回踩买入策略/253" target="_blank" rel="external">多头排列回踩买入策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E5%9F%BA%E4%BA%8E%E5%8D%8F%E6%95%B4%E7%9A%84%E9%85%8D%E5%AF%B9%E4%BA%A4%E6%98%93/260" target="_blank" rel="external">配对交易策略</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E4%BD%BF%E7%94%A8cvxopt%E5%8C%85%E5%AE%9E%E7%8E%B0%E9%A9%AC%E7%A7%91%E7%BB%B4%E8%8C%A8%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96%E4%BB%A5%E4%B8%80%E4%B8%AA%E8%82%A1%E7%A5%A8%E7%AD%96%E7%95%A5%E4%B8%BA%E4%BE%8B/274" target="_blank" rel="external">Markowitz投资策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%A4%9A%E4%B8%AA%E7%AD%96%E7%95%A5%E7%BB%84%E5%90%88/1470" target="_blank" rel="external">多个策略组合</a></p>
+<h1 id="策略验证"><a href="#策略验证" class="headerlink" title="策略验证"></a>策略验证</h1><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E7%AD%96%E7%95%A5%E5%BC%80%E5%8F%91%E7%AD%96%E7%95%A5%E5%9B%9E%E6%B5%8B%E7%BB%93%E6%9E%9C%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/257" target="_blank" rel="external">策略回测结果指标详解</a> |<br><a href="https://community.bigquant.com/t/%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E6%94%B6%E7%9B%8A%E5%88%86%E6%9E%90/1873" target="_blank" rel="external">策略收益分析</a> |<br><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E7%AD%96%E7%95%A5%E9%A3%8E%E9%99%A9%E5%88%86%E6%9E%90/1522" target="_blank" rel="external">策略风险分析</a> | <a href="https://community.bigquant.com/t/%E5%9C%A8AI%E7%AD%96%E7%95%A5%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%BB%9A%E5%8A%A8%E8%AE%AD%E7%BB%83/3542" target="_blank" rel="external">滚动训练AI策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%9B%9E%E6%B5%8B%E6%95%B0%E6%8D%AE%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90/1323" target="_blank" rel="external">回测数据深入分析</a></p>
+<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/242" target="_blank" rel="external">机器学习的含义</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%AE%97%E6%B3%95/243" target="_blank" rel="external">机器学习的算法</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84%E4%B8%AD%E7%9A%84%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/278" target="_blank" rel="external">特征工程</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0AI%E9%87%8F%E5%8C%96%E7%AD%96%E7%95%A5%E7%9A%84%E5%88%9D%E6%AD%A5%E7%90%86%E8%A7%A3/280" target="_blank" rel="external">AI量化策略</a></p>
+<p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0StockRanker%E6%A8%A1%E5%9E%8B%E5%8F%AF%E8%A7%86%E5%8C%96/279" target="_blank" rel="external">StockRanker模型（可视化）</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E4%BA%8ELSTM%E7%9A%84%E8%82%A1%E7%A5%A8%E4%BB%B7%E6%A0%BC%E9%A2%84%E6%B5%8B%E6%A8%A1%E5%9E%8B/201" target="_blank" rel="external">LSTM模型（股票价格预测</a> | <a href="https://community.bigquant.com/t/%E4%BD%BF%E7%94%A8sklearn%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/1533" target="_blank" rel="external">sklearn模型（数据预处理）</a></p>
+<h1 id="BigQuant的使用"><a href="#BigQuant的使用" class="headerlink" title="BigQuant的使用"></a>BigQuant的使用</h1><h2 id="高效使用指南"><a href="#高效使用指南" class="headerlink" title="高效使用指南"></a>高效使用指南</h2><p><a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E7%25AD%2596%25E7%2595%25A5%25E7%25A0%2594%25E7%25A9%25B6%25E5%25B9%25B3%25E5%258F%25B0%25E5%25B8%25B8%25E7%2594%25A8%25E5%25BF%25AB%25E6%258D%25B7%25E9%2594%25AE%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F615&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">常用快捷键</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F3&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">代码提示：自动补全和文档帮助</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E5%25A6%2582%25E4%25BD%2595%25E4%25B8%258A%25E4%25BC%25A0%25E6%259C%25AC%25E5%259C%25B0%25E6%2595%25B0%25E6%258D%25AE%25E5%2588%25B0%25E7%25AD%2596%25E7%2595%25A5%25E7%25A0%2594%25E7%25A9%25B6%25E5%25B9%25B3%25E5%258F%25B0%25EF%25BC%259F%25EF%25BC%2581%2F1987%2F1&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">上传和下载数据</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F2&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">对比策略效果</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F4&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">修改策略名称</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2FBigQuant%25E5%25B9%25B3%25E5%258F%25B0%25E9%25AB%2598%25E6%2595%2588%25E4%25BD%25BF%25E7%2594%25A8%25E6%258C%2587%25E5%258D%2597%2F611%2F5&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">使用“我的交易”功能</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E5%25A6%2582%25E4%25BD%2595%25E5%259C%25A8BigQuant%25E7%25AD%2596%25E7%2595%25A5%25E7%25A0%2594%25E7%25A9%25B6%25E5%25B9%25B3%25E5%258F%25B0%25E8%2587%25AA%25E5%25AE%259A%25E4%25B9%2589library%25EF%25BC%259F%2F3565&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">自定义library</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E5%259C%25A8AI%25E7%25AD%2596%25E7%2595%25A5%25E4%25B8%25AD%25E5%25AF%25B9%25E8%2582%25A1%25E7%25A5%25A8%25E7%2589%25B9%25E5%25BE%2581%25E5%2581%259A%25E8%25BF%2587%25E6%25BB%25A4%25EF%25BC%258C%25E4%25BB%25A5%25E8%25BF%2587%25E6%25BB%25A4ST%25E8%2582%25A1%25E7%25A5%25A8%25E4%25B8%25BA%25E4%25BE%258B%2F3641&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">对股票特征做过滤</a> | <a href="https://community.bigquant.com/clicks/track?url=https%3A%2F%2Fcommunity.bigquant.com%2Ft%2F%25E6%2595%25B4%25E7%2599%25BE%25E4%25B8%258B%25E5%258D%2595%25E7%259A%2584%25E4%25B8%2580%25E4%25B8%25AA%25E4%25BE%258B%25E5%25AD%2590%2F3760&amp;post_id=1131&amp;topic_id=611" target="_blank" rel="external">实现整百下单</a></p>
+<h2 id="编写策略"><a href="#编写策略" class="headerlink" title="编写策略"></a>编写策略</h2><h3 id="Meta"><a href="#Meta" class="headerlink" title="Meta"></a>Meta</h3><p><a href="https://bigquant.com/docs/module_introduction.html" target="_blank" rel="external">M/模块</a> | <a href="https://bigquant.com/docs/data_introduction.html" target="_blank" rel="external">D/数据</a> | <a href="https://bigquant.com/docs/tools.html" target="_blank" rel="external">T/工具–绘图函数</a> | <a href="https://bigquant.com/docs/datasource.html" target="_blank" rel="external">DataSource/数据源</a></p>
+<h3 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h3><p><a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%96%B0%E6%89%8B%E4%B8%93%E5%8C%BABigQuant%E6%95%B0%E6%8D%AEAPI%E8%AF%A6%E8%A7%A3/247" target="_blank" rel="external">数据API的使用</a></p>
+<p><a href="https://bigquant.com/docs/data_trading_days.html" target="_blank" rel="external">交易日历</a> | <a href="https://bigquant.com/docs/exchange_markets.html" target="_blank" rel="external">交易市场</a> | <a href="https://bigquant.com/docs/data_market_indexes.html" target="_blank" rel="external">市场指数</a> | <a href="https://bigquant.com/docs/data_industry.html" target="_blank" rel="external">行业列表</a> | <a href="https://bigquant.com/docs/data_instruments.html" target="_blank" rel="external">股票代码</a> | <a href="https://bigquant.com/docs/data_history_data.html" target="_blank" rel="external">历史数据</a> | <a href="https://bigquant.com/docs/data_macro_data.html" target="_blank" rel="external">宏观经济数据</a> <a href="https://bigquant.com/docs/data_features.html" target="_blank" rel="external">因子库</a></p>
+<p><a href="https://bigquant.com/docs/data_financial_statements.html" target="_blank" rel="external">财报数据</a> | <a href="https://bigquant.com/docs/module_fast_auto_labeler.html" target="_blank" rel="external">数据标注 M.fast_auto_labeler</a> | <a href="https://bigquant.com/docs/module_advanced_auto_labeler.html" target="_blank" rel="external">高级数据标注 M.advanced_auto_labeler</a> | <a href="https://bigquant.com/docs/module_general_feature_extractor.html" target="_blank" rel="external">基础特征抽取 M.general_feature_extractor</a> | <a href="https://bigquant.com/docs/module_derived_feature_extractor.html" target="_blank" rel="external">衍生特征抽取 M.derived_feature_extractor</a> | <a href="https://bigquant.com/docs/module_user_feature_extractor.html" target="_blank" rel="external">用户自定义特征抽取 M.user_feature_extractor</a> | <a href="https://bigquant.com/docs/module_transform.html" target="_blank" rel="external">数据变换 M.transform</a> | <a href="https://bigquant.com/docs/module_join.html" target="_blank" rel="external">数据连接 M.join</a> | <a href="https://bigquant.com/docs/module_filter.html" target="_blank" rel="external">数据过滤 M.filter</a></p>
+<h3 id="AI算法模型"><a href="#AI算法模型" class="headerlink" title="AI算法模型"></a>AI算法模型</h3><p><a href="https://bigquant.com/docs/module_stock_ranker_train.html" target="_blank" rel="external">股票排序学习模型 M.stock_ranker_train</a> | <a href="https://bigquant.com/docs/module_stock_ranker_predict.html" target="_blank" rel="external">股票排序学习模型 M.stock_ranker_predict</a> | <a href="https://bigquant.com/docs/module_stock_ranker_train_rolling.html" target="_blank" rel="external">股票排序学习模型 (滚动版) M.stock_ranker_train_rolling</a> | <a href="https://bigquant.com/docs/module_random_forest_train.html" target="_blank" rel="external">随机森林模型 M.random_forest_train</a> | <a href="https://bigquant.com/docs/module_random_forest_predict.html" target="_blank" rel="external">随机森林模型 M.random_forest_predict</a> | <a href="https://bigquant.com/docs/module_linear_sgd_train.html" target="_blank" rel="external">线性随机梯度下降模型 M.linear_sgd_train</a> | <a href="https://bigquant.com/docs/module_linear_sgd_predict.html" target="_blank" rel="external">线性随机梯度下降模型 M.linear_sgd_predict</a></p>
+<p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E5%A6%82%E4%BD%95%E9%80%89%E5%87%BA%E7%AC%A6%E5%90%88%E4%B8%80%E5%AE%9A%E6%9D%A1%E4%BB%B6%E7%9A%84%E8%82%A1%E7%A5%A8/2564" target="_blank" rel="external">选出符合条件的股票</a></p>
+<h2 id="策略回测"><a href="#策略回测" class="headerlink" title="策略回测"></a>策略回测</h2><p><a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91%E7%AD%96%E7%95%A5%E5%9B%9E%E6%B5%8B%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB/1067" target="_blank" rel="external">回测结果解读</a> | <a href="https://community.bigquant.com/t/%E9%87%8F%E5%8C%96%E5%AD%A6%E5%A0%82-%E6%96%B0%E6%89%8B%E4%B8%93%E5%8C%BABigQuant%E5%9B%9E%E6%B5%8B%E6%9C%BA%E5%88%B6/246" target="_blank" rel="external">回测机制</a> | <a href="https://community.bigquant.com/t/%E3%80%90%E5%AE%BD%E5%AE%A2%E5%AD%A6%E9%99%A2%E3%80%91StockRanker%E7%BB%93%E6%9E%9C%E8%A7%A3%E8%AF%BB/1084" target="_blank" rel="external">StockRanker结果解读</a></p>
+<h2 id="量化交易引擎"><a href="#量化交易引擎" class="headerlink" title="量化交易引擎"></a>量化交易引擎</h2><p><a href="https://bigquant.com/docs/big_expr.html" target="_blank" rel="external">表达式引擎</a> | <a href="https://bigquant.com/docs/module_trade.html" target="_blank" rel="external">交易(支持回测和实盘) M.trade</a> | <a href="https://bigquant.com/docs/module_multi_strategy_analysis.html" target="_blank" rel="external">多策略组合分析 M.multi_strategy_analysis</a></p>
+<h2 id="BigStudio可视化使用文档"><a href="#BigStudio可视化使用文档" class="headerlink" title="BigStudio可视化使用文档"></a>BigStudio可视化使用文档</h2><p><a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%B8%80%EF%BC%89/2791" target="_blank" rel="external">BigStudio使用文档介绍(一)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%BA%8C%EF%BC%89/2796" target="_blank" rel="external">BigStudio使用文档介绍(二)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%B8%89%EF%BC%89/2866" target="_blank" rel="external">BigStudio使用文档介绍(三)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E5%9B%9B%EF%BC%89/2913" target="_blank" rel="external">BigStudio使用文档介绍(四)</a> | <a href="https://community.bigquant.com/t/BigStudio%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3%E4%BB%8B%E7%BB%8D%EF%BC%88%E4%BA%94%EF%BC%89/3077" target="_blank" rel="external">BigStudio使用文档介绍(五)</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ouyxzbi9n.bkt.clouddn.com/%E9%87%8F%E5%8C%96%E9%87%91%E8%9E%8D%E5%88%86%E6%9E%90%E5%B8%88.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="技术应用" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E6%8A%80%E6%9C%AF%E5%BA%94%E7%94%A8/"/>
+    
+    
+      <category term="量化投资" scheme="http://yoursite.com/tags/%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【官方文档】Pandas官方文档</title>
+    <link href="http://yoursite.com/2017/11/06/%E3%80%90%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E3%80%91Pandas%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    <id>http://yoursite.com/2017/11/06/【官方文档】Pandas官方文档/</id>
+    <published>2017-11-05T17:56:30.000Z</published>
+    <updated>2018-02-21T16:56:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ovot91g2e.bkt.clouddn.com/Pandas.jpeg" alt=""><br><a id="more"></a></p>
+<h1 id="基础搭建"><a href="#基础搭建" class="headerlink" title="基础搭建"></a>基础搭建</h1><ul>
+<li>从头开始：<a href="http://usyiyi.cn/documents/Pandas_0j2/whatsnew.html" target="_blank" rel="external">新功能</a> | <a href="http://usyiyi.cn/documents/Pandas_0j2/install.html" target="_blank" rel="external">安装</a><br><a href="http://usyiyi.cn/documents/Pandas_0j2/contributing.html" target="_blank" rel="external">贡献给pandas</a><br><a href="http://usyiyi.cn/documents/Pandas_0j2/faq.html" target="_blank" rel="external">常见问题（FAQ</a></li>
+<li>教程：<a href="http://usyiyi.cn/documents/Pandas_0j2/10min.html" target="_blank" rel="external">10分钟入门Pandas</a> | <a href="http://usyiyi.cn/documents/Pandas_0j2/10min.html" target="_blank" rel="external">中级教程</a></li>
+</ul>
+<p><a href="http://usyiyi.cn/documents/Pandas_0j2/cookbook.html" target="_blank" rel="external">CookBook</a></p>
+<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/dsintro.html" target="_blank" rel="external">数据结构简介</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/basics.html" target="_blank" rel="external">基本基本功能</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/text.html" target="_blank" rel="external">使用文本数据</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/options.html" target="_blank" rel="external">选项和设置</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/indexing.html" target="_blank" rel="external">索引和选择数据</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/advanced.html" target="_blank" rel="external">MultiIndex /高级索引</a></li>
+</ul>
+<h1 id="处理数据"><a href="#处理数据" class="headerlink" title="处理数据"></a>处理数据</h1><ul>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/computation.html" target="_blank" rel="external">计算工具</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/missing_data.html" target="_blank" rel="external">使用缺失数据</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/groupby.html" target="_blank" rel="external">分组：split-apply-combine</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/merging.html" target="_blank" rel="external">合并，连接和连接</a></li>
+</ul>
+<h1 id="展示数据"><a href="#展示数据" class="headerlink" title="展示数据"></a>展示数据</h1><ul>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/reshaping.html" target="_blank" rel="external">整形和数据透视表</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/timeseries.html" target="_blank" rel="external">时间系列/日期功能</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/timedeltas.html" target="_blank" rel="external">时间Deltas</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/categorical.html" target="_blank" rel="external">分类数据</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/visualization.html" target="_blank" rel="external">可视化</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/style.html" target="_blank" rel="external">样式</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/io.html" target="_blank" rel="external">IO工具（文本，CSV，HDF5，…）</a></li>
+</ul>
+<h1 id="解决具体问题"><a href="#解决具体问题" class="headerlink" title="解决具体问题"></a>解决具体问题</h1><ul>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/remote_data.html" target="_blank" rel="external">远程数据访问</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/enhancingperf.html" target="_blank" rel="external">增强性能</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/sparse.html" target="_blank" rel="external">稀疏数据结构</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/gotchas.html" target="_blank" rel="external">告诫和诀窍</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/r_interface.html" target="_blank" rel="external">rpy2 / R interface</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/ecosystem.html" target="_blank" rel="external">pandas生态系统</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/comparison_with_r.html" target="_blank" rel="external">与R / R库比较</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/comparison_with_sql.html" target="_blank" rel="external">与SQL比较</a></li>
+<li><a href="http://usyiyi.cn/documents/Pandas_0j2/comparison_with_sas.html" target="_blank" rel="external">与SAS的比较</a></li>
+</ul>
+<hr>
+<p>参考链接：<a href="http://usyiyi.cn/translate/Pandas_0j2/tutorials.html" target="_blank" rel="external">http://usyiyi.cn/translate/Pandas_0j2/tutorials.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ovot91g2e.bkt.clouddn.com/Pandas.jpeg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【官方文档】Scrapy官方文档</title>
+    <link href="http://yoursite.com/2017/11/06/%E3%80%90%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E3%80%91Scrapy%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    <id>http://yoursite.com/2017/11/06/【官方文档】Scrapy官方文档/</id>
+    <published>2017-11-05T17:13:07.000Z</published>
+    <updated>2018-02-21T16:57:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ovot91g2e.bkt.clouddn.com/Scrapy.jpeg" alt=""><br><a id="more"></a></p>
+<h1 id="基础搭建"><a href="#基础搭建" class="headerlink" title="基础搭建"></a>基础搭建</h1><ul>
+<li>从头开始：<a href="http://usyiyi.cn/documents/scrapy_12/intro/overview.html" target="_blank" rel="external">概述</a> | <a href="http://usyiyi.cn/documents/scrapy_12/intro/install.html" target="_blank" rel="external">安装指南</a></li>
+<li>初级教程：<a href="http://usyiyi.cn/documents/scrapy_12/intro/tutorial.html" target="_blank" rel="external">第一个Scrapy项目</a> | <a href="http://usyiyi.cn/documents/scrapy_12/intro/examples.html" target="_blank" rel="external">第二个Scrapy项目</a></li>
+</ul>
+<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/commands.html" target="_blank" rel="external">命令行工具</a>：学习用于管理Scrapy项目的命令行工具。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/spiders.html" target="_blank" rel="external">Spiders</a>：编写爬取网站的规则。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/selectors.html" target="_blank" rel="external">Selectors</a>：使用XPath提取网页的数据。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/shell.html" target="_blank" rel="external">Scrapy shell</a>：在交互环境中测试提取数据的代码。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/items.html" target="_blank" rel="external">Items</a>：定义想要爬取的数据 。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/loaders.html" target="_blank" rel="external">Item Loaders</a>：使用爬取到的数据填充item。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/item-pipeline.html" target="_blank" rel="external">Item Pipeline</a>：后期处理和存储爬取的数据。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/feed-exports.html" target="_blank" rel="external">Feed exports</a>：使用不同格式和存储输出爬取的数据。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/request-response.html" target="_blank" rel="external">Requests and Responses</a>：了解用于代表HTTP请求和响应的类。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/link-extractors.html" target="_blank" rel="external">Link Extractors</a>：提取链接来跟踪页面的方便的类。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/settings.html" target="_blank" rel="external">Settings</a>：了解如何配置Scrapy以及所有可用的设置。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/exceptions.html" target="_blank" rel="external">Exceptions</a>：查看可用的所有异常和它们的含义。</li>
+</ul>
+<h1 id="内置的服务"><a href="#内置的服务" class="headerlink" title="内置的服务"></a>内置的服务</h1><ul>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/logging.html" target="_blank" rel="external">Logging</a>：了解在Scrapy上如何使用Python内置的logging。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/stats.html" target="_blank" rel="external">统计数据收集</a>：收集有关你的爬虫的统计信息。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/email.html" target="_blank" rel="external">发送电子邮件</a>：当特定事件发生时发送邮件通知。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/telnetconsole.html" target="_blank" rel="external">Telnet终端</a>：使用内置的Python终端检查运行中的爬虫。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/webservice.html" target="_blank" rel="external">Web Service</a>：使用web service监控和管理爬虫。</li>
+</ul>
+<h1 id="解决具体问题"><a href="#解决具体问题" class="headerlink" title="解决具体问题"></a>解决具体问题</h1><ul>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/faq.html" target="_blank" rel="external">常见问题</a>：获取最常问的问题的解答。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/debug.html" target="_blank" rel="external">调试Spiders</a>：学习如何调试scrapy爬虫的常见问题。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/contracts.html" target="_blank" rel="external">Spiders Contracts</a>：学习如何使用contract来测试您的spider。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/practices.html" target="_blank" rel="external">Common Practices</a>：熟悉Scrapy的一些惯例做法。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/broad-crawls.html" target="_blank" rel="external">Broad Crawls</a>：调整Scrapy来并发爬取多个域名。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/firefox.html" target="_blank" rel="external">Using Firefox for scraping</a>：了解如何使用Firefox及其他有用的插件来爬取数据。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/firebug.html" target="_blank" rel="external">使用Firebug进行爬取</a>：了解如何使用Firebug来爬取数据。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/leaks.html" target="_blank" rel="external">调试内存溢出</a>：了解如何查找并让您的爬虫避免内存泄露。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/media-pipeline.html" target="_blank" rel="external">Downloading and processing files and images</a>：下载与你的爬取的项目相关的文件和/或图像。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/ubuntu.html" target="_blank" rel="external">Ubuntu 软件包</a>：在Ubuntu下下载最新的Scrapy。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/deploy.html" target="_blank" rel="external">Deploying Spiders</a>：在生产环境中部署您的Scrapy项目。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/autothrottle.html" target="_blank" rel="external">自动限速(AutoThrottle)扩展</a>：根据负载(load)动态调节爬取速度。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/benchmarking.html" target="_blank" rel="external">Benchmarking</a>：在您的硬件平台上测试Scrapy的性能。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/jobs.html" target="_blank" rel="external">Jobs: 暂停，恢复爬虫</a>：学习如何停止和恢复爬虫</li>
+</ul>
+<h1 id="扩展Scrapy"><a href="#扩展Scrapy" class="headerlink" title="扩展Scrapy"></a>扩展Scrapy</h1><ul>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/architecture.html" target="_blank" rel="external">架构概览</a>：了解Scrapy架构。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/downloader-middleware.html" target="_blank" rel="external">下载器中间件(Downloader Middleware)</a>：自定义页面被请求及下载操作。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/spider-middleware.html" target="_blank" rel="external">Spider中间件(Middleware)</a>：自定义spider的输入与输出。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/extensions.html" target="_blank" rel="external">扩展(Extensions)</a>：提供您自定义的功能来扩展Scrapy</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/api.html" target="_blank" rel="external">核心API</a>：在extension(扩展)和middleware(中间件)使用api来扩展Scrapy的功能</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/signals.html" target="_blank" rel="external">信号(Signals)</a>：了解Scrapy如何命名版本以及API的稳定性。</li>
+<li><a href="http://usyiyi.cn/documents/scrapy_12/topics/exporters.html" target="_blank" rel="external">Item Exporters</a>：快速将您爬取到的item导出到文件中(XML, CSV等格式)</li>
+</ul>
+<hr>
+<p>参考链接：<a href="http://usyiyi.cn/documents/scrapy_12/topics/items.html" target="_blank" rel="external">http://usyiyi.cn/documents/scrapy_12/topics/items.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ovot91g2e.bkt.clouddn.com/Scrapy.jpeg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【官方文档】Django官方文档</title>
+    <link href="http://yoursite.com/2017/11/02/%E3%80%90%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E3%80%91Djang%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
+    <id>http://yoursite.com/2017/11/02/【官方文档】Djang官方文档/</id>
+    <published>2017-11-01T16:08:42.000Z</published>
+    <updated>2018-02-21T16:56:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ovot91g2e.bkt.clouddn.com/Django.jpeg" alt=""><br><a id="more"></a></p>
+<h1 id="基础搭建"><a href="#基础搭建" class="headerlink" title="基础搭建"></a>基础搭建</h1><ul>
+<li>从头开始： <a href="http://usyiyi.cn/documents/Django_111/intro/overview.html" target="_blank" rel="external">概述</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/install.html" target="_blank" rel="external">安装</a></li>
+<li>初级教程： <a href="http://usyiyi.cn/documents/Django_111/intro/tutorial01.html" target="_blank" rel="external">第1部分：请求和响应</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/tutorial02.html" target="_blank" rel="external">第2部分：模型和管理站点</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/tutorial03.html" target="_blank" rel="external">第3部分：视图和模板</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/tutorial04.html" target="_blank" rel="external">第4部分：表单和通用视图</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/tutorial05.html" target="_blank" rel="external">第5部分：测试</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/tutorial06.html" target="_blank" rel="external">第6部分：静态文件</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/tutorial07.html" target="_blank" rel="external">第7部分：自定义管理站点</a></li>
+<li>高级教程： <a href="http://usyiyi.cn/documents/Django_111/intro/reusable-apps.html" target="_blank" rel="external">如何编写可重复使用的应用程序</a> | <a href="http://usyiyi.cn/documents/Django_111/intro/contributing.html" target="_blank" rel="external">编写Django的第一个补丁</a></li>
+</ul>
+<h1 id="框架概念"><a href="#框架概念" class="headerlink" title="框架概念"></a>框架概念</h1><h2 id="模型层"><a href="#模型层" class="headerlink" title="模型层"></a>模型层</h2><blockquote>
+<p>模型层用于组织和操作Web应用的数据。</p>
+</blockquote>
+<ul>
+<li>模型： <a href="http://usyiyi.cn/documents/Django_111/topics/db/models.html" target="_blank" rel="external">模型简介</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/fields.html" target="_blank" rel="external">字段类型</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/indexes.html" target="_blank" rel="external">索引</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/options.html" target="_blank" rel="external">元选项</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/class.html" target="_blank" rel="external">模型类</a></li>
+<li>查询集： <a href="http://usyiyi.cn/documents/Django_111/topics/db/queries.html" target="_blank" rel="external">执行查询</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/querysets.html" target="_blank" rel="external">QuerySet方法参考</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/lookups.html" target="_blank" rel="external">查找表达式</a></li>
+<li>模型的实例： <a href="http://usyiyi.cn/documents/Django_111/ref/models/instances.html" target="_blank" rel="external">实例方法</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/relations.html" target="_blank" rel="external">访问关联对象</a></li>
+<li>迁移： <a href="http://usyiyi.cn/documents/Django_111/topics/migrations.html" target="_blank" rel="external">迁移简介</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/migration-operations.html" target="_blank" rel="external">操作参考</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/schema-editor.html" target="_blank" rel="external">模式编辑器</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/writing-migrations.html" target="_blank" rel="external">编写迁移</a></li>
+<li>高级： <a href="http://usyiyi.cn/documents/Django_111/topics/db/managers.html" target="_blank" rel="external">管理器</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/db/sql.html" target="_blank" rel="external">原始SQL</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/db/transactions.html" target="_blank" rel="external">事务</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/db/aggregation.html" target="_blank" rel="external">聚合</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/db/search.html" target="_blank" rel="external">搜索</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/custom-model-fields.html" target="_blank" rel="external">自定义字段</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/db/multi-db.html" target="_blank" rel="external">多个数据库</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/custom-lookups.html" target="_blank" rel="external">自定义查找</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/expressions.html" target="_blank" rel="external">查询表达式</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/conditional-expressions.html" target="_blank" rel="external">条件表达式</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/models/database-functions.html" target="_blank" rel="external">数据库函数</a></li>
+<li>其它： <a href="http://usyiyi.cn/documents/Django_111/ref/databases.html" target="_blank" rel="external">支持的数据库</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/legacy-databases.html" target="_blank" rel="external">旧数据库</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/initial-data.html" target="_blank" rel="external">提供初始数据</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/db/optimization.html" target="_blank" rel="external">优化数据库访问</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/contrib/postgres/index.html" target="_blank" rel="external">PostgreSQL具体功能</a></li>
+</ul>
+<h2 id="视图层"><a href="#视图层" class="headerlink" title="视图层"></a>视图层</h2><blockquote>
+<p>视图层用于封装负责处理用户请求及返回响应的逻辑</p>
+</blockquote>
+<ul>
+<li>基础： <a href="http://usyiyi.cn/documents/Django_111/topics/http/urls.html" target="_blank" rel="external">URL配置 </a>| <a href="http://usyiyi.cn/documents/Django_111/topics/http/views.html" target="_blank" rel="external">视图函数</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/http/shortcuts.html" target="_blank" rel="external">快捷函数</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/http/decorators.html" target="_blank" rel="external">装饰器</a></li>
+<li>参考： <a href="http://usyiyi.cn/documents/Django_111/ref/views.html" target="_blank" rel="external">内置视图</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/request-response.html" target="_blank" rel="external">请求/响应对象</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/template-response.html" target="_blank" rel="external">TemplateResponse对象</a></li>
+<li>文件上传： <a href="http://usyiyi.cn/documents/Django_111/topics/http/file-uploads.html" target="_blank" rel="external">概述</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/files/file.html" target="_blank" rel="external">文件对象</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/files/storage.html" target="_blank" rel="external">存储API</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/files.html" target="_blank" rel="external">管理文件</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/custom-file-storage.html" target="_blank" rel="external">自定义存储</a></li>
+<li>基于类的视图： <a href="http://usyiyi.cn/documents/Django_111/topics/class-based-views/index.html" target="_blank" rel="external">Overview</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/class-based-views/generic-display.html" target="_blank" rel="external">Built-in display views</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/class-based-views/generic-editing.html" target="_blank" rel="external">Built-in editing views</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/class-based-views/mixins.html" target="_blank" rel="external">Using mixins</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/class-based-views/index.html" target="_blank" rel="external">API reference</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/class-based-views/flattened-index.html" target="_blank" rel="external">Flattened index</a></li>
+<li>高级： <a href="http://usyiyi.cn/documents/Django_111/howto/outputting-csv.html" target="_blank" rel="external">生成CSV</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/outputting-pdf.html" target="_blank" rel="external">生成PDF</a></li>
+<li>中间件： <a href="http://usyiyi.cn/documents/Django_111/topics/http/middleware.html" target="_blank" rel="external">Overview</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/middleware.html" target="_blank" rel="external">Built-in middleware classes</a></li>
+</ul>
+<h2 id="模板层"><a href="#模板层" class="headerlink" title="模板层"></a>模板层</h2><blockquote>
+<p>模板层用于展示信息给用户</p>
+</blockquote>
+<ul>
+<li>基础： <a href="http://usyiyi.cn/documents/Django_111/topics/templates.html" target="_blank" rel="external">概述</a></li>
+<li>面向设计师： <a href="http://usyiyi.cn/documents/Django_111/ref/templates/language.html" target="_blank" rel="external">Language overview</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/templates/builtins.html" target="_blank" rel="external">Built-in tags and filters</a> |<a href="http://usyiyi.cn/documents/Django_111/ref/contrib/humanize.html" target="_blank" rel="external"> Humanization</a></li>
+<li>面向程序员： <a href="http://usyiyi.cn/documents/Django_111/ref/templates/api.html" target="_blank" rel="external">模板API</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/custom-template-tags.html" target="_blank" rel="external">自定义标签和过滤器</a></li>
+</ul>
+<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><blockquote>
+<p>Django是一个可便捷地创建表单并操作数据的多功能框架</p>
+</blockquote>
+<ul>
+<li>基础知识： <a href="http://usyiyi.cn/documents/Django_111/topics/forms/index.html" target="_blank" rel="external">概述</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/forms/api.html" target="_blank" rel="external">表单API</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/forms/fields.html" target="_blank" rel="external">内置字段</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/forms/widgets.html" target="_blank" rel="external">内置小部件</a></li>
+<li>高级： <a href="http://usyiyi.cn/documents/Django_111/topics/forms/modelforms.html" target="_blank" rel="external">模型的表单</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/forms/media.html" target="_blank" rel="external">集成媒体</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/forms/formsets.html" target="_blank" rel="external">Formsets</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/forms/validation.html" target="_blank" rel="external">定制验证</a></li>
+</ul>
+<h1 id="框架开发常用组件与工具"><a href="#框架开发常用组件与工具" class="headerlink" title="框架开发常用组件与工具"></a>框架开发常用组件与工具</h1><ul>
+<li>设置： <a href="http://usyiyi.cn/documents/Django_111/topics/settings.html" target="_blank" rel="external">概述</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/settings.html" target="_blank" rel="external">完整设置列表</a></li>
+<li>应用： <a href="http://usyiyi.cn/documents/Django_111/ref/applications.html" target="_blank" rel="external">概述</a></li>
+<li>异常： <a href="http://usyiyi.cn/documents/Django_111/ref/exceptions.html" target="_blank" rel="external">概述</a></li>
+<li>django-admin 和 manage.py: <a href="http://usyiyi.cn/documents/Django_111/ref/django-admin.html" target="_blank" rel="external">Overview</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/custom-management-commands.html" target="_blank" rel="external">Adding custom commands</a></li>
+<li>测试： <a href="http://usyiyi.cn/documents/Django_111/topics/testing/index.html" target="_blank" rel="external">Introduction</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/testing/overview.html" target="_blank" rel="external">Writing and running tests</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/testing/tools.html" target="_blank" rel="external">Included testing tools</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/testing/advanced.html" target="_blank" rel="external">Advanced topics</a></li>
+<li>部署： <a href="http://usyiyi.cn/documents/Django_111/howto/deployment/index.html" target="_blank" rel="external">概述</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/deployment/wsgi/index.html" target="_blank" rel="external">WSGI服务器</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/static-files/deployment.html" target="_blank" rel="external">部署静态文件</a> | <a href="http://usyiyi.cn/documents/Django_111/howto/error-reporting.html" target="_blank" rel="external">通过电子邮件跟踪代码错误</a></li>
+</ul>
+<h1 id="框架开发不常用的组件与工具"><a href="#框架开发不常用的组件与工具" class="headerlink" title="框架开发不常用的组件与工具"></a>框架开发不常用的组件与工具</h1><ul>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/conditional-view-processing.html" target="_blank" rel="external">按需内容处理</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/contenttypes.html" target="_blank" rel="external">内容类型和泛型的关系</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/flatpages.html" target="_blank" rel="external">Flatpages 数据浏览</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/redirects.html" target="_blank" rel="external">重定向</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/signals.html" target="_blank" rel="external">信号</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/checks.html" target="_blank" rel="external">系统检查框架</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/sites.html" target="_blank" rel="external">“Sites” 框架</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/unicode.html" target="_blank" rel="external">Django中的Unicode编码</a></li>
+</ul>
+<h1 id="Web应用程序常用组件与工具"><a href="#Web应用程序常用组件与工具" class="headerlink" title="Web应用程序常用组件与工具"></a>Web应用程序常用组件与工具</h1><ul>
+<li><p>Admin模块：<a href="">管理站点</a> | <a href="">管理操作</a> | <a href="">管理文档生成器</a></p>
+</li>
+<li><p>用户认证系统： <a href="http://usyiyi.cn/documents/Django_111/topics/auth/index.html" target="_blank" rel="external">Overview</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/auth/default.html" target="_blank" rel="external">Using the authentication system</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/auth/passwords.html" target="_blank" rel="external">Password management</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/auth/customizing.html" target="_blank" rel="external">Customizing authentication</a> | <a href="http://usyiyi.cn/documents/Django_111/ref/contrib/auth.html" target="_blank" rel="external">API Reference</a></p>
+</li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/cache.html" target="_blank" rel="external">缓存</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/logging.html" target="_blank" rel="external">日志</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/email.html" target="_blank" rel="external">发送邮件</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/syndication.html" target="_blank" rel="external">组织 feeds (RSS/Atom)</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/pagination.html" target="_blank" rel="external">分页</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/messages.html" target="_blank" rel="external">消息框架</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/serialization.html" target="_blank" rel="external">序列化</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/http/sessions.html" target="_blank" rel="external">会话</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/sitemaps.html" target="_blank" rel="external">网站地图</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/staticfiles.html" target="_blank" rel="external">静态文件处理</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/validators.html" target="_blank" rel="external">数据验证</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/contrib/gis/index.html" target="_blank" rel="external">GeoDjango</a></li>
+</ul>
+<h1 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h1><blockquote>
+<p>Django提供的保护手段和机制</p>
+</blockquote>
+<ul>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/security.html" target="_blank" rel="external">安全概述</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/releases/security.html" target="_blank" rel="external">Django中的公开的安全问题</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/clickjacking.html" target="_blank" rel="external">点击劫持保护</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/csrf.html" target="_blank" rel="external">伪造跨站请求保护</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/signing.html" target="_blank" rel="external">加密签名</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/ref/middleware.html#security-middleware" target="_blank" rel="external">安全中间件</a></li>
+</ul>
+<h1 id="性能与优化"><a href="#性能与优化" class="headerlink" title="性能与优化"></a>性能与优化</h1><p><a href="http://usyiyi.cn/documents/Django_111/topics/performance.html" target="_blank" rel="external">性能和优化概述</a></p>
+<h1 id="国际化与本土化"><a href="#国际化与本土化" class="headerlink" title="国际化与本土化"></a>国际化与本土化</h1><ul>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/i18n/index.html" target="_blank" rel="external">Overview</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/i18n/translation.html" target="_blank" rel="external">Internationalization</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/i18n/translation.html#how-to-create-language-files" target="_blank" rel="external">Localization</a> | <a href="http://usyiyi.cn/documents/Django_111/topics/i18n/formatting.html" target="_blank" rel="external">Localized Web UI formatting and form input</a></li>
+<li><a href="">时区</a></li>
+</ul>
+<h1 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h1><ul>
+<li><a href="http://usyiyi.cn/documents/Django_111/howto/jython.html" target="_blank" rel="external">Jython 支持</a></li>
+<li><a href="http://usyiyi.cn/documents/Django_111/topics/python3.html" target="_blank" rel="external">Python 3 兼容性</a></li>
+</ul>
+<h1 id="Django开源项目"><a href="#Django开源项目" class="headerlink" title="Django开源项目"></a>Django开源项目</h1><ul>
+<li>社区 <a href="http://usyiyi.cn/documents/Django_111/internals/contributing/index.html" target="_blank" rel="external">How to get involved</a> |<a href="http://usyiyi.cn/documents/Django_111/internals/release-process.html" target="_blank" rel="external"> The release process</a> | <a href="http://usyiyi.cn/documents/Django_111/internals/organization.html" target="_blank" rel="external">Team organization</a> | <a href="http://usyiyi.cn/documents/Django_111/internals/git.html" target="_blank" rel="external">The Django source code repository</a> | <a href="http://usyiyi.cn/documents/Django_111/internals/security.html" target="_blank" rel="external">Security policies</a> | <a href="http://usyiyi.cn/documents/Django_111/internals/mailing-lists.html" target="_blank" rel="external">Mailing lists</a></li>
+<li>设计理念︰ <a href="http://usyiyi.cn/documents/Django_111/misc/design-philosophies.html" target="_blank" rel="external">概述</a></li>
+<li>文档： <a href="http://usyiyi.cn/documents/Django_111/internals/contributing/writing-documentation.html" target="_blank" rel="external">关于本文档</a></li>
+<li>第三方发行： <a href="http://usyiyi.cn/documents/Django_111/misc/distributions.html" target="_blank" rel="external">概述</a></li>
+<li>Django版本迁移 <a href="http://usyiyi.cn/documents/Django_111/misc/api-stability.html" target="_blank" rel="external">API stability</a> | <a href="http://usyiyi.cn/documents/Django_111/releases/index.html" target="_blank" rel="external">Release notes and upgrading instructions</a> | <a href="http://usyiyi.cn/documents/Django_111/internals/deprecation.html" target="_blank" rel="external">Deprecation Timeline</a></li>
+</ul>
+<hr>
+<p>参考链接：<a href="http://usyiyi.cn/translate/Django_111/index.html" target="_blank" rel="external">http://usyiyi.cn/translate/Django_111/index.html</a><br>名词索引：<a href="http://usyiyi.cn/translate/Django_111/genindex.html" target="_blank" rel="external">http://usyiyi.cn/translate/Django_111/genindex.html</a><br>模块索引：<a href="http://usyiyi.cn/translate/Django_111/py-modindex.html" target="_blank" rel="external">http://usyiyi.cn/translate/Django_111/py-modindex.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ovot91g2e.bkt.clouddn.com/Django.jpeg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【笔记】Pycharm的使用</title>
+    <link href="http://yoursite.com/2017/10/15/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91Pycharm%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2017/10/15/【笔记】Pycharm的使用/</id>
+    <published>2017-10-14T16:06:56.000Z</published>
+    <updated>2018-02-21T17:43:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Pycharm软件的使用技巧总结<br><a id="more"></a></p>
+<h1 id="使用-Git-进行代码版本控制"><a href="#使用-Git-进行代码版本控制" class="headerlink" title="使用 Git 进行代码版本控制"></a>使用 Git 进行代码版本控制</h1><blockquote>
+<p>点击播放双击窗口放大<br><div class="owl-media owl-video owl-tencent"><embed src="http://static.video.qq.com/TPout.swf?vid=l0377krelp6&auto=0" type="application/x-shockwave-flash" quality="high" allowfullscreen="true" align="middle" allowscriptaccess="always"></div></p>
+</blockquote>
+<h1 id="使用-MacDown-作为外部编辑器"><a href="#使用-MacDown-作为外部编辑器" class="headerlink" title="使用 MacDown 作为外部编辑器"></a>使用 MacDown 作为外部编辑器</h1><p>参考链接：<a href="https://my.oschina.net/seraphimL/blog/760936" target="_blank" rel="external">https://my.oschina.net/seraphimL/blog/760936</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Pycharm软件的使用技巧总结&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="软件工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Pycharm" scheme="http://yoursite.com/tags/Pycharm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql的安装与使用</title>
+    <link href="http://yoursite.com/2017/10/15/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91Mysql%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2017/10/15/【笔记】Mysql的安装与使用/</id>
+    <published>2017-10-14T16:05:07.000Z</published>
+    <updated>2018-02-21T16:53:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ouyxzbi9n.bkt.clouddn.com/MySQL.jpg" alt=""><br><a id="more"></a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>MAC：<a href="http://www.jianshu.com/p/a8e4068a7a8a" target="_blank" rel="external">http://www.jianshu.com/p/a8e4068a7a8a</a></p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h2><ol>
+<li>创建用户<br><code>create user 用户名@IP地址 identified by &#39;密码&#39;;</code></li>
+<li>删除用户<br><code>drop user 用户名@IP地址;</code></li>
+<li>修改用户<br><code>rename user 用户名@IP地址 to 新用户名@IP地址;</code></li>
+<li>修改密码<br><code>set password for 用户名@IP地址 = Password(新密码)</code></li>
+</ol>
+<p>例1:<br>增加一个用户test1密码为abc，让他可以在任何主机上登录，并对所有数据库有查询、插入、修改、删除的权限。<br><code>grant select,insert,update,delete on *.* to test1@&quot;%&quot; Identified by &quot;abc&quot;;</code><br>例2:<br>增加一个用户test2密码为abc, 让他只可以在localhost上登录，并可以对数据库mydb进行查询、插入、修改、删除的操作。<br><code>grant select,insert,update,delete on mydb.* to test2@localhost identified by &quot;abc&quot;</code><br>例子3<br>增加一个用户custom，他能从主机localhost、server.domain和whitehouse.gov连接。他只想要从 localhost存取bankaccount数据库，从whitehouse.gov存取expenses数据库和从所有3台主机存取customer 数据库。他想要从所有3台主机上使用口令stupid。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">shell&gt; mysql --user=root mysql </div><div class="line">mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON bankaccount.* TO custom@localhost IDENTIFIED BY &apos;stupid&apos;; </div><div class="line">mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON expenses.* TO custom@whitehouse.gov IDENTIFIED BY &apos;stupid&apos;; </div><div class="line">mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON customer.* TO custom@&apos;%&apos; IDENTIFIED BY &apos;stupid&apos;;</div></pre></td></tr></table></figure>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
+<li>数值</li>
+<li>字符串</li>
+<li>二进制数据</li>
+<li>时间</li>
+<li>集合</li>
+</ol>
+<h2 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h2><h3 id="服务器级别"><a href="#服务器级别" class="headerlink" title="服务器级别"></a>服务器级别</h3><ol>
+<li>连接服务器<br><code>mysql -u用户名 -hMySQL服务器地址 -p用户密码</code><br>例：<code>shell&gt; mysql -uroot -hlocalhost -p11111111</code>    </li>
+<li>断开服务器<br>例：<code>mysql&gt; quit;</code></li>
+<li>停止MySQL服务<br>例：<code>shell&gt; net stop mysql</code>    </li>
+<li>启动MySQL服务<br>例：<code>shell&gt; net start mysql</code></li>
+</ol>
+<h3 id="数据库级别"><a href="#数据库级别" class="headerlink" title="数据库级别"></a>数据库级别</h3><ol>
+<li>显示所有的数据库<br><code>SHOW DATABASES;</code>  </li>
+<li>创建数据库<br><code>CREATE DATABASE 数据库名称 DEFAULT CHARSET utf8 COLLATE utf8_general_ci;</code>  </li>
+<li>使用数据库<br><code>USE 数据库名称;</code>    </li>
+<li>删除数据库<br><code>mysql&gt; drop database 数据库名称;</code>  </li>
+</ol>
+<h3 id="表级别"><a href="#表级别" class="headerlink" title="表级别"></a>表级别</h3><ol>
+<li>显示具体数据库所有的表<br><code>show tables;</code>    </li>
+<li><p>查看表结构<br><code>describe 数据表名</code><br><code>show columns from 数据库名.数据表名;</code><br>例：<code>mysql&gt; describe student;</code><br>例：<code>mysql&gt; show columns from student.name;</code>    </p>
+</li>
+<li><p>创建表<br><code>create table 表名(字段名1 字段1数据类型, 字段名2 字段2数据类型);</code><br>例：<code>mysql&gt; create table tb1(nid int, name varchar(10));</code>   </p>
+</li>
+<li><p>修改表结构<br><code>alter table 数据表名 相关操作</code><br>例：<code>mysql&gt; alter table student add email varchar(50) not null, modify passwd varchar(40);//添加一个新字段email,类型为varchar(50),not null,将字段passwd的类型改为varchar(40)</code>      </p>
+</li>
+<li>重命名表<br><code>rename table 旧表名 to 新表名;</code><br>例：<code>mysql&gt; rename table student to students;</code>  </li>
+<li>删除表<br><code>drop table 表名;</code>    </li>
+<li>清空表内容(速度慢)<br><code>delete from 表名;</code>    </li>
+<li>清空表内容(速度块，自增回到原点)<br><code>truncate table 表名;</code>  </li>
+</ol>
+<h3 id="数据行级别"><a href="#数据行级别" class="headerlink" title="数据行级别"></a>数据行级别</h3><ol>
+<li>增<br><code>insert into 表名(字段名...) values(字段值1),(字段值2);</code><br>例：<code>mysql&gt; insert into student(name,age) values(&#39;alex&#39;, 18),(&#39;eric&#39;, 19),(&#39;eric&#39;, 19);</code>    </li>
+<li>删<br><code>delete from 数据表名 where 条件</code><br>例：<code>mysql&gt; delete from student where name=&#39;eric&#39;;   //一般条件是指定id删除的,没有where条件则删除整个表</code>  </li>
+<li>改<br><code>update 数据表名 set 字段名1=新的值1,字段名2=新的值2,.. [where 条件];</code><br><code>update student set age=&#39;18&#39;,email=&#39;15707950645@163.com&#39; where name=&#39;alex&#39;;</code>  </li>
+<li>查</li>
+<li>连表操作<br><code>select * form a,b where a.x = b.o</code><br><code>select * from a LEFT OUTER JOIN b ON a.x = b.o</code><br><code>select * from a inner JOIN b ON a.x = b.o</code></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ouyxzbi9n.bkt.clouddn.com/MySQL.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【内省】读书计划</title>
+    <link href="http://yoursite.com/2017/10/05/%E3%80%90%E5%86%85%E7%9C%81%E3%80%91%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/"/>
+    <id>http://yoursite.com/2017/10/05/【内省】读书计划/</id>
+    <published>2017-10-05T02:47:07.000Z</published>
+    <updated>2018-02-21T17:22:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://ouyxzbi9n.bkt.clouddn.com/%E9%98%85%E8%AF%BB%E6%A0%BC%E8%A8%80.jpg" alt=""><br><a id="more"></a></p>
+<h1 id="读书计划"><a href="#读书计划" class="headerlink" title="读书计划"></a>读书计划</h1><table>
+<thead>
+<tr>
+<th style="text-align:left">年度</th>
+<th style="text-align:left">领域</th>
+<th style="text-align:left">时间</th>
+<th style="text-align:left">书籍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2017</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">历史</td>
+<td style="text-align:left">10.1~11.15</td>
+<td style="text-align:left">《剑桥中国史套装全11卷》</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">历史</td>
+<td style="text-align:left">11.15~11.30</td>
+<td style="text-align:left">《晚清七十年》</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">人物传记</td>
+<td style="text-align:left">12.1~12.30</td>
+<td style="text-align:left">《毛泽东传》《邓小平时代》</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://ouyxzbi9n.bkt.clouddn.com/%E9%98%85%E8%AF%BB%E6%A0%BC%E8%A8%80.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="生活札记" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/%E7%94%9F%E6%B4%BB%E6%9C%AD%E8%AE%B0/"/>
+    
+    
+      <category term="思考总结" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+</feed>
