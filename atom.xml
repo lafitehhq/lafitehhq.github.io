@@ -5,10 +5,98 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-21T18:42:46.000Z</updated>
+  <updated>2018-02-24T16:47:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【汇总】前端知识体系之JavaScript（下）</title>
+    <link href="http://yoursite.com/2018/02/25/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E4%B9%8BJavaScript%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/25/【汇总】前端知识体系之JavaScript（下）/</id>
+    <published>2018-02-24T16:02:55.000Z</published>
+    <updated>2018-02-24T16:47:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】前端知识体系之JavaScript<br><a id="more"></a></p>
+<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E5%8F%98%E9%87%8F%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt=""></p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E6%95%B0%E7%BB%84%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt=""></p>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E8%BF%90%E7%AE%97%E7%AC%A6%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.gif" alt=""></p>
+<h2 id="流程语句"><a href="#流程语句" class="headerlink" title="流程语句"></a>流程语句</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E6%B5%81%E7%A8%8B%E8%AF%AD%E5%8F%A5%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.gif" alt=""></p>
+<h2 id="函数基础"><a href="#函数基础" class="headerlink" title="函数基础"></a>函数基础</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.gif" alt=""></p>
+<h2 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.gif" alt=""></p>
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.gif" alt=""></p>
+<h2 id="基础DOM操作"><a href="#基础DOM操作" class="headerlink" title="基础DOM操作"></a>基础DOM操作</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/JavaScript%E5%9F%BA%E7%A1%80DOM%E6%93%8D%E4%BD%9C%20%20%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.gif" alt=""></p>
+<h1 id="知识点详解"><a href="#知识点详解" class="headerlink" title="知识点详解"></a>知识点详解</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;【汇总】前端知识体系之JavaScript&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】前端知识体系之CSS（中）</title>
+    <link href="http://yoursite.com/2018/02/25/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E4%B9%8BCSS%EF%BC%88%E4%B8%AD%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/25/【汇总】前端知识体系之CSS（中）/</id>
+    <published>2018-02-24T16:01:45.000Z</published>
+    <updated>2018-02-24T16:13:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】前端知识体系之CSS<br><a id="more"></a></p>
+<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="自定义样式表"><a href="#自定义样式表" class="headerlink" title="自定义样式表"></a>自定义样式表</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/1%E3%80%81%E4%BD%BF%E7%94%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E5%BC%8F.png" alt=""></p>
+<h2 id="使用CSS样式的方式"><a href="#使用CSS样式的方式" class="headerlink" title="使用CSS样式的方式"></a>使用CSS样式的方式</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/2%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F%E8%A1%A8.png" alt=""></p>
+<h2 id="常见属性"><a href="#常见属性" class="headerlink" title="常见属性"></a>常见属性</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/3%E3%80%81%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7.png" alt=""></p>
+<h2 id="DIV-CSS布局"><a href="#DIV-CSS布局" class="headerlink" title="DIV+CSS布局"></a>DIV+CSS布局</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/4%E3%80%81DIV%20+%20CSS%20%E5%B8%83%E5%B1%80.png" alt=""> </p>
+<h1 id="知识点详解"><a href="#知识点详解" class="headerlink" title="知识点详解"></a>知识点详解</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;【汇总】前端知识体系之CSS&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【汇总】前端知识体系之HTML（上）</title>
+    <link href="http://yoursite.com/2018/02/25/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E4%B9%8BHTML%EF%BC%88%E4%B8%8A%EF%BC%89/"/>
+    <id>http://yoursite.com/2018/02/25/【汇总】前端知识体系之HTML（上）/</id>
+    <published>2018-02-24T16:01:25.000Z</published>
+    <updated>2018-02-24T16:16:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>【汇总】前端知识体系之HTML<br><a id="more"></a></p>
+<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/html%20%E8%AF%A6%E7%BB%86%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png" alt=""></p>
+<h1 id="知识点详解"><a href="#知识点详解" class="headerlink" title="知识点详解"></a>知识点详解</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;【汇总】前端知识体系之HTML&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Html" scheme="http://yoursite.com/tags/Html/"/>
+    
+  </entry>
   
   <entry>
     <title>【汇总】机器学习基础之「数据挖掘篇」（下）</title>
@@ -843,169 +931,6 @@ zip -r temp.zip temp #如果要压缩的是个目录，则要加上-r参数，�
     
     
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【笔记】Pycharm的使用</title>
-    <link href="http://yoursite.com/2017/10/15/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91Pycharm%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/10/15/【笔记】Pycharm的使用/</id>
-    <published>2017-10-14T16:06:56.000Z</published>
-    <updated>2018-02-21T17:43:49.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Pycharm软件的使用技巧总结<br><a id="more"></a></p>
-<h1 id="使用-Git-进行代码版本控制"><a href="#使用-Git-进行代码版本控制" class="headerlink" title="使用 Git 进行代码版本控制"></a>使用 Git 进行代码版本控制</h1><blockquote>
-<p>点击播放双击窗口放大<br><div class="owl-media owl-video owl-tencent"><embed src="http://static.video.qq.com/TPout.swf?vid=l0377krelp6&auto=0" type="application/x-shockwave-flash" quality="high" allowfullscreen="true" align="middle" allowscriptaccess="always"></div></p>
-</blockquote>
-<h1 id="使用-MacDown-作为外部编辑器"><a href="#使用-MacDown-作为外部编辑器" class="headerlink" title="使用 MacDown 作为外部编辑器"></a>使用 MacDown 作为外部编辑器</h1><p>参考链接：<a href="https://my.oschina.net/seraphimL/blog/760936" target="_blank" rel="external">https://my.oschina.net/seraphimL/blog/760936</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Pycharm软件的使用技巧总结&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="软件工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="Pycharm" scheme="http://yoursite.com/tags/Pycharm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql的安装与使用</title>
-    <link href="http://yoursite.com/2017/10/15/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91Mysql%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/10/15/【笔记】Mysql的安装与使用/</id>
-    <published>2017-10-14T16:05:07.000Z</published>
-    <updated>2018-02-21T16:53:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://ouyxzbi9n.bkt.clouddn.com/MySQL.jpg" alt=""><br><a id="more"></a></p>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>MAC：<a href="http://www.jianshu.com/p/a8e4068a7a8a" target="_blank" rel="external">http://www.jianshu.com/p/a8e4068a7a8a</a></p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h2><ol>
-<li>创建用户<br><code>create user 用户名@IP地址 identified by &#39;密码&#39;;</code></li>
-<li>删除用户<br><code>drop user 用户名@IP地址;</code></li>
-<li>修改用户<br><code>rename user 用户名@IP地址 to 新用户名@IP地址;</code></li>
-<li>修改密码<br><code>set password for 用户名@IP地址 = Password(新密码)</code></li>
-</ol>
-<p>例1:<br>增加一个用户test1密码为abc，让他可以在任何主机上登录，并对所有数据库有查询、插入、修改、删除的权限。<br><code>grant select,insert,update,delete on *.* to test1@&quot;%&quot; Identified by &quot;abc&quot;;</code><br>例2:<br>增加一个用户test2密码为abc, 让他只可以在localhost上登录，并可以对数据库mydb进行查询、插入、修改、删除的操作。<br><code>grant select,insert,update,delete on mydb.* to test2@localhost identified by &quot;abc&quot;</code><br>例子3<br>增加一个用户custom，他能从主机localhost、server.domain和whitehouse.gov连接。他只想要从 localhost存取bankaccount数据库，从whitehouse.gov存取expenses数据库和从所有3台主机存取customer 数据库。他想要从所有3台主机上使用口令stupid。  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">shell&gt; mysql --user=root mysql </div><div class="line">mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON bankaccount.* TO custom@localhost IDENTIFIED BY &apos;stupid&apos;; </div><div class="line">mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON expenses.* TO custom@whitehouse.gov IDENTIFIED BY &apos;stupid&apos;; </div><div class="line">mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON customer.* TO custom@&apos;%&apos; IDENTIFIED BY &apos;stupid&apos;;</div></pre></td></tr></table></figure>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
-<li>数值</li>
-<li>字符串</li>
-<li>二进制数据</li>
-<li>时间</li>
-<li>集合</li>
-</ol>
-<h2 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h2><h3 id="服务器级别"><a href="#服务器级别" class="headerlink" title="服务器级别"></a>服务器级别</h3><ol>
-<li>连接服务器<br><code>mysql -u用户名 -hMySQL服务器地址 -p用户密码</code><br>例：<code>shell&gt; mysql -uroot -hlocalhost -p11111111</code>    </li>
-<li>断开服务器<br>例：<code>mysql&gt; quit;</code></li>
-<li>停止MySQL服务<br>例：<code>shell&gt; net stop mysql</code>    </li>
-<li>启动MySQL服务<br>例：<code>shell&gt; net start mysql</code></li>
-</ol>
-<h3 id="数据库级别"><a href="#数据库级别" class="headerlink" title="数据库级别"></a>数据库级别</h3><ol>
-<li>显示所有的数据库<br><code>SHOW DATABASES;</code>  </li>
-<li>创建数据库<br><code>CREATE DATABASE 数据库名称 DEFAULT CHARSET utf8 COLLATE utf8_general_ci;</code>  </li>
-<li>使用数据库<br><code>USE 数据库名称;</code>    </li>
-<li>删除数据库<br><code>mysql&gt; drop database 数据库名称;</code>  </li>
-</ol>
-<h3 id="表级别"><a href="#表级别" class="headerlink" title="表级别"></a>表级别</h3><ol>
-<li>显示具体数据库所有的表<br><code>show tables;</code>    </li>
-<li><p>查看表结构<br><code>describe 数据表名</code><br><code>show columns from 数据库名.数据表名;</code><br>例：<code>mysql&gt; describe student;</code><br>例：<code>mysql&gt; show columns from student.name;</code>    </p>
-</li>
-<li><p>创建表<br><code>create table 表名(字段名1 字段1数据类型, 字段名2 字段2数据类型);</code><br>例：<code>mysql&gt; create table tb1(nid int, name varchar(10));</code>   </p>
-</li>
-<li><p>修改表结构<br><code>alter table 数据表名 相关操作</code><br>例：<code>mysql&gt; alter table student add email varchar(50) not null, modify passwd varchar(40);//添加一个新字段email,类型为varchar(50),not null,将字段passwd的类型改为varchar(40)</code>      </p>
-</li>
-<li>重命名表<br><code>rename table 旧表名 to 新表名;</code><br>例：<code>mysql&gt; rename table student to students;</code>  </li>
-<li>删除表<br><code>drop table 表名;</code>    </li>
-<li>清空表内容(速度慢)<br><code>delete from 表名;</code>    </li>
-<li>清空表内容(速度块，自增回到原点)<br><code>truncate table 表名;</code>  </li>
-</ol>
-<h3 id="数据行级别"><a href="#数据行级别" class="headerlink" title="数据行级别"></a>数据行级别</h3><ol>
-<li>增<br><code>insert into 表名(字段名...) values(字段值1),(字段值2);</code><br>例：<code>mysql&gt; insert into student(name,age) values(&#39;alex&#39;, 18),(&#39;eric&#39;, 19),(&#39;eric&#39;, 19);</code>    </li>
-<li>删<br><code>delete from 数据表名 where 条件</code><br>例：<code>mysql&gt; delete from student where name=&#39;eric&#39;;   //一般条件是指定id删除的,没有where条件则删除整个表</code>  </li>
-<li>改<br><code>update 数据表名 set 字段名1=新的值1,字段名2=新的值2,.. [where 条件];</code><br><code>update student set age=&#39;18&#39;,email=&#39;15707950645@163.com&#39; where name=&#39;alex&#39;;</code>  </li>
-<li>查</li>
-<li>连表操作<br><code>select * form a,b where a.x = b.o</code><br><code>select * from a LEFT OUTER JOIN b ON a.x = b.o</code><br><code>select * from a inner JOIN b ON a.x = b.o</code></li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://ouyxzbi9n.bkt.clouddn.com/MySQL.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
-    
-    
-      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【内省】读书计划</title>
-    <link href="http://yoursite.com/2017/10/05/%E3%80%90%E5%86%85%E7%9C%81%E3%80%91%E8%AF%BB%E4%B9%A6%E8%AE%A1%E5%88%92/"/>
-    <id>http://yoursite.com/2017/10/05/【内省】读书计划/</id>
-    <published>2017-10-05T02:47:07.000Z</published>
-    <updated>2018-02-21T17:22:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://ouyxzbi9n.bkt.clouddn.com/%E9%98%85%E8%AF%BB%E6%A0%BC%E8%A8%80.jpg" alt=""><br><a id="more"></a></p>
-<h1 id="读书计划"><a href="#读书计划" class="headerlink" title="读书计划"></a>读书计划</h1><table>
-<thead>
-<tr>
-<th style="text-align:left">年度</th>
-<th style="text-align:left">领域</th>
-<th style="text-align:left">时间</th>
-<th style="text-align:left">书籍</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">2017</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-<td style="text-align:left">-</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">历史</td>
-<td style="text-align:left">10.1~11.15</td>
-<td style="text-align:left">《剑桥中国史套装全11卷》</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">历史</td>
-<td style="text-align:left">11.15~11.30</td>
-<td style="text-align:left">《晚清七十年》</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left">人物传记</td>
-<td style="text-align:left">12.1~12.30</td>
-<td style="text-align:left">《毛泽东传》《邓小平时代》</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://ouyxzbi9n.bkt.clouddn.com/%E9%98%85%E8%AF%BB%E6%A0%BC%E8%A8%80.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-      <category term="生活札记" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/%E7%94%9F%E6%B4%BB%E6%9C%AD%E8%AE%B0/"/>
-    
-    
-      <category term="思考总结" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   

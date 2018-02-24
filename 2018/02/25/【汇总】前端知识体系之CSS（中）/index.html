@@ -3,23 +3,31 @@
 <head>
   <meta charset="utf-8">
   
-  <title>About🙄 | 海球的博客</title>
+  <title>【汇总】前端知识体系之css（中） | 海球的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="CSS" />
   
   
   
-  <meta name="description" content="关于我爱上编程的Python的工程师。思维导图超级迷弟。梦想是从事与数据与AI有关的职业。 联系我如果有对博客内容的疑问/纠错/补充，请直接在博文当前页下方评论区留言，方便所有朋友交流学习；如果需要深度的课题/学习/思想交流，欢迎大家给我发送邮件；如果有大神莅临小站，觉得我还不错，可以戳页面下方的邮箱联系我哦~感谢ing~ 关于本站用思维导图分享我学习以及思考的一切。对过往博文，我也会不定期更新，">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  
+  <meta name="description" content="【汇总】前端知识体系之CSS">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【汇总】前端知识体系之CSS（中）">
+<meta property="og:url" content="http://yoursite.com/2018/02/25/【汇总】前端知识体系之CSS（中）/index.html">
 <meta property="og:site_name" content="海球的博客">
-<meta property="og:description" content="关于我爱上编程的Python的工程师。思维导图超级迷弟。梦想是从事与数据与AI有关的职业。 联系我如果有对博客内容的疑问/纠错/补充，请直接在博文当前页下方评论区留言，方便所有朋友交流学习；如果需要深度的课题/学习/思想交流，欢迎大家给我发送邮件；如果有大神莅临小站，觉得我还不错，可以戳页面下方的邮箱联系我哦~感谢ing~ 关于本站用思维导图分享我学习以及思考的一切。对过往博文，我也会不定期更新，">
+<meta property="og:description" content="【汇总】前端知识体系之CSS">
 <meta property="og:locale" content="de">
-<meta property="og:updated_time" content="2018-02-24T16:58:59.000Z">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/1%E3%80%81%E4%BD%BF%E7%94%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E5%BC%8F.png">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/2%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F%E8%A1%A8.png">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/3%E3%80%81%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7.png">
+<meta property="og:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/4%E3%80%81DIV%20+%20CSS%20%E5%B8%83%E5%B1%80.png">
+<meta property="og:updated_time" content="2018-02-24T16:13:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="关于我爱上编程的Python的工程师。思维导图超级迷弟。梦想是从事与数据与AI有关的职业。 联系我如果有对博客内容的疑问/纠错/补充，请直接在博文当前页下方评论区留言，方便所有朋友交流学习；如果需要深度的课题/学习/思想交流，欢迎大家给我发送邮件；如果有大神莅临小站，觉得我还不错，可以戳页面下方的邮箱联系我哦~感谢ing~ 关于本站用思维导图分享我学习以及思考的一切。对过往博文，我也会不定期更新，">
+<meta name="twitter:title" content="【汇总】前端知识体系之CSS（中）">
+<meta name="twitter:description" content="【汇总】前端知识体系之CSS">
+<meta name="twitter:image" content="http://ovot91g2e.bkt.clouddn.com/PDF/1%E3%80%81%E4%BD%BF%E7%94%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E5%BC%8F.png">
   
 
   
@@ -54,8 +62,6 @@
   
 
   
-    <link rel="stylesheet" href="/css/archive.css" >
-  
   
   
     <link rel="stylesheet" href="/css/vdonate.css" >
@@ -65,7 +71,7 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -88,7 +94,7 @@
             
               <a class="brand" style="
                  margin-top: 0px;"  
-                 >
+                href="#" data-toggle="modal" data-target="#myModal" >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.JPG">
               </a>
             
@@ -154,19 +160,12 @@
 </header>
 
 
-  <div style="background:#fff;width: 100%;">
-
-      <div style="max-height:600px; overflow: hidden;">
-        <img width="100%" alt="Hike News" src="/css/images/pose.jpg">
-      </div>
-  </div>
-
 
       
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="page-"  class="article article-type-page" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-【汇总】前端知识体系之CSS（中）" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
 
   <div id="articleInner" class="article-inner">
     
@@ -175,7 +174,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      About
+      【汇总】前端知识体系之CSS（中）
     </h1>
   
 
@@ -183,16 +182,30 @@
     
     <div class="article-meta">
       
+	<a href="/2018/02/25/【汇总】前端知识体系之CSS（中）/" class="article-date">
+	  <time datetime="2018-02-24T16:01:45.000Z" itemprop="datePublished">2018-02-25</time>
+	</a>
+
       
+    <a class="article-category-link" href="/categories/工作/">工作</a><a class="article-category-link" href="/categories/工作/编程之魅/">编程之魅</a>
+
       
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         
-        <h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>爱上编程的Python的工程师。<br>思维导图超级迷弟。<br>梦想是从事与数据与AI有关的职业。</p>
-<h1 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h1><p>如果有对博客内容的疑问/纠错/补充，请直接在博文当前页下方评论区留言，方便所有朋友交流学习；<br>如果需要深度的课题/学习/思想交流，欢迎大家给我发送邮件；<br>如果有大神莅临小站，觉得我还不错，可以戳页面下方的邮箱联系我哦~感谢ing~</p>
-<h1 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h1><p>用思维导图分享我学习以及思考的一切。<br>对过往博文，我也会不定期更新，对同一方向更深入学习的知识采用追加的形式，便于大家系统性参考。</p>
-
+        <p>【汇总】前端知识体系之CSS<br><a id="more"></a></p>
+<h1 id="MindMap"><a href="#MindMap" class="headerlink" title="MindMap"></a>MindMap</h1><h2 id="自定义样式表"><a href="#自定义样式表" class="headerlink" title="自定义样式表"></a>自定义样式表</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/1%E3%80%81%E4%BD%BF%E7%94%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%96%B9%E5%BC%8F.png" alt=""></p>
+<h2 id="使用CSS样式的方式"><a href="#使用CSS样式的方式" class="headerlink" title="使用CSS样式的方式"></a>使用CSS样式的方式</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/2%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F%E8%A1%A8.png" alt=""></p>
+<h2 id="常见属性"><a href="#常见属性" class="headerlink" title="常见属性"></a>常见属性</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/3%E3%80%81%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7.png" alt=""></p>
+<h2 id="DIV-CSS布局"><a href="#DIV-CSS布局" class="headerlink" title="DIV+CSS布局"></a>DIV+CSS布局</h2><p><img src="http://ovot91g2e.bkt.clouddn.com/PDF/4%E3%80%81DIV%20+%20CSS%20%E5%B8%83%E5%B1%80.png" alt=""> </p>
+<h1 id="知识点详解"><a href="#知识点详解" class="headerlink" title="知识点详解"></a>知识点详解</h1>
       
     </div>
     <footer class="article-footer">
@@ -237,14 +250,44 @@ var a = new Donate({
 
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2018/02/25/【汇总】前端知识体系之JavaScript（下）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          【汇总】前端知识体系之JavaScript（下）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/02/25/【汇总】前端知识体系之HTML（上）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">【汇总】前端知识体系之HTML（上）</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 <!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MindMap"><span class="nav-number">1.</span> <span class="nav-text">MindMap</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义样式表"><span class="nav-number">1.1.</span> <span class="nav-text">自定义样式表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用CSS样式的方式"><span class="nav-number">1.2.</span> <span class="nav-text">使用CSS样式的方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见属性"><span class="nav-number">1.3.</span> <span class="nav-text">常见属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DIV-CSS布局"><span class="nav-number">1.4.</span> <span class="nav-text">DIV+CSS布局</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#知识点详解"><span class="nav-number">2.</span> <span class="nav-text">知识点详解</span></a></li></ol>
+    
+    </div>
+  </aside>
 
 
 </section>
@@ -345,6 +388,8 @@ var a = new Donate({
 
 
 
+  <script src="/js/dialog.js"></script>
+
 
 
 
@@ -428,6 +473,8 @@ var a = new Donate({
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>
