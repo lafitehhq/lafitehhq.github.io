@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/11/02/%E3%80%90%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E3%80%91Djang%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</loc>
+    
+    <lastmod>2018-03-11T16:29:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/08/12/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Django%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</loc>
+    
+    <lastmod>2018-03-11T16:28:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/02/19/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Python%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%EF%BC%88%E4%B8%8A%EF%BC%89/</loc>
+    
+    <lastmod>2018-03-03T06:20:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/08/21/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91Github%E4%B8%8EGitLab%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2018-03-01T16:53:00.000Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>http://yoursite.com/2017/08/20/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91Git%E5%8E%9F%E7%90%86%E4%B8%8E%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2018-03-01T11:12:35.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/02/19/%E3%80%90%E6%B1%87%E6%80%BB%E3%80%91Python%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%EF%BC%88%E4%B8%8A%EF%BC%89/</loc>
-    
-    <lastmod>2018-03-01T11:00:31.000Z</lastmod>
     
   </url>
   
@@ -222,13 +236,6 @@
     <loc>http://yoursite.com/2017/11/06/%E3%80%90%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E3%80%91Pandas%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</loc>
     
     <lastmod>2018-02-21T16:56:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/11/02/%E3%80%90%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E3%80%91Djang%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</loc>
-    
-    <lastmod>2018-02-21T16:56:27.000Z</lastmod>
     
   </url>
   
