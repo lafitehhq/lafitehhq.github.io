@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【汇总】python面试知识点总结（上） | 海球的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Python" />
+  
+  
+  
+  
+  <meta name="description" content="Python面试知识点总结吐血整理">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【汇总】Python面试知识点总结（上）">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/【汇总】Python面试知识点总结（上）/index.html">
+<meta property="og:site_name" content="海球的博客">
+<meta property="og:description" content="Python面试知识点总结吐血整理">
+<meta property="og:locale" content="de">
+<meta property="og:updated_time" content="2018-04-23T18:59:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【汇总】Python面试知识点总结（上）">
+<meta name="twitter:description" content="Python面试知识点总结吐血整理">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.JPG">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.JPG">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/dialog.css">
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.JPG">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home🔝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives📝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories🗂</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags🏷</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/pictures">Pictures📽</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About🙄</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键字" />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Seiten',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Unbenannt)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-【汇总】Python面试知识点总结（上）" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      【汇总】Python面试知识点总结（上）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/04/24/【汇总】Python面试知识点总结（上）/" class="article-date">
+	  <time datetime="2018-04-23T18:43:53.000Z" itemprop="datePublished">2018-04-24</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/工作/">工作</a><a class="article-category-link" href="/categories/工作/编程之魅/">编程之魅</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>Python面试知识点总结吐血整理<br><a id="more"></a></p>
+<h1 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h1><h2 id="数据类型和变量"><a href="#数据类型和变量" class="headerlink" title="数据类型和变量"></a>数据类型和变量</h2><h2 id="字符串和编码"><a href="#字符串和编码" class="headerlink" title="字符串和编码"></a>字符串和编码</h2><h2 id="使用list和tuple"><a href="#使用list和tuple" class="headerlink" title="使用list和tuple"></a>使用list和tuple</h2><h2 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h2><h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h2 id="使用dict和set"><a href="#使用dict和set" class="headerlink" title="使用dict和set"></a>使用dict和set</h2><h2 id="StackOverflow"><a href="#StackOverflow" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=9add9d60710c57795e822f055adeef26" target="_blank" rel="external">Python中有三元运算符吗</a>  |<br><a href="http://note.youdao.com/noteshare?id=121dd09ecb2252b1abfdef7ef221f2d3" target="_blank" rel="external">怎么在windows下安装pip</a>  |<br><a href="http://note.youdao.com/noteshare?id=32cf9aeeb0bf9e39127144cefc67c7fe" target="_blank" rel="external">如何在一个表达式里合并两个字典</a>  |<br><a href="http://note.youdao.com/noteshare?id=73feffb6fc73e8c1f23d98c855e5b28a" target="_blank" rel="external">用字典的值对字典进行排序</a>  |<br><a href="http://note.youdao.com/noteshare?id=cb102e8405958757e432412a031bfc16" target="_blank" rel="external">如何在一个函数里用全局变量</a>  |<br><a href="http://note.youdao.com/noteshare?id=77f8e703cd873d0f7f672d9964ce14b9" target="_blank" rel="external">Python中的”小震撼”:变化的默认参数</a>  |<br><a href="http://note.youdao.com/noteshare?id=7b71c92a70ce5040d462d224277e79e3" target="_blank" rel="external">检查字典，列表，元组为空的方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=da8e26510a40b80d2a4a784e6246144b" target="_blank" rel="external">怎么用引用来改变一个变量</a>  |<br><a href="http://note.youdao.com/noteshare?id=4c2f992201845c6404bd414d3a365d56" target="_blank" rel="external">在循环中获取索引(数组下标)</a>  |<br><a href="http://note.youdao.com/noteshare?id=4a0730b34acbc8496506677f2b3975f3" target="_blank" rel="external">Python中的appen和extend</a>  |<br><a href="http://note.youdao.com/noteshare?id=0ec6b593185e201357d24945f8511d2d" target="_blank" rel="external">字典里添加元素的方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=0e5083da265f1bde1fccc230c38a3e77" target="_blank" rel="external">类里的静态变量</a>  |<br><a href="http://note.youdao.com/noteshare?id=99188a43428b052cec6bd8f1d017d15f" target="_blank" rel="external">如何移除换行符</a>  |<br><a href="http://note.youdao.com/noteshare?id=809b6186eadb5591d18cae893073b0c8" target="_blank" rel="external">为什么用pip比用easy_install的好</a>  |<br><a href="http://note.youdao.com/noteshare?id=648cc7c1589444f43ec1e39f1e4f579f" target="_blank" rel="external">把字符串解析成浮点数或者整数</a>  |<br><a href="http://note.youdao.com/noteshare?id=84549ea6b08de2269e74d3dbb45be856" target="_blank" rel="external">怎么样获取一个列表的长度</a>  |<br><a href="http://note.youdao.com/noteshare?id=90c96218700aafd80b2aee32802cdec6" target="_blank" rel="external">为什么是string.join(list)而不是list.join(string)</a>  |<br><a href="http://note.youdao.com/noteshare?id=89dcd5d4b2f67a2795d586e5b6f77226" target="_blank" rel="external">检查一个字符串是否是一个数字</a>  |<br><a href="http://note.youdao.com/noteshare?id=ef3ee0274b3d18346560b7b53390c355" target="_blank" rel="external">查找列表中某个元素的下标</a>  |<br><a href="http://note.youdao.com/noteshare?id=fb3eb5d313eed43e5225fb7a67a5cc12" target="_blank" rel="external">合并列表中的列表</a>  |<br><a href="http://note.youdao.com/noteshare?id=79b1ed97b04f2596da8d04096d9f0806" target="_blank" rel="external">检查一个键在字典中是否存在</a>  |<br><a href="http://note.youdao.com/noteshare?id=ddc5d9b493cbe953d0423489baee14d4" target="_blank" rel="external">在列表中随机取一个元素</a>  |<br><a href="http://note.youdao.com/noteshare?id=aec8dc1d83c8d79a6c8279e333164b20" target="_blank" rel="external">通过列表中字典的值对列表进行排序</a>  |<br><a href="http://note.youdao.com/noteshare?id=e36746169d7e0ebcfab119c324c09db5" target="_blank" rel="external">字典推导式</a>  |<br><a href="http://note.youdao.com/noteshare?id=a279bcb6bb1a156d827998b974d7b657" target="_blank" rel="external">反转字符串</a>  |<br><a href="http://note.youdao.com/noteshare?id=411d226aee6331f97ee41b6643371fff" target="_blank" rel="external">获取列表最后一个元素</a>  |<br><a href="http://note.youdao.com/noteshare?id=d02b9a96cb24f6e09944ee85d8ec6ff7" target="_blank" rel="external">Python中用什么代替switch语句</a>  |<br><a href="http://note.youdao.com/noteshare?id=de283232bf026a187b70ad08a9b964d4" target="_blank" rel="external">生成包含大写字母和数字的随机字符串</a>  |<br><a href="http://note.youdao.com/noteshare?id=97dd8943939d7cd7ed1f3689977080ce" target="_blank" rel="external">合并两个列表</a>  |<br><a href="http://note.youdao.com/noteshare?id=76f0717993a71043cd268452dc3adc0b" target="_blank" rel="external">输出到stderr</a>  |<br><a href="http://note.youdao.com/noteshare?id=065ef0f76a03dab12b6849733a766e8b" target="_blank" rel="external">字符串格式化</a>  |<br><a href="http://note.youdao.com/noteshare?id=c04423b210eda7d7440ecf38e7f809a3" target="_blank" rel="external">怎么样去除空格(包括tab)</a>  |<br><a href="http://note.youdao.com/noteshare?id=97dd8943939d7cd7ed1f3689977080ce" target="_blank" rel="external">合并两个列表</a>  |<br><a href="http://note.youdao.com/noteshare?id=bf5f3d59c2889a48dce0007298973ee1" target="_blank" rel="external">用pip升级所有包</a>  |<br><a href="http://note.youdao.com/noteshare?id=6a1235f9adbf423e5e82f57ae0c811be" target="_blank" rel="external">给字符串填充0</a>  |  </p>
+<h2 id="实用编程案例"><a href="#实用编程案例" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h2><h2 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h2><h2 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h2><h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><h2 id="StackOverflow-1"><a href="#StackOverflow-1" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=49eb61ef194cfd4812af6dd6500f0b55" target="_blank" rel="external">静态方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=aa9274e48c3fdef4795d99715cc07146" target="_blank" rel="external">为什么代码在一个函数里运行的更快</a>  |<br><a href="http://note.youdao.com/noteshare?id=11ed0ea4423b69978ec81d648aca80a7" target="_blank" rel="external">args和 kwargs</a>  |<br><a href="http://note.youdao.com/noteshare?id=74ba1f2f072fa0dc631dcbbe0c73fa29" target="_blank" rel="external">通过函数名的字符串来调用这个函数</a>  |  </p>
+<h2 id="实用编程案例-1"><a href="#实用编程案例-1" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=b2bc9dae3a56c1ed3c0e277fdaf10baa" target="_blank" rel="external">定义二元一次方程求解的函数</a>  |<br><a href="http://note.youdao.com/noteshare?id=d697f9e4d0212421a2e6f5eaa83a3774" target="_blank" rel="external">说明pow函数（x的n次方）的实现原理</a>  |<br><a href="http://note.youdao.com/noteshare?id=3eafa03119a320c374c4419e73cf6d26" target="_blank" rel="external">定义带有可变参数的函数</a>  |<br><a href="http://note.youdao.com/noteshare?id=a6b4adf8ee20b43664e5a8417909edce" target="_blank" rel="external">定义递归函数</a>  |  </p>
+<h1 id="高级特性"><a href="#高级特性" class="headerlink" title="高级特性"></a>高级特性</h1><h2 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h2><h2 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h2><h2 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式"></a>列表生成式</h2><h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h2><h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><h2 id="StackOverflow-2"><a href="#StackOverflow-2" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=27c5eb8ca5819cc4ea08574c8ad2dd64" target="_blank" rel="external">Python中关键字yield有什么作用</a><br><a href="http://note.youdao.com/noteshare?id=2dbe967ba8c5a208a1900c69ee5acf1e" target="_blank" rel="external">理解Python切片</a>  |<br><a href="http://note.youdao.com/noteshare?id=f93b228a9cc40017beb1976a07850415" target="_blank" rel="external">在Python怎么样才能把列表分割成同样大小的块</a>  |<br><a href="http://note.youdao.com/noteshare?id=ba1cff4da33f8e541643e403f8e32ae4" target="_blank" rel="external">获得一个字符串的子串</a>  |<br><a href="http://note.youdao.com/noteshare?id=d3967a060f3ea8fc1230b8a48fb84a80" target="_blank" rel="external">在Python中如何直达搜一个对象是可迭代的</a>  |  </p>
+<h2 id="实用编程案例-2"><a href="#实用编程案例-2" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=22160e4aa7cdb45bd77b8156847e032d" target="_blank" rel="external">定义打印某区间的奇偶数列表函数</a>  |<br><a href="http://note.youdao.com/noteshare?id=98ddb17a40a8bf4c3cf905f8aac2c4d5" target="_blank" rel="external">序列切片操作</a>  |<br><a href="http://note.youdao.com/noteshare?id=98f2fb399cd58035ae6fb1069c427ef0" target="_blank" rel="external">strip()函数【去除字符串首尾的字符】实现原理</a>  |<br><a href="http://note.youdao.com/noteshare?id=c65c84a4c994e9bd418ff51948bf6b4b" target="_blank" rel="external">python序列的迭代</a>  |<br><a href="http://note.youdao.com/noteshare?id=4817c80f012824e8c91944445a81f068" target="_blank" rel="external">python序列的解包</a>  |<br><a href="http://note.youdao.com/noteshare?id=2dd279957a8050ecb7919622ac99d7d1" target="_blank" rel="external">说明max()与min()函数的实现原理</a>  |<br><a href="http://note.youdao.com/noteshare?id=7fca40c734104a03d38af5287842614d" target="_blank" rel="external">列表生成式操作</a>  |<br><a href="http://note.youdao.com/noteshare?id=beddd103cb3cc50b9c6727a35f14adf9" target="_blank" rel="external">使用迭代器生成斐波拉契数列</a>  |<br><a href="http://note.youdao.com/noteshare?id=abca9c6b600223b1328d40c41893315d" target="_blank" rel="external">使用迭代器生成杨辉三角</a>  |<br><a href="http://note.youdao.com/noteshare?id=30eca6c61c3fa8205e865e84ee5e3436" target="_blank" rel="external">可迭代对象&amp;迭代器的常用方法</a>  |  </p>
+<h1 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h1><h2 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h2><h3 id="map-reduce"><a href="#map-reduce" class="headerlink" title="map/reduce"></a>map/reduce</h3><h3 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h3><h3 id="sorted"><a href="#sorted" class="headerlink" title="sorted"></a>sorted</h3><h2 id="返回函数"><a href="#返回函数" class="headerlink" title="返回函数"></a>返回函数</h2><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><h2 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h2><h2 id="偏函数"><a href="#偏函数" class="headerlink" title="偏函数"></a>偏函数</h2><h2 id="StackOverflow-3"><a href="#StackOverflow-3" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=1f30165d3eafc61c52b70042fde7e6a0" target="_blank" rel="external">Python中如何在一个函数中加入多个装饰器</a>  </p>
+<h2 id="实用编程案例-3"><a href="#实用编程案例-3" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=d1b33ef947ecf4ba629543d794b26f06" target="_blank" rel="external">定义一个高阶函数</a>  |<br><a href="http://note.youdao.com/noteshare?id=3971ac32d607fffcc49f60ec8a369ba6" target="_blank" rel="external">map()函数的使用</a>  |<br><a href="http://note.youdao.com/noteshare?id=deef897c75a06fb84accc9c360a9f8e9" target="_blank" rel="external">reduce()函数的使用【functools模块reduce函数】</a>  |<br><a href="http://note.youdao.com/noteshare?id=c324ff4a2b5699b85b9a0174473a19b6" target="_blank" rel="external">filter()函数的使用</a>  |<br><a href="http://note.youdao.com/noteshare?id=6e0d6b0196247353d21ab65cc7f62a4d" target="_blank" rel="external">sorted()函数的使用</a>  |<br><a href="http://note.youdao.com/noteshare?id=fe3908624809e8d4f6c2b6e5dbd10fa7" target="_blank" rel="external">定义返回函数</a>  |<br><a href="http://note.youdao.com/noteshare?id=1b97ce3d906e895678746448430f7fb1" target="_blank" rel="external">定义并使用闭包</a>  |<br><a href="http://note.youdao.com/noteshare?id=3048b7c4dc5a1a36bf1703efdd5f06c3" target="_blank" rel="external">定义匿名函数</a>  |<br><a href="http://note.youdao.com/noteshare?id=c38b3a3127fd655b09121318d82ebfca" target="_blank" rel="external">定义装饰器函数【functools模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=33be966b6a1850fb419b92d76b74c5b7" target="_blank" rel="external">使用闭包创建工厂类方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=c93b0124df2b55fd32c5754df3fdfc64" target="_blank" rel="external">使用nonlocal关键字对闭包中嵌套作用域变量进行变更</a>  |<br><a href="http://note.youdao.com/noteshare?id=ea7ad434a3c5dcf39c1af753d404d314" target="_blank" rel="external">定义偏函数【functools.partial方法】</a>  |<br><a href="http://note.youdao.com/noteshare?id=ca7be0549607ef74f6c42be5a2c1a7b2" target="_blank" rel="external">定义带有默认参数的函数</a>  |  </p>
+<h1 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h1><h2 id="使用模块"><a href="#使用模块" class="headerlink" title="使用模块"></a>使用模块</h2><h2 id="安装第三方模块"><a href="#安装第三方模块" class="headerlink" title="安装第三方模块"></a>安装第三方模块</h2><h2 id="StackOverflow-4"><a href="#StackOverflow-4" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=f345bad9f9c6e71089eca86f731f0b75" target="_blank" rel="external">if <strong>name</strong> == <strong>main</strong>是干嘛的</a>  |<br><a href="http://note.youdao.com/noteshare?id=57a082d4c7ef33f6eb663c882a4d5dc7" target="_blank" rel="external">在Python里怎么读取stdin</a>  |<br><a href="http://note.youdao.com/noteshare?id=fa73ba25ebdaf29a205073ff38675d71" target="_blank" rel="external">在Python里获取当前时间</a>  |<br><a href="http://note.youdao.com/noteshare?id=6554428967339cacaf83c04b94301c1b" target="_blank" rel="external">从相对路径引入一个模块</a>  |  </p>
+<h2 id="实用编程案例-4"><a href="#实用编程案例-4" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><h1 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h1><h2 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h2><h2 id="访问限制"><a href="#访问限制" class="headerlink" title="访问限制"></a>访问限制</h2><h2 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a>继承和多态</h2><h2 id="获取对象信息"><a href="#获取对象信息" class="headerlink" title="获取对象信息"></a>获取对象信息</h2><h2 id="实例属性和类属性"><a href="#实例属性和类属性" class="headerlink" title="实例属性和类属性"></a>实例属性和类属性</h2><h2 id="StackOverflow-5"><a href="#StackOverflow-5" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=1f17ad96f30359b16c1b44ece0409701" target="_blank" rel="external">装饰器@staticmethod和@classmethod有什么区别?</a>  |<br><a href="http://note.youdao.com/noteshare?id=082d9ffb31707c3474b92baa6462e1ec" target="_blank" rel="external">理解Python中super()和<strong>init</strong>()方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=ce130d38f793b35f3406c8c29d580f88" target="_blank" rel="external"><strong>str</strong>和repr__的区别</a>  |<br><a href="http://note.youdao.com/noteshare?id=e08240345e1b5b7fc29b64df9a96c130" target="_blank" rel="external">检查字符串包含的方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=cfb638c575e7d45dd257a1237b7aadec" target="_blank" rel="external">如何知道一个对象有一个特定的属性</a>  |<br><a href="http://note.youdao.com/noteshare?id=3099e7bb97f31f7b43220ddf1c591f34" target="_blank" rel="external">如何获取实例的类名</a>  |<br><a href="http://note.youdao.com/noteshare?id=f1f124d2edc201f2b4e9ebf361bb3021" target="_blank" rel="external">在实例名字前单下划线和双下划线的含义</a>  |<br><a href="http://note.youdao.com/noteshare?id=ec65358080c62ae19c7279e7cbc46e1f" target="_blank" rel="external">查看一个对象的类型</a>  |  </p>
+<h2 id="实用编程案例-5"><a href="#实用编程案例-5" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=bd179881a08654912efabeeff18d1ec7" target="_blank" rel="external">作用域的命名及使用</a>  |<br><a href="http://note.youdao.com/noteshare?id=3c6a82717ba7d63570a25d9af6ea88d5" target="_blank" rel="external">设计类和实例-上</a>  |<br><a href="http://note.youdao.com/noteshare?id=fe887a82058587ae693aa8772182a984" target="_blank" rel="external">设计类和实例-中【使用<strong>slots</strong>】</a>  |<br><a href="http://note.youdao.com/noteshare?id=2e71597b8e40b5104162792847fe6129" target="_blank" rel="external">设计类和实例-下【使用@property】</a>  |<br><a href="http://note.youdao.com/noteshare?id=ff8ba0546f11157ef01f5fa3f4e68649" target="_blank" rel="external">设计类继承【单继承&amp;多继承】</a>  |<br><a href="http://note.youdao.com/noteshare?id=0205da02454189d036fa06e4a0ec174c" target="_blank" rel="external">判断变量，方法，类的类型</a>  |<br><a href="http://note.youdao.com/noteshare?id=aa59080fe0ea1b97928b016946cbc546" target="_blank" rel="external">获取对象的属性和拥有的方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=788199894479be9a932660b7e54a3a98" target="_blank" rel="external">定义类属性和实例属性</a>  |  </p>
+<h1 id="面向对象高级编程"><a href="#面向对象高级编程" class="headerlink" title="面向对象高级编程"></a>面向对象高级编程</h1><h2 id="使用slots"><a href="#使用slots" class="headerlink" title="使用slots"></a>使用<strong>slots</strong></h2><h2 id="使用-property"><a href="#使用-property" class="headerlink" title="使用@property"></a>使用@property</h2><h2 id="多重继承"><a href="#多重继承" class="headerlink" title="多重继承"></a>多重继承</h2><h2 id="定制类"><a href="#定制类" class="headerlink" title="定制类"></a>定制类</h2><h2 id="使用枚举类"><a href="#使用枚举类" class="headerlink" title="使用枚举类"></a>使用枚举类</h2><h2 id="使用元类"><a href="#使用元类" class="headerlink" title="使用元类"></a>使用元类</h2><h2 id="StackOverflow-6"><a href="#StackOverflow-6" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=e88275f08654539f41e2ed7e0d8e3548" target="_blank" rel="external">Python中的元类(metaclass)是什么</a>  |<br><a href="http://note.youdao.com/noteshare?id=a36311e2cdbbf81492a57085109fb312" target="_blank" rel="external">在Python里如何用枚举类型</a>  |  </p>
+<h2 id="实用编程案例-6"><a href="#实用编程案例-6" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=e12745035d545512b497382a60ac238d" target="_blank" rel="external">设计拥有多继承的类【MixIn】</a>  |<br><a href="http://note.youdao.com/noteshare?id=7e6d89f5f1bda546970e4e035cda0095" target="_blank" rel="external">设计拥有定制方法的类</a>  |<br><a href="http://note.youdao.com/noteshare?id=8f2288effc5b7fb8ae3b2360dafef2aa" target="_blank" rel="external">定义和使用枚举类【Enum】</a>  |<br><a href="http://note.youdao.com/noteshare?id=1692d23032d8db34bb2eda14286c3613" target="_blank" rel="external">定义和使用元类</a>  |  </p>
+<h1 id="错误、调试和测试"><a href="#错误、调试和测试" class="headerlink" title="错误、调试和测试"></a>错误、调试和测试</h1><h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><h2 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h2><h2 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h2><h2 id="文档测试"><a href="#文档测试" class="headerlink" title="文档测试"></a>文档测试</h2><h2 id="StackOverflow-7"><a href="#StackOverflow-7" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=0097e687ce94c8882e90817a919fbc91" target="_blank" rel="external">在一行里获取多个异常</a>  |<br><a href="http://note.youdao.com/noteshare?id=71aff02923d3867f837a07df29cc3d94" target="_blank" rel="external">手动抛出异常</a>  |  </p>
+<h2 id="实用编程案例-7"><a href="#实用编程案例-7" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=19615b3c890ff0a8c4bf1c9833bb2e2c" target="_blank" rel="external">定义含有捕获异常的方法【使用try…except…except…except…else…finally…】</a>  |<br><a href="http://note.youdao.com/noteshare?id=c6d9294c1c580135ed78986c1c37e782" target="_blank" rel="external">定义含有记录错误的方法【使用内置的logging模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=954237c230272e04567232cf445dc19f" target="_blank" rel="external">定义抛出错误的方法【使用raise语句】</a>  |<br><a href="http://note.youdao.com/noteshare?id=278bbc6fb5c35c07386ce7af6735c59b" target="_blank" rel="external">定义单元测试的方法【使用unittest模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=624dffc125773a8595984d0a4e82f017" target="_blank" rel="external">定义文档测试的方法【使用doctest模块】</a>  |  </p>
+<h1 id="IO编程"><a href="#IO编程" class="headerlink" title="IO编程"></a>IO编程</h1><h2 id="文件读写"><a href="#文件读写" class="headerlink" title="文件读写"></a>文件读写</h2><h2 id="StringIO和BytesIO"><a href="#StringIO和BytesIO" class="headerlink" title="StringIO和BytesIO"></a>StringIO和BytesIO</h2><h2 id="操作文件和目录"><a href="#操作文件和目录" class="headerlink" title="操作文件和目录"></a>操作文件和目录</h2><h2 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h2><h2 id="StackOverflow-8"><a href="#StackOverflow-8" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=feb4aa5e4030add7d2982d4b876841f2" target="_blank" rel="external">Python如何判断一个文件是否存在</a>  |<br><a href="http://note.youdao.com/noteshare?id=fceedb7c02a2a2cf7d70da5cc38b3029" target="_blank" rel="external">在Python中调用外部命令</a>  |<br><a href="http://note.youdao.com/noteshare?id=e5784bf19d0fdfa057dd96ae7e06e699" target="_blank" rel="external">检查一个文件夹是否存在,如果不存在就创建它</a>  |<br><a href="http://note.youdao.com/noteshare?id=f8f8999276f5da1d7bfe4f20658b51a6" target="_blank" rel="external">列出目录中的所有文件</a>  |<br><a href="http://note.youdao.com/noteshare?id=d88a2feee2fb131e9058443db2a3cb66" target="_blank" rel="external">复制文件</a>  |<br><a href="http://note.youdao.com/noteshare?id=6c5a682bd2ec9ba52d3f897b25f01104" target="_blank" rel="external">把文件一行行读入数组</a>  |  </p>
+<h2 id="实用编程案例-8"><a href="#实用编程案例-8" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=b499c2957102d08daaaefcbce3f8b81c" target="_blank" rel="external">同步.异步IO的含义</a>  |<br><a href="http://note.youdao.com/noteshare?id=3776396fa408565a9b77ef45c036d955" target="_blank" rel="external">定义读文件数据的方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=238cea5c2f67c690fc86cc1c848b9cc2" target="_blank" rel="external">定义写文件数据的方法</a>  |<br><a href="http://note.youdao.com/noteshare?id=995982b23d7d6780ceab0a2fede4016b" target="_blank" rel="external">定义内存中读写str的方法【StringIO】</a>  |<br><a href="http://note.youdao.com/noteshare?id=11ff7032ab3d74831ae616059470329d" target="_blank" rel="external">定义内存中读写bytes的方法【BytesIO】</a>  |<br><a href="http://note.youdao.com/noteshare?id=848e05b5b6fd2a374010a9ff33dec3d8" target="_blank" rel="external">定义操作系统的环境变量和目录和文件的方法【os模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=25cfc9374752ea0e3c398b827c30b445" target="_blank" rel="external">定义Python语言的对象序列化与反序列化的方法【pickle模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=01bea5efd214bb96384990e09d172f4a" target="_blank" rel="external">定义其他语言对的对象序列化与反序列化的方法【json模块】</a>  |  </p>
+<h1 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h1><h2 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h2><h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h2 id="ThreadLocal"><a href="#ThreadLocal" class="headerlink" title="ThreadLocal"></a>ThreadLocal</h2><h2 id="进程-vs-线程"><a href="#进程-vs-线程" class="headerlink" title="进程 vs. 线程"></a>进程 vs. 线程</h2><h2 id="分布式进程"><a href="#分布式进程" class="headerlink" title="分布式进程"></a>分布式进程</h2><h2 id="StackOverflow-9"><a href="#StackOverflow-9" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-9"><a href="#实用编程案例-9" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=9a7cf7dedd6ead4fe696b98d119173dd" target="_blank" rel="external">进程，线程，多任务，pid、ppid</a>  |<br><a href="http://note.youdao.com/noteshare?id=f13e47db3092bc55190af079d6039fd3" target="_blank" rel="external">实现非Windows下创建一个子进程【os模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=0bef09a9052a7dd0a1ed554055b62f68" target="_blank" rel="external">实现使用进程池批量创建子进程【进程池Pool】</a>  |<br><a href="http://note.youdao.com/noteshare?id=cf030b1f161d44ef5896d1d4266feef6" target="_blank" rel="external">实现子进程的输入和输出【subprocess模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=43d185de6f6a6f237a6f84ea3ac6a0a4" target="_blank" rel="external">实现进程间的通信【multiprocessing模块的Queue、Pipes等多种方式】</a>  |<br><a href="http://note.youdao.com/noteshare?id=df84084a6af2dbce370261ef231505b8" target="_blank" rel="external">实现创建和调用子线程【threading模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=d99c5bf263b52f6b65712d2289403c46" target="_blank" rel="external">实现多线程加锁【lock.acquire()】</a>  |<br><a href="http://note.youdao.com/noteshare?id=2dcda21b8c21a9abe333f89765b1d686" target="_blank" rel="external">实现Python在多核CPU下的多核任务【】</a>  |<br><a href="http://note.youdao.com/noteshare?id=65c56f955dfb99ba9b87090482b6adf2" target="_blank" rel="external">理解计算密集型 vs. IO密集型；同步IO vs. 异步IO</a>  |<br><a href="http://note.youdao.com/noteshare?id=f5447b5dd719b44fc35d23bc960d93ec" target="_blank" rel="external">实现分布式进程【multiprocessing模块，managers子模块】</a>  |  </p>
+<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><h2 id="StackOverflow-10"><a href="#StackOverflow-10" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-10"><a href="#实用编程案例-10" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=3962e0b2c8fc430bd715eb0428336ad3" target="_blank" rel="external">理解常用的正则表达式</a>  |<br><a href="http://note.youdao.com/noteshare?id=2ba3dc8d6927ed6a1e10a499c7755cae" target="_blank" rel="external">实现正则表达式判断字符串是否匹配【re模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=d1e3b67cf50b4cbd8da70006ddb4cab9" target="_blank" rel="external">实现正则表达式切分字符串【re模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=165b3e03b5bdead6e00667b637630441" target="_blank" rel="external">实现正则表达式提取子串【re模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=8f0c5d0587b64798f43b24938c2d54ed" target="_blank" rel="external">实现正则表达式(非)贪婪匹配【re模块】</a>  |  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '',
+  alipayImage: ''
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/04/24/【汇总】Python面试知识点总结（下）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          【汇总】Python面试知识点总结（下）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/02/25/【汇总】前端知识体系之JavaScript（下）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">【汇总】前端知识体系之JavaScript（下）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python基础"><span class="nav-number">1.</span> <span class="nav-text">Python基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型和变量"><span class="nav-number">1.1.</span> <span class="nav-text">数据类型和变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串和编码"><span class="nav-number">1.2.</span> <span class="nav-text">字符串和编码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用list和tuple"><span class="nav-number">1.3.</span> <span class="nav-text">使用list和tuple</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#条件判断"><span class="nav-number">1.4.</span> <span class="nav-text">条件判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环"><span class="nav-number">1.5.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用dict和set"><span class="nav-number">1.6.</span> <span class="nav-text">使用dict和set</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow"><span class="nav-number">1.7.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例"><span class="nav-number">1.8.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">2.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#调用函数"><span class="nav-number">2.1.</span> <span class="nav-text">调用函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义函数"><span class="nav-number">2.2.</span> <span class="nav-text">定义函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的参数"><span class="nav-number">2.3.</span> <span class="nav-text">函数的参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#递归函数"><span class="nav-number">2.4.</span> <span class="nav-text">递归函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-1"><span class="nav-number">2.5.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-1"><span class="nav-number">2.6.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#高级特性"><span class="nav-number">3.</span> <span class="nav-text">高级特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#切片"><span class="nav-number">3.1.</span> <span class="nav-text">切片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代"><span class="nav-number">3.2.</span> <span class="nav-text">迭代</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表生成式"><span class="nav-number">3.3.</span> <span class="nav-text">列表生成式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器"><span class="nav-number">3.4.</span> <span class="nav-text">生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器"><span class="nav-number">3.5.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-2"><span class="nav-number">3.6.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-2"><span class="nav-number">3.7.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数式编程"><span class="nav-number">4.</span> <span class="nav-text">函数式编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#高阶函数"><span class="nav-number">4.1.</span> <span class="nav-text">高阶函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#map-reduce"><span class="nav-number">4.1.1.</span> <span class="nav-text">map/reduce</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#filter"><span class="nav-number">4.1.2.</span> <span class="nav-text">filter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sorted"><span class="nav-number">4.1.3.</span> <span class="nav-text">sorted</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#返回函数"><span class="nav-number">4.2.</span> <span class="nav-text">返回函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匿名函数"><span class="nav-number">4.3.</span> <span class="nav-text">匿名函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#装饰器"><span class="nav-number">4.4.</span> <span class="nav-text">装饰器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#偏函数"><span class="nav-number">4.5.</span> <span class="nav-text">偏函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-3"><span class="nav-number">4.6.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-3"><span class="nav-number">4.7.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#模块"><span class="nav-number">5.</span> <span class="nav-text">模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用模块"><span class="nav-number">5.1.</span> <span class="nav-text">使用模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装第三方模块"><span class="nav-number">5.2.</span> <span class="nav-text">安装第三方模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-4"><span class="nav-number">5.3.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-4"><span class="nav-number">5.4.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面向对象编程"><span class="nav-number">6.</span> <span class="nav-text">面向对象编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#类和实例"><span class="nav-number">6.1.</span> <span class="nav-text">类和实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问限制"><span class="nav-number">6.2.</span> <span class="nav-text">访问限制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#继承和多态"><span class="nav-number">6.3.</span> <span class="nav-text">继承和多态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取对象信息"><span class="nav-number">6.4.</span> <span class="nav-text">获取对象信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例属性和类属性"><span class="nav-number">6.5.</span> <span class="nav-text">实例属性和类属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-5"><span class="nav-number">6.6.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-5"><span class="nav-number">6.7.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面向对象高级编程"><span class="nav-number">7.</span> <span class="nav-text">面向对象高级编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用slots"><span class="nav-number">7.1.</span> <span class="nav-text">使用slots</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-property"><span class="nav-number">7.2.</span> <span class="nav-text">使用@property</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重继承"><span class="nav-number">7.3.</span> <span class="nav-text">多重继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定制类"><span class="nav-number">7.4.</span> <span class="nav-text">定制类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用枚举类"><span class="nav-number">7.5.</span> <span class="nav-text">使用枚举类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用元类"><span class="nav-number">7.6.</span> <span class="nav-text">使用元类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-6"><span class="nav-number">7.7.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-6"><span class="nav-number">7.8.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#错误、调试和测试"><span class="nav-number">8.</span> <span class="nav-text">错误、调试和测试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#错误处理"><span class="nav-number">8.1.</span> <span class="nav-text">错误处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调试"><span class="nav-number">8.2.</span> <span class="nav-text">调试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单元测试"><span class="nav-number">8.3.</span> <span class="nav-text">单元测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文档测试"><span class="nav-number">8.4.</span> <span class="nav-text">文档测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-7"><span class="nav-number">8.5.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-7"><span class="nav-number">8.6.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IO编程"><span class="nav-number">9.</span> <span class="nav-text">IO编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件读写"><span class="nav-number">9.1.</span> <span class="nav-text">文件读写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StringIO和BytesIO"><span class="nav-number">9.2.</span> <span class="nav-text">StringIO和BytesIO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作文件和目录"><span class="nav-number">9.3.</span> <span class="nav-text">操作文件和目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#序列化"><span class="nav-number">9.4.</span> <span class="nav-text">序列化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-8"><span class="nav-number">9.5.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-8"><span class="nav-number">9.6.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#进程和线程"><span class="nav-number">10.</span> <span class="nav-text">进程和线程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#多进程"><span class="nav-number">10.1.</span> <span class="nav-text">多进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多线程"><span class="nav-number">10.2.</span> <span class="nav-text">多线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ThreadLocal"><span class="nav-number">10.3.</span> <span class="nav-text">ThreadLocal</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程-vs-线程"><span class="nav-number">10.4.</span> <span class="nav-text">进程 vs. 线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式进程"><span class="nav-number">10.5.</span> <span class="nav-text">分布式进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-9"><span class="nav-number">10.6.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-9"><span class="nav-number">10.7.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正则表达式"><span class="nav-number">11.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-10"><span class="nav-number">11.1.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-10"><span class="nav-number">11.2.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2018 海球的博客 All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/pictures" class="mobile-nav-link">Pictures</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+  <script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            海球的博客
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 海球的博客 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>

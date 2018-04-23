@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【汇总】python面试知识点总结（下） | 海球的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="Python" />
+  
+  
+  
+  
+  <meta name="description" content="Python面试知识点总结吐血整理">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【汇总】Python面试知识点总结（下）">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/【汇总】Python面试知识点总结（下）/index.html">
+<meta property="og:site_name" content="海球的博客">
+<meta property="og:description" content="Python面试知识点总结吐血整理">
+<meta property="og:locale" content="de">
+<meta property="og:updated_time" content="2018-04-23T18:59:54.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【汇总】Python面试知识点总结（下）">
+<meta name="twitter:description" content="Python面试知识点总结吐血整理">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.JPG">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.JPG">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    <link rel="stylesheet" href="/css/dialog.css">
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.JPG">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home🔝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives📝</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories🗂</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags🏷</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/pictures">Pictures📽</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About🙄</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键字" />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Seiten',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Unbenannt)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-【汇总】Python面试知识点总结（下）" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      【汇总】Python面试知识点总结（下）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/04/24/【汇总】Python面试知识点总结（下）/" class="article-date">
+	  <time datetime="2018-04-23T18:52:12.000Z" itemprop="datePublished">2018-04-24</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/工作/">工作</a><a class="article-category-link" href="/categories/工作/编程之魅/">编程之魅</a>
+
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        <p>Python面试知识点总结吐血整理<br><a id="more"></a></p>
+<h1 id="常用内建模块"><a href="#常用内建模块" class="headerlink" title="常用内建模块"></a>常用内建模块</h1><h2 id="datetime"><a href="#datetime" class="headerlink" title="datetime"></a>datetime</h2><h2 id="collections"><a href="#collections" class="headerlink" title="collections"></a>collections</h2><h2 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h2><h2 id="struct"><a href="#struct" class="headerlink" title="struct"></a>struct</h2><h2 id="hashlib"><a href="#hashlib" class="headerlink" title="hashlib"></a>hashlib</h2><h2 id="hmac"><a href="#hmac" class="headerlink" title="hmac"></a>hmac</h2><h2 id="itertools"><a href="#itertools" class="headerlink" title="itertools"></a>itertools</h2><h2 id="contextlib"><a href="#contextlib" class="headerlink" title="contextlib"></a>contextlib</h2><h2 id="urllib"><a href="#urllib" class="headerlink" title="urllib"></a>urllib</h2><h2 id="XML"><a href="#XML" class="headerlink" title="XML"></a>XML</h2><h2 id="HTMLParser"><a href="#HTMLParser" class="headerlink" title="HTMLParser"></a>HTMLParser</h2><h2 id="StackOverflow"><a href="#StackOverflow" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=57aba5640103492a50065a364345952f" target="_blank" rel="external">如何测量脚本运行时间</a>  |<br><a href="http://note.youdao.com/noteshare?id=e6a90c23d6adb69d5bb3ca0ce3d9b897" target="_blank" rel="external">把字符串转化成时间</a>  |  </p>
+<h2 id="实用编程案例"><a href="#实用编程案例" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=a5b0e4d954dffda44c40c9eae0355b72" target="_blank" rel="external">实现获取当前日期和时间【datetime模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=8b8500769f1d5d7203cd6d48ebfc9a12" target="_blank" rel="external">实现获取指定日期和时间【datetime模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=ca421d0b8fba63b282a916c88900bf26" target="_blank" rel="external">实现datetime和timestamp的相互转换【datetime模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=b6717aae76c734e1f794b6ca4ce38060" target="_blank" rel="external">实现datetime和str的相互转换【datetime模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=799c92f9ad138b25ce035916e99a882b" target="_blank" rel="external">实现datetime日期往后或往前计算【timedelta类】</a>  |<br><a href="http://note.youdao.com/noteshare?id=f9305b0f9b6c76e32382cc817642c8bb" target="_blank" rel="external">实现datetime日期装换成包含时区备注的时间【datetime, timedelta, timezone类】</a>  |<br><a href="http://note.youdao.com/noteshare?id=a3b82a49aa98a4cf833d30fd59bb14bb" target="_blank" rel="external">实现datetime日期时区转换【utcnow()】</a>  |<br><a href="http://note.youdao.com/noteshare?id=b3ae655bebff22fed0544152111a13d9" target="_blank" rel="external">定义一种数据类型：具备tuple的不变性，又可以根据属性来引用【collections模块的namedtuple函数】</a>  |<br><a href="http://note.youdao.com/noteshare?id=bc44893030b4437f0a34afbc76e25714" target="_blank" rel="external">定义一种数据类型：高效实现插入和删除操作的双向列表，适合用于队列和栈【collections模块的deque函数】</a>  |<br><a href="http://note.youdao.com/noteshare?id=6923df39bd13f34ebee828c0f72cb680" target="_blank" rel="external">定义一种数据类型：使用dict时，如果希望key不存在时，返回一个默认值【collections模块的defaultdict函数】</a>  |<br><a href="http://note.youdao.com/noteshare?id=0d5addaeff6a6be3a8d009f84a73002e" target="_blank" rel="external">定义一种数据类型：使用dict时，按照Key的插入顺序排列【collections模块的OrderedDict函数】</a>  |<br><a href="http://note.youdao.com/noteshare?id=05531ffc894f763aec50f0e0f9daa092" target="_blank" rel="external">定义一种数据类型：统计字符出现的个数【collections模块的Counter函数】</a>  |<br><a href="http://note.youdao.com/noteshare?id=7bcd5efe91760d7548d9420d0a8d375a" target="_blank" rel="external">实现字符文件的二进制编解码（常用于在URL、Cookie、网页中传输少量二进制数据）【Base64模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=b3f338489306a2566eac7ea8670ca444" target="_blank" rel="external">实现字节文件的二进制编码【struct模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=83bfb6bcc2322079a2253b9e642e5d8f" target="_blank" rel="external">实现标准hash算法用于防篡改但不加密【hashlib模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=7e548904182540598d6f823c37c92181" target="_blank" rel="external">实现hmac算法用于防篡改且加密【hmac模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=923707de0a6d340c7026886db9dbad7a" target="_blank" rel="external">实现处理迭代对象的方法【itertools模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=678037a936d725c333de1dc4103990bb" target="_blank" rel="external">实现上下文管理的方法【contextlib模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=7d3f587597a6fb318c8e2ae3f4cdbc87" target="_blank" rel="external">实现操作URL等访问网络资源的方法【urllib模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=9a3581054b5bfaef07914d0b617c959e" target="_blank" rel="external">实现操作XML的方法【xml模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=11a174827bf1994e18549bc828b14293" target="_blank" rel="external">实现解析HTML的方法【HTMLParser模块】</a>  |  </p>
+<h1 id="常用第三方模块"><a href="#常用第三方模块" class="headerlink" title="常用第三方模块"></a>常用第三方模块</h1><h2 id="Pillow"><a href="#Pillow" class="headerlink" title="Pillow"></a>Pillow</h2><h2 id="requests"><a href="#requests" class="headerlink" title="requests"></a>requests</h2><h2 id="chardet"><a href="#chardet" class="headerlink" title="chardet"></a>chardet</h2><h2 id="psutil"><a href="#psutil" class="headerlink" title="psutil"></a>psutil</h2><h2 id="StackOverflow-1"><a href="#StackOverflow-1" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-1"><a href="#实用编程案例-1" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=cccf15432f2bf7ec4e658948b7002350" target="_blank" rel="external">实现图像处理的方法【Pillow模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=99c5c0a7b2803f5fb102ed630a321cdb" target="_blank" rel="external">实现操作URL等访问网络资源的方法【request模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=134dbdf69223e7aa459533f0f3c60280" target="_blank" rel="external">实现字符串编码检测的方法【chardet模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=a0a938cb6b44c9f925df2e882d8ab560" target="_blank" rel="external">实现获取系统等运维信息的方法【psutil模块】</a>  |   </p>
+<h1 id="virtualenv"><a href="#virtualenv" class="headerlink" title="virtualenv"></a>virtualenv</h1><h2 id="StackOverflow-2"><a href="#StackOverflow-2" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-2"><a href="#实用编程案例-2" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=8c86e8ad59380b955a4b4b3f00f344f1" target="_blank" rel="external">实现为应用提供了隔离的运行环境【virtualenv模块】</a>  |  </p>
+<h1 id="图形界面"><a href="#图形界面" class="headerlink" title="图形界面"></a>图形界面</h1><h2 id="StackOverflow-3"><a href="#StackOverflow-3" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-3"><a href="#实用编程案例-3" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=7f0f8060b31c404758839a499f214468" target="_blank" rel="external">实现基本的GUI弹框程序【Tkinter模块】</a>  |  </p>
+<h1 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h1><h2 id="TCP-IP简介"><a href="#TCP-IP简介" class="headerlink" title="TCP/IP简介"></a>TCP/IP简介</h2><h2 id="TCP编程"><a href="#TCP编程" class="headerlink" title="TCP编程"></a>TCP编程</h2><h2 id="UDP编程"><a href="#UDP编程" class="headerlink" title="UDP编程"></a>UDP编程</h2><h2 id="StackOverflow-4"><a href="#StackOverflow-4" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-4"><a href="#实用编程案例-4" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=39fe166eb41f31fa9a05a3e1922db06e" target="_blank" rel="external">理解IP协议，TCP协议，HTTP协议，SMTP协议</a>  |<br><a href="http://note.youdao.com/noteshare?id=82b4207416cabe1ec30d5e708a1ef000" target="_blank" rel="external">实现TCP协议进行Socket编程，包括客户端与服务端【socket库】</a>  |<br><a href="http://note.youdao.com/noteshare?id=910a37063b573f12356a752ddc80a41b" target="_blank" rel="external">实现UDP协议进行Socket编程，包括客户端与服务端【socket库】</a>  |  </p>
+<h1 id="电子邮件"><a href="#电子邮件" class="headerlink" title="电子邮件"></a>电子邮件</h1><h2 id="SMTP发送邮件"><a href="#SMTP发送邮件" class="headerlink" title="SMTP发送邮件"></a>SMTP发送邮件</h2><h2 id="POP3收取邮件"><a href="#POP3收取邮件" class="headerlink" title="POP3收取邮件"></a>POP3收取邮件</h2><h2 id="StackOverflow-5"><a href="#StackOverflow-5" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-5"><a href="#实用编程案例-5" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=92a5a154ad993425d7525f7fff22089c" target="_blank" rel="external">实现SMTP发送邮件的方法【smtplib和email两个模块】</a>  |<br><a href="http://note.youdao.com/noteshare?id=01b636f3f50d1896b34f308a53bb9e3d" target="_blank" rel="external">实现POP3收取邮件的方法【poplib模块】</a>  |  </p>
+<h1 id="访问数据库"><a href="#访问数据库" class="headerlink" title="访问数据库"></a>访问数据库</h1><h2 id="使用SQLite"><a href="#使用SQLite" class="headerlink" title="使用SQLite"></a>使用SQLite</h2><h2 id="使用MySQL"><a href="#使用MySQL" class="headerlink" title="使用MySQL"></a>使用MySQL</h2><h2 id="使用SQLAlchemy"><a href="#使用SQLAlchemy" class="headerlink" title="使用SQLAlchemy"></a>使用SQLAlchemy</h2><h2 id="StackOverflow-6"><a href="#StackOverflow-6" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><p><a href="http://note.youdao.com/noteshare?id=44c9025d217c034b3f329ff44b9137be" target="_blank" rel="external">如何连接MySQL</a>  |  </p>
+<h2 id="实用编程案例-6"><a href="#实用编程案例-6" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=3c48e0b0e346692c1aec31550fa5edb8" target="_blank" rel="external">实现Python操作SQLite数据库【sqllite3驱动】</a>  |<br><a href="http://note.youdao.com/noteshare?id=0f53a4845cdc78fcb8e66e163ee4a868" target="_blank" rel="external">实现Python操作MySQL数据库【mysql-connector-python驱动】</a>  |<br><a href="http://note.youdao.com/noteshare?id=8d1576b948dcadde274732d8bc4f2285" target="_blank" rel="external">实现把关系数据库的表结构映射到Python对象上【SQLAlchemy的ORM框架】</a>  |  </p>
+<h1 id="Web开发"><a href="#Web开发" class="headerlink" title="Web开发"></a>Web开发</h1><h2 id="HTTP协议简介"><a href="#HTTP协议简介" class="headerlink" title="HTTP协议简介"></a>HTTP协议简介</h2><h2 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h2><h2 id="WSGI接口"><a href="#WSGI接口" class="headerlink" title="WSGI接口"></a>WSGI接口</h2><h2 id="使用Web框架"><a href="#使用Web框架" class="headerlink" title="使用Web框架"></a>使用Web框架</h2><h2 id="使用模板"><a href="#使用模板" class="headerlink" title="使用模板"></a>使用模板</h2><h2 id="StackOverflow-7"><a href="#StackOverflow-7" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-7"><a href="#实用编程案例-7" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=cfeb93124e03b10200f675dec9b79863" target="_blank" rel="external">HTTP协议简介</a>  |<br><a href="http://note.youdao.com/noteshare?id=b2462b01cc1301f6e4ea38ec7af5b5bc" target="_blank" rel="external">实现Python的WSGI接口（处理响应函数，wsgiref模块）</a>  |<br><a href="http://note.youdao.com/noteshare?id=9c04731f3f8bfc07c5b3a8d327387fbe" target="_blank" rel="external">实现Flask框架编写Web App逻辑（处理URL及对应的处理函数）</a>  |<br><a href="http://note.youdao.com/noteshare?id=95cd6343af78c03308f840f0c4268f39" target="_blank" rel="external">实现Flask框架模板编写Web App（分离逻辑与视图）</a>  |  </p>
+<h1 id="异步IO"><a href="#异步IO" class="headerlink" title="异步IO"></a>异步IO</h1><h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><h2 id="asyncio"><a href="#asyncio" class="headerlink" title="asyncio"></a>asyncio</h2><h2 id="async-await"><a href="#async-await" class="headerlink" title="async/await"></a>async/await</h2><h2 id="aiohttp"><a href="#aiohttp" class="headerlink" title="aiohttp"></a>aiohttp</h2><h2 id="StackOverflow-8"><a href="#StackOverflow-8" class="headerlink" title="StackOverflow"></a>StackOverflow</h2><h2 id="实用编程案例-8"><a href="#实用编程案例-8" class="headerlink" title="实用编程案例"></a>实用编程案例</h2><p><a href="http://note.youdao.com/noteshare?id=32088ad2da9385bae91f03cbc011a798" target="_blank" rel="external">实现创建和调用协程【generator】</a>  |<br><a href="http://note.youdao.com/noteshare?id=f0e791bdf000994c2832755e2ad50557" target="_blank" rel="external">实现异步IO【（3.5及以上可用）asyncio模块的async和await语法】</a>  |<br><a href="http://note.youdao.com/noteshare?id=630e743352ad444f25b7f7aca5fc4855" target="_blank" rel="external">实现异步IO【（3.5前均可用）asyncio模块的@asyncio.coroutine和yield from语法】</a>  |<br><a href="http://note.youdao.com/noteshare?id=c564a3c3629e1b3648b6fb3e3d9c617d" target="_blank" rel="external">实现单线程并发IO操作【aiohttp模块】</a>  |  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '',
+  alipayImage: ''
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/04/24/【汇总】Python面试知识点总结（上）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">【汇总】Python面试知识点总结（上）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常用内建模块"><span class="nav-number">1.</span> <span class="nav-text">常用内建模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#datetime"><span class="nav-number">1.1.</span> <span class="nav-text">datetime</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#collections"><span class="nav-number">1.2.</span> <span class="nav-text">collections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#base64"><span class="nav-number">1.3.</span> <span class="nav-text">base64</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#struct"><span class="nav-number">1.4.</span> <span class="nav-text">struct</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hashlib"><span class="nav-number">1.5.</span> <span class="nav-text">hashlib</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hmac"><span class="nav-number">1.6.</span> <span class="nav-text">hmac</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#itertools"><span class="nav-number">1.7.</span> <span class="nav-text">itertools</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#contextlib"><span class="nav-number">1.8.</span> <span class="nav-text">contextlib</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#urllib"><span class="nav-number">1.9.</span> <span class="nav-text">urllib</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XML"><span class="nav-number">1.10.</span> <span class="nav-text">XML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTMLParser"><span class="nav-number">1.11.</span> <span class="nav-text">HTMLParser</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow"><span class="nav-number">1.12.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例"><span class="nav-number">1.13.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用第三方模块"><span class="nav-number">2.</span> <span class="nav-text">常用第三方模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pillow"><span class="nav-number">2.1.</span> <span class="nav-text">Pillow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#requests"><span class="nav-number">2.2.</span> <span class="nav-text">requests</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#chardet"><span class="nav-number">2.3.</span> <span class="nav-text">chardet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#psutil"><span class="nav-number">2.4.</span> <span class="nav-text">psutil</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-1"><span class="nav-number">2.5.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-1"><span class="nav-number">2.6.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#virtualenv"><span class="nav-number">3.</span> <span class="nav-text">virtualenv</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-2"><span class="nav-number">3.1.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-2"><span class="nav-number">3.2.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图形界面"><span class="nav-number">4.</span> <span class="nav-text">图形界面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-3"><span class="nav-number">4.1.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-3"><span class="nav-number">4.2.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网络编程"><span class="nav-number">5.</span> <span class="nav-text">网络编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP-IP简介"><span class="nav-number">5.1.</span> <span class="nav-text">TCP/IP简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP编程"><span class="nav-number">5.2.</span> <span class="nav-text">TCP编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UDP编程"><span class="nav-number">5.3.</span> <span class="nav-text">UDP编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-4"><span class="nav-number">5.4.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-4"><span class="nav-number">5.5.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#电子邮件"><span class="nav-number">6.</span> <span class="nav-text">电子邮件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SMTP发送邮件"><span class="nav-number">6.1.</span> <span class="nav-text">SMTP发送邮件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#POP3收取邮件"><span class="nav-number">6.2.</span> <span class="nav-text">POP3收取邮件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-5"><span class="nav-number">6.3.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-5"><span class="nav-number">6.4.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#访问数据库"><span class="nav-number">7.</span> <span class="nav-text">访问数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用SQLite"><span class="nav-number">7.1.</span> <span class="nav-text">使用SQLite</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用MySQL"><span class="nav-number">7.2.</span> <span class="nav-text">使用MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用SQLAlchemy"><span class="nav-number">7.3.</span> <span class="nav-text">使用SQLAlchemy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-6"><span class="nav-number">7.4.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-6"><span class="nav-number">7.5.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web开发"><span class="nav-number">8.</span> <span class="nav-text">Web开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP协议简介"><span class="nav-number">8.1.</span> <span class="nav-text">HTTP协议简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML简介"><span class="nav-number">8.2.</span> <span class="nav-text">HTML简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WSGI接口"><span class="nav-number">8.3.</span> <span class="nav-text">WSGI接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Web框架"><span class="nav-number">8.4.</span> <span class="nav-text">使用Web框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用模板"><span class="nav-number">8.5.</span> <span class="nav-text">使用模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-7"><span class="nav-number">8.6.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-7"><span class="nav-number">8.7.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#异步IO"><span class="nav-number">9.</span> <span class="nav-text">异步IO</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#协程"><span class="nav-number">9.1.</span> <span class="nav-text">协程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#asyncio"><span class="nav-number">9.2.</span> <span class="nav-text">asyncio</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#async-await"><span class="nav-number">9.3.</span> <span class="nav-text">async/await</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#aiohttp"><span class="nav-number">9.4.</span> <span class="nav-text">aiohttp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#StackOverflow-8"><span class="nav-number">9.5.</span> <span class="nav-text">StackOverflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用编程案例-8"><span class="nav-number">9.6.</span> <span class="nav-text">实用编程案例</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2018 海球的博客 All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				UV : <span id="busuanzi_value_site_uv"></span> |  
+				PV : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/pictures" class="mobile-nav-link">Pictures</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+  <script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            海球的博客
+          </div>
+          <div class="panel-body">
+            Copyright © 2018 海球的博客 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
