@@ -3,22 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>kategorie: 编程之魅 | 海球的博客</title>
+  <title>【项目】flask项目总结 | 海球的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="Flask" />
   
   
   
-  <meta name="description" content="How could you live with no stories to tell!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="海球的博客">
-<meta property="og:url" content="http://yoursite.com/categories/工作/编程之魅/page/3/index.html">
+  
+  <meta name="description" content="Flask知识点总结">
+<meta name="keywords" content="Flask">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【项目】Flask项目总结">
+<meta property="og:url" content="http://yoursite.com/2018/01/07/【项目】Flask项目总结/index.html">
 <meta property="og:site_name" content="海球的博客">
-<meta property="og:description" content="How could you live with no stories to tell!">
+<meta property="og:description" content="Flask知识点总结">
 <meta property="og:locale" content="de">
+<meta property="og:updated_time" content="2018-05-07T15:59:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="海球的博客">
-<meta name="twitter:description" content="How could you live with no stories to tell!">
+<meta name="twitter:title" content="【项目】Flask项目总结">
+<meta name="twitter:description" content="Flask知识点总结">
   
 
   
@@ -53,8 +57,6 @@
   
 
   
-    <link rel="stylesheet" href="/css/archive.css" >
-  
   
   
     <link rel="stylesheet" href="/css/vdonate.css" >
@@ -64,7 +66,7 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -87,7 +89,7 @@
             
               <a class="brand" style="
                  margin-top: 0px;"  
-                 >
+                href="#" data-toggle="modal" data-target="#myModal" >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.JPG">
               </a>
             
@@ -158,111 +160,127 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;">
-  
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2017" class="archive-year">2017</a></h1>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/09/03/【读书笔记】Python语言及应用/" class="archive-article-date">
-	  <time datetime="2017-09-03T04:23:45.000Z" itemprop="datePublished">2017-09-03</time>
-	</a>
+          <section id="main" style="float:none;"><article id="post-【项目】Flask项目总结" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
 
-      
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/09/03/【读书笔记】Python语言及应用/">【读书笔记】Python语言及应用</a>
+    <h1 class="thumb" class="article-title" itemprop="name">
+      【项目】Flask项目总结
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+    <div class="article-meta">
       
-	<a href="/2017/08/21/【笔记】Github与GitLab的使用方法/" class="archive-article-date">
-	  <time datetime="2017-08-20T16:26:40.000Z" itemprop="datePublished">2017-08-21</time>
+	<a href="/2018/01/07/【项目】Flask项目总结/" class="article-date">
+	  <time datetime="2018-01-07T15:44:04.000Z" itemprop="datePublished">2018-01-07</time>
 	</a>
 
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/08/21/【笔记】Github与GitLab的使用方法/">【笔记】Github与GitLab的使用方法</a>
-    </h1>
-  
+    <a class="article-category-link" href="/categories/工作/">工作</a><a class="article-category-link" href="/categories/工作/编程之魅/">编程之魅</a>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
       
-	<a href="/2017/08/20/【笔记】Git原理与操作命令/" class="archive-article-date">
-	  <time datetime="2017-08-20T04:55:06.000Z" itemprop="datePublished">2017-08-20</time>
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
 	</a>
 
+    </div>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/08/20/【笔记】Git原理与操作命令/">【笔记】Git原理与操作命令</a>
-    </h1>
-  
+        
+        <p>Flask知识点总结<br><a id="more"></a></p>
+<h1 id="基于Flask的博客系统"><a href="#基于Flask的博客系统" class="headerlink" title="基于Flask的博客系统"></a>基于Flask的博客系统</h1><p><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc3W-3YQ2zyQTn2uphZQ2Bx0Tw" target="_blank" rel="external">01:搭建开发环境</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1_Drla0zaAyb2Z5D311oivlv" target="_blank" rel="external">02.编写Web App骨架【app.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc12WowO0H-AKg2IGX1A00FOQg" target="_blank" rel="external">03.编写ORM【orm.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1hFn7I2CYkwf2XBb051rbU-4" target="_blank" rel="external">04.编写模型【models.py；schema.sql；test_models.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc3JALo72KtQ0d2iAhi91KdfFh" target="_blank" rel="external">05.编写Web框架【coroweb.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc07R3d10jZQN72l7WFr1g_y4b" target="_blank" rel="external">06.编写配置文件【config.py；config_override.py；config_default.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc2FELoe0cl4RP2hLlmo1L4jU9" target="_blank" rel="external">07.编写MVC【handlers.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc2uWFye1f7AHH2tX5kR3FUCRi" target="_blank" rel="external">08.使用模板构建前端【app.py；<strong>base</strong>.html；blog.html…】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc0DieEp0Sh4cN2AcbzB2Amvux" target="_blank" rel="external">09.编写API</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc3_oBsU2o-AZZ29wuPF3_FnVA" target="_blank" rel="external">10.实现用户注册和登录【handlers.py；/templates/register.html】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1ZfXqE08Hk4C2_Fwpz3-x5l0" target="_blank" rel="external">11.实现日志创建【handlers.py；/templates/manage_blog_edit.html】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc2410kO1e7A2_2zLKQu0HDd81" target="_blank" rel="external">12.实现日志分页【apis.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc0gmUB72sg4hH2X_bJh3gswXN" target="_blank" rel="external">13.提升开发效率【pymonitor.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1fYo8r3gpAjF2GI4oh0c13sf" target="_blank" rel="external">14.部署Web App【fabfile.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc27jovN3WtkHJ2X9bx70Ywj-E" target="_blank" rel="external">15.项目总结</a></p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '',
+  alipayImage: ''
+});
+</script>
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Flask/">Flask</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/02/19/【汇总】Python编程核心知识体系（上）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          【汇总】Python编程核心知识体系（上）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/11/18/【读书笔记】Python爬虫处理/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">【读书笔记】Python爬虫处理</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
     
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基于Flask的博客系统"><span class="nav-number">1.</span> <span class="nav-text">基于Flask的博客系统</span></a></li></ol>
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/08/12/【汇总】Django编程核心知识体系/" class="archive-article-date">
-	  <time datetime="2017-08-11T16:10:35.000Z" itemprop="datePublished">2017-08-12</time>
-	</a>
+    </div>
+  </aside>
 
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/08/12/【汇总】Django编程核心知识体系/">【汇总】Django编程核心知识体系</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/categories/工作/编程之魅/page/2/">&laquo; zurück</a><a class="page-number" href="/categories/工作/编程之魅/">1</a><a class="page-number" href="/categories/工作/编程之魅/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
 
 </section>
         
@@ -362,6 +380,8 @@
 
 
 
+  <script src="/js/dialog.js"></script>
+
 
 
 
@@ -445,6 +465,8 @@
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>

@@ -627,6 +627,32 @@ zip -r temp.zip temp #如果要压缩的是个目录，则要加上-r参数，�
   </entry>
   
   <entry>
+    <title>【项目】Flask项目总结</title>
+    <link href="http://yoursite.com/2018/01/07/%E3%80%90%E9%A1%B9%E7%9B%AE%E3%80%91Flask%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/01/07/【项目】Flask项目总结/</id>
+    <published>2018-01-07T15:44:04.000Z</published>
+    <updated>2018-05-07T15:59:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Flask知识点总结<br><a id="more"></a></p>
+<h1 id="基于Flask的博客系统"><a href="#基于Flask的博客系统" class="headerlink" title="基于Flask的博客系统"></a>基于Flask的博客系统</h1><p><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc3W-3YQ2zyQTn2uphZQ2Bx0Tw" target="_blank" rel="external">01:搭建开发环境</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1_Drla0zaAyb2Z5D311oivlv" target="_blank" rel="external">02.编写Web App骨架【app.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc12WowO0H-AKg2IGX1A00FOQg" target="_blank" rel="external">03.编写ORM【orm.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1hFn7I2CYkwf2XBb051rbU-4" target="_blank" rel="external">04.编写模型【models.py；schema.sql；test_models.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc3JALo72KtQ0d2iAhi91KdfFh" target="_blank" rel="external">05.编写Web框架【coroweb.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc07R3d10jZQN72l7WFr1g_y4b" target="_blank" rel="external">06.编写配置文件【config.py；config_override.py；config_default.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc2FELoe0cl4RP2hLlmo1L4jU9" target="_blank" rel="external">07.编写MVC【handlers.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc2uWFye1f7AHH2tX5kR3FUCRi" target="_blank" rel="external">08.使用模板构建前端【app.py；<strong>base</strong>.html；blog.html…】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc0DieEp0Sh4cN2AcbzB2Amvux" target="_blank" rel="external">09.编写API</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc3_oBsU2o-AZZ29wuPF3_FnVA" target="_blank" rel="external">10.实现用户注册和登录【handlers.py；/templates/register.html】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1ZfXqE08Hk4C2_Fwpz3-x5l0" target="_blank" rel="external">11.实现日志创建【handlers.py；/templates/manage_blog_edit.html】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc2410kO1e7A2_2zLKQu0HDd81" target="_blank" rel="external">12.实现日志分页【apis.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc0gmUB72sg4hH2X_bJh3gswXN" target="_blank" rel="external">13.提升开发效率【pymonitor.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc1fYo8r3gpAjF2GI4oh0c13sf" target="_blank" rel="external">14.部署Web App【fabfile.py】</a><br><a href="http://84daf6c4.wiz03.com/share/s/24SLr41bcA2l2RNn1D1VuBRc27jovN3WtkHJ2X9bx70Ywj-E" target="_blank" rel="external">15.项目总结</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Flask知识点总结&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
+    
+    
+      <category term="Flask" scheme="http://yoursite.com/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【读书笔记】Python爬虫处理</title>
     <link href="http://yoursite.com/2017/11/18/%E3%80%90%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%91Python%E7%88%AC%E8%99%AB%E5%A4%84%E7%90%86/"/>
     <id>http://yoursite.com/2017/11/18/【读书笔记】Python爬虫处理/</id>
@@ -740,72 +766,6 @@ zip -r temp.zip temp #如果要压缩的是个目录，则要加上-r参数，�
     
     
       <category term="量化投资" scheme="http://yoursite.com/tags/%E9%87%8F%E5%8C%96%E6%8A%95%E8%B5%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【官方文档】Pandas官方文档</title>
-    <link href="http://yoursite.com/2017/11/06/%E3%80%90%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E3%80%91Pandas%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/"/>
-    <id>http://yoursite.com/2017/11/06/【官方文档】Pandas官方文档/</id>
-    <published>2017-11-05T17:56:30.000Z</published>
-    <updated>2018-02-21T16:56:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://ovot91g2e.bkt.clouddn.com/Pandas.jpeg" alt=""><br><a id="more"></a></p>
-<h1 id="基础搭建"><a href="#基础搭建" class="headerlink" title="基础搭建"></a>基础搭建</h1><ul>
-<li>从头开始：<a href="http://usyiyi.cn/documents/Pandas_0j2/whatsnew.html" target="_blank" rel="external">新功能</a> | <a href="http://usyiyi.cn/documents/Pandas_0j2/install.html" target="_blank" rel="external">安装</a><br><a href="http://usyiyi.cn/documents/Pandas_0j2/contributing.html" target="_blank" rel="external">贡献给pandas</a><br><a href="http://usyiyi.cn/documents/Pandas_0j2/faq.html" target="_blank" rel="external">常见问题（FAQ</a></li>
-<li>教程：<a href="http://usyiyi.cn/documents/Pandas_0j2/10min.html" target="_blank" rel="external">10分钟入门Pandas</a> | <a href="http://usyiyi.cn/documents/Pandas_0j2/10min.html" target="_blank" rel="external">中级教程</a></li>
-</ul>
-<p><a href="http://usyiyi.cn/documents/Pandas_0j2/cookbook.html" target="_blank" rel="external">CookBook</a></p>
-<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/dsintro.html" target="_blank" rel="external">数据结构简介</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/basics.html" target="_blank" rel="external">基本基本功能</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/text.html" target="_blank" rel="external">使用文本数据</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/options.html" target="_blank" rel="external">选项和设置</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/indexing.html" target="_blank" rel="external">索引和选择数据</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/advanced.html" target="_blank" rel="external">MultiIndex /高级索引</a></li>
-</ul>
-<h1 id="处理数据"><a href="#处理数据" class="headerlink" title="处理数据"></a>处理数据</h1><ul>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/computation.html" target="_blank" rel="external">计算工具</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/missing_data.html" target="_blank" rel="external">使用缺失数据</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/groupby.html" target="_blank" rel="external">分组：split-apply-combine</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/merging.html" target="_blank" rel="external">合并，连接和连接</a></li>
-</ul>
-<h1 id="展示数据"><a href="#展示数据" class="headerlink" title="展示数据"></a>展示数据</h1><ul>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/reshaping.html" target="_blank" rel="external">整形和数据透视表</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/timeseries.html" target="_blank" rel="external">时间系列/日期功能</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/timedeltas.html" target="_blank" rel="external">时间Deltas</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/categorical.html" target="_blank" rel="external">分类数据</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/visualization.html" target="_blank" rel="external">可视化</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/style.html" target="_blank" rel="external">样式</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/io.html" target="_blank" rel="external">IO工具（文本，CSV，HDF5，…）</a></li>
-</ul>
-<h1 id="解决具体问题"><a href="#解决具体问题" class="headerlink" title="解决具体问题"></a>解决具体问题</h1><ul>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/remote_data.html" target="_blank" rel="external">远程数据访问</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/enhancingperf.html" target="_blank" rel="external">增强性能</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/sparse.html" target="_blank" rel="external">稀疏数据结构</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/gotchas.html" target="_blank" rel="external">告诫和诀窍</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/r_interface.html" target="_blank" rel="external">rpy2 / R interface</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/ecosystem.html" target="_blank" rel="external">pandas生态系统</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/comparison_with_r.html" target="_blank" rel="external">与R / R库比较</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/comparison_with_sql.html" target="_blank" rel="external">与SQL比较</a></li>
-<li><a href="http://usyiyi.cn/documents/Pandas_0j2/comparison_with_sas.html" target="_blank" rel="external">与SAS的比较</a></li>
-</ul>
-<hr>
-<p>参考链接：<a href="http://usyiyi.cn/translate/Pandas_0j2/tutorials.html" target="_blank" rel="external">http://usyiyi.cn/translate/Pandas_0j2/tutorials.html</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://ovot91g2e.bkt.clouddn.com/Pandas.jpeg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="编程之魅" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%AD%85/"/>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
